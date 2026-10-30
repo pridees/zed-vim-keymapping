@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+// Check rendering and event logic without a browser; this is not a visual layout test.
+const elements = new Map();
+const element = id => { if (!elements.has(id)) elements.set(id,{value:'',checked:false,hidden:false,innerHTML:'',textContent:'',listeners:{},addEventListener(name,fn){this.listeners[name]=fn},setAttribute(){},focus(){},blur(){}}); return elements.get(id); };
+const sandbox={window:{},document:{querySelector:element,querySelectorAll:()=>[],addEventListener(){},activeElement:{tagName:'BODY'}}};
+vm.createContext(sandbox);
+for(const path of ['docs/keymaps.js','docs/app.js'])vm.runInContext(fs.readFileSync(new URL('../'+path,import.meta.url),'utf8'),sandbox);
+assert(element('#cards').innerHTML.includes('Copy relative path'));
+assert(element('#cards').innerHTML.includes('Copy file / folder'));
+element('#search').value='Copy relative path';element('#search').listeners.input();
+assert(element('#cards').innerHTML.includes('ProjectPanel'));
+assert(!element('#cards').innerHTML.includes('Close active tab'));
+element('#search').value='no-such-binding-xyz';element('#search').listeners.input();assert.equal(element('#empty').hidden,false);
+element('#search').value='';
+element('#sources').listeners.click({target:{closest:()=>({dataset:{source:'vim'}})}});
+assert(element('#cards').innerHTML.includes('CONTEXT OVERRIDES'));
+assert(element('#cards').innerHTML.includes('Select next match'));
+element('#group').value='Project tree';element('#group').listeners.change();
+assert(!element('#cards').innerHTML.includes('Vim motions &amp; commands'));
+console.log('UI logic OK: initial rendering, search, empty state, source and context filters.');

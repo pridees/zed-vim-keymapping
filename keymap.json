@@ -1,0 +1,412 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      // Global pane focus, including text inputs and the terminal.
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-r": "multi_workspace::ToggleWorkspaceSidebar"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-j": "multi_workspace::ToggleWorkspaceSidebar"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-/": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-`": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-/": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false,
+          "comment_empty_lines": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-/": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false,
+          "comment_empty_lines": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
+    "bindings": {
+      // LazyVim: windows and buffers.
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+      "space b b": "pane::AlternateFile",
+      "space b o": "pane::CloseOtherItems",
+      "space b h": "pane::CloseItemsToTheLeft",
+      "space b l": "pane::CloseItemsToTheRight",
+      "space b a": "pane::CloseAllItems",
+      "space b c": "pane::CloseCleanItems",
+      "space b p": "pane::TogglePinTab",
+      "space b u": "pane::ReopenClosedItem",
+      "space -": "pane::SplitDown",
+      "space |": "pane::SplitRight",
+
+      // LazyVim: search and panels.
+      "space /": "pane::DeploySearch",
+      "space s g": "pane::DeploySearch",
+      "space s r": ["pane::DeploySearch", { "replace_enabled": true }],
+      "space s s": "outline::Toggle",
+      "space s shift-s": "project_symbols::Toggle",
+      "space g": null,
+      "space g g": "git_panel::ToggleFocus",
+      "space g d": "git::Diff",
+      "space g shift-d": "git::CompareWithBranch",
+      "space t": "terminal_panel::ToggleFocus",
+      "space u h": "editor::ToggleInlayHints",
+
+      // LazyVim: language server actions.
+      "g d": "editor::GoToDefinition",
+      "g r": "editor::FindAllReferences",
+      "space c r": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions",
+      "space c f": "editor::Format",
+      "space c d": "editor::Hover",
+      "space c s": null,
+      "space c i": "call_hierarchy::ShowIncomingCalls",
+      "space c o": "call_hierarchy::ShowOutgoingCalls",
+      "space c l": "editor::RestartLanguageServer",
+
+      // Familiar mini-surround keys using Zed's native surround commands.
+      "g s": null,
+      "g s a": ["workspace::SendKeystrokes", "y s"],
+      "g s d": ["workspace::SendKeystrokes", "d s"],
+      "g s r": ["workspace::SendKeystrokes", "c s"]
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      "space ,": [
+        "editor::ToggleComments",
+        { "advance_downwards": false, "comment_empty_lines": false }
+      ]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      // Add a blank line without leaving Normal mode.
+      "[ space": "vim::InsertEmptyLineAbove",
+      "] space": "vim::InsertEmptyLineBelow"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !menu",
+    "bindings": {
+      "space c a": "editor::ToggleCodeActions",
+      "space c f": "editor::FormatSelections"
+    }
+  },
+  {
+    "context": "(EmptyPane || (Editor && mode == full && (vim_mode == normal || vim_mode == visual))) && !menu",
+    "bindings": {
+      // Agent context is added to the draft; nothing is submitted.
+      "space a": null,
+      "space a a": "agent::FocusAgent",
+      "space a t": "agent::AddSelectionToThread",
+      "space a d": [
+        "action::Sequence",
+        [
+          "agent::FocusAgent",
+          "editor::MoveToEnd",
+          ["editor::InsertSnippet", { "snippet": " @diagnostics" }],
+          "editor::ShowCompletions"
+        ]
+      ]
+    }
+  },
+  {
+    "context": "Terminal && vi_mode",
+    "bindings": {
+      // Enter terminal selection mode with Ctrl+Shift+Space first.
+      "space a": null,
+      "space a a": "agent::FocusAgent",
+      "space a t": "agent::AddSelectionToThread",
+      "space a d": [
+        "action::Sequence",
+        [
+          "agent::FocusAgent",
+          "editor::MoveToEnd",
+          ["editor::InsertSnippet", { "snippet": " @diagnostics" }],
+          "editor::ShowCompletions"
+        ]
+      ]
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      // Neo-tree / LazyVim: navigation and opening.
+      "j": "vim::MenuSelectNext",
+      "k": "vim::MenuSelectPrevious",
+      "h": "project_panel::CollapseSelectedEntry",
+      "l": "project_panel::OpenPermanent",
+      "enter": "project_panel::OpenPermanent",
+      "t": "project_panel::OpenPermanent",
+      "s": "project_panel::OpenSplitVertical",
+      "shift-s": "project_panel::OpenSplitHorizontal",
+      "shift-p": "project_panel::Open",
+      "shift-o": "workspace::OpenWithSystem",
+      "backspace": "project_panel::SelectParent",
+      "g g": "menu::SelectFirst",
+      "shift-g": "menu::SelectLast",
+      "shift-c": "project_panel::CollapseSelectedEntry",
+      "z": "project_panel::CollapseAllEntries",
+
+      // Neo-tree: file operations, keeping deletion confirmation.
+      "a": "project_panel::NewFile",
+      "shift-a": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": ["project_panel::Delete", { "skip_prompt": false }],
+      "shift-t": ["project_panel::Trash", { "skip_prompt": false }],
+      "c": "project_panel::Copy",
+      "x": "project_panel::Cut",
+      "p": "project_panel::Paste",
+      "y": "workspace::CopyRelativePath",
+      "shift-y": "workspace::CopyPath",
+      "u": "project_panel::Undo",
+
+      // Available Zed equivalents for search, visibility and Git navigation.
+      "/": "file_finder::Toggle",
+      "shift-h": "project_panel::ToggleHideHidden",
+      "[ g": "project_panel::SelectPrevGitEntry",
+      "] g": "project_panel::SelectNextGitEntry",
+      "?": "project_panel::OpenContextMenu",
+      "q": "project_panel::Toggle",
+
+      // Agent shortcuts for the project tree.
+      "space": null,
+      "space a": null,
+      "space a a": "agent::FocusAgent",
+      "space a d": [
+        "action::Sequence",
+        [
+          "agent::FocusAgent",
+          "editor::MoveToEnd",
+          ["editor::InsertSnippet", { "snippet": " @diagnostics" }],
+          "editor::ShowCompletions"
+        ]
+      ],
+
+      // Avoid inherited netrw actions on Neo-tree keys without an equivalent.
+      "shift-d": null,
+      "shift-r": null,
+      "o": null
+    }
+  },
+  {
+    "context": "EmptyPane || (Editor && (vim_mode == normal || vim_mode == visual)) || (ProjectPanel && not_editing) || (Terminal && vi_mode)",
+    "bindings": {
+      "space a n": [
+        "action::Sequence",
+        ["agent::FocusAgent", "agent::NewThread"]
+      ],
+      "space a c": [
+        "action::Sequence",
+        ["agent::FocusAgent", "agent::OpenAddContextMenu"]
+      ],
+      "space a r": [
+        "action::Sequence",
+        ["agent::FocusAgent", "agent::OpenAgentDiff"]
+      ]
+    }
+  },
+  {
+    "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      // Keep agent panel controls local to its message editor.
+      "space": null,
+      "space a": null,
+      "space a a": "agent::Toggle",
+      "space a m": "agent::ToggleModelSelector",
+      // ToggleFastMode only controls the native Zed agent, not Codex ACP.
+      "space a f": null,
+      "space a e": "agent::ToggleThinkingEffortMenu"
+    }
+  },
+  {
+    "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      "g a": "git::ToggleStaged",
+      "g x": "git::Restore"
+    }
+  },
+  {
+    "context": "Editor && multibuffer && (vim_mode == normal || vim_mode == visual) && !menu",
+    "bindings": {
+      // Open source files consistently from diff, search and diagnostics views.
+      "g space": null,
+      "g f": "editor::OpenExcerpts"
+    }
+  },
+  {
+    "context": "GitPanel && ChangesList && !Editor",
+    "bindings": {
+      "space": null,
+      "enter": null,
+      "l": [
+        "action::Sequence",
+        ["menu::Confirm", "workspace::FocusCenterPane"]
+      ],
+      "s": "git::ToggleStaged",
+      "shift-s": "git::StageAll",
+      "t": "git_panel::ToggleTreeView",
+      "b": "git::Branch",
+      "p": "git::Pull",
+      "shift-p": "git::Push",
+      "r": "git::PullRebase",
+      "f": "git::Fetch",
+      "shift-f p": "git::ForcePush",
+      "d": ["git::RestoreFile", { "skip_prompt": false }],
+      "tab": "git_panel::FocusEditor",
+      "c": "git_panel::FocusEditor",
+      "g d": "menu::Confirm",
+      "g shift-d": "menu::SecondaryConfirm",
+      "g f": "git::ViewFile",
+      "g h": "git::FileHistory"
+    }
+  },
+  {
+    "context": "CommitEditor > Editor",
+    "bindings": {
+      "tab": "git_panel::FocusChanges"
+    }
+  },
+  {
+    "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
+    "bindings": {
+      // Open and focus the project panel; close it when already focused.
+      "space e": "project_panel::Toggle",
+
+      // Keep Space f as a prefix in editors and panels alike.
+      "space f": null,
+      "space space": "file_finder::Toggle",
+      "space s f": "file_finder::Toggle",
+      "space f n": "workspace::NewFile",
+      "space f h": "git::FileHistory",
+      "space f y": "workspace::CopyRelativePath",
+      "space f shift-y": "workspace::CopyPath",
+
+      "space f p": "projects::OpenRecent",
+      "space f b": "tab_switcher::OpenInActivePane",
+      // Close any active tab, including non-editor and pinned tabs.
+      "space b d": ["pane::CloseActiveItem", { "close_pinned": true }],
+      "space g shift-g": "git_graph::Open",
+      "space g b": "git::Branch",
+      "space g f": "git::Fetch",
+      "space g p": "git::Pull",
+      "space g shift-p": "git::Push",
+      "space g r": "git::PullRebase",
+      "space x": "diagnostics::Deploy",
+      "space r": "task::Spawn",
+      "space shift-r": "task::Rerun",
+
+      // CollabPanel itself has the menu context, so do not exclude menu here.
+      // Dock visibility by position.
+      "space w": null,
+      "space w h": "workspace::ToggleLeftDock",
+      "space w j": "workspace::ToggleBottomDock",
+      "space w k": "workspace::ToggleRightDock",
+      "space w tab": "workspace::ToggleAllDocks",
+      // Focus a real center pane after closing docks, even with no open tabs.
+      "space w q": [
+        "action::Sequence",
+        ["workspace::CloseActiveDock", ["workspace::ActivatePane", 0]]
+      ],
+      "space w shift-q": [
+        "action::Sequence",
+        ["workspace::CloseAllDocks", ["workspace::ActivatePane", 0]]
+      ],
+
+      // Toggle individual panels, wherever they are docked.
+      "space w e": "project_panel::Toggle",
+      "space w g": "git_panel::Toggle",
+      "space w t": "terminal_panel::Toggle",
+      "space w a": "agent::Toggle",
+      "space w o": "outline_panel::Toggle",
+      "space w d": "debug_panel::Toggle",
+      "space w c": "collab_panel::Toggle",
+      "space w m": "workspace::ToggleZoom",
+      "space w l": "lsp_tool::ToggleMenu",
+
+      // Operate on the center editor even when a dock or its input has focus.
+      "space w s": [
+        "action::Sequence",
+        ["workspace::FocusCenterPane", "pane::SplitDown"]
+      ],
+      "space w v": [
+        "action::Sequence",
+        ["workspace::FocusCenterPane", "pane::SplitRight"]
+      ],
+      "space w =": "workspace::ResetPaneSizes",
+      "space w shift-o": [
+        "action::Sequence",
+        ["workspace::FocusCenterPane", "pane::JoinAll"]
+      ]
+    }
+  },
+  {
+    "context": "(VimControl || !vim_mode) && !Dock && (!Terminal || vi_mode)",
+    "bindings": {
+      // Center items (files, diagnostics, release notes) are tabs, not docks.
+      "space w q": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Dock || Terminal",
+    "bindings": {
+      "ctrl-;": "editor::ToggleFocus"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space": null
+    }
+  }
+]
