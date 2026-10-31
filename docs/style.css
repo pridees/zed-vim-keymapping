@@ -1,12 +1,25 @@
 :root {
     color-scheme: dark;
-    --bg: #080d0a;
-    --panel: #0e1511;
-    --line: #253a2b;
-    --green: #b4ff5c;
-    --text: #e2ecd9;
-    --muted: #90a18f;
-    --amber: #ffd17b;
+    /* Palette from the Soulfly Dark Zed theme. */
+    --bg: #090908;
+    --panel: #0f0f0e;
+    --line: #20201d;
+    --row-line: #181816;
+    --text: #c6beb2;
+    --muted: #968979;
+    --accent: #ecc18e;
+    --focus: #ac6766;
+    --link: #72bfff;
+    --link-hover: #efca9f;
+    --tag: #e58ea5;
+    --number: #d9976e;
+    --hover: #1a1a18;
+    --active: #262220;
+    --key-bg: #151514;
+    --key-border: #4b4134;
+    --key-shadow: #514538;
+    --selection: #ac676626;
+    --glow: #ac676622;
     font-family:
         "JetBrains Mono", "IBM Plex Mono", "Cascadia Code", ui-monospace,
         monospace;
@@ -14,6 +27,10 @@
 }
 * {
     box-sizing: border-box;
+}
+::selection {
+    background: var(--selection);
+    color: var(--text);
 }
 body {
     margin: 0;
@@ -28,7 +45,7 @@ body:before {
     inset: 0;
     pointer-events: none;
     z-index: -1;
-    background: radial-gradient(ellipse at 8% 0%, #17321a55, transparent 55%);
+    background: radial-gradient(ellipse at 8% 0%, var(--glow), transparent 55%);
 }
 header {
     padding: 28px 36px;
@@ -47,7 +64,7 @@ header {
 .mark {
     line-height: 1;
     font-size: 36px;
-    color: var(--green);
+    color: var(--accent);
 }
 h1 {
     line-height: 1;
@@ -71,14 +88,15 @@ h1 span {
 .led {
     width: 6px;
     height: 6px;
-    background: var(--green);
-    box-shadow: 0 0 14px #b4ff5c88;
+    background: var(--accent);
+    box-shadow: 0 0 14px var(--glow);
 }
 a {
-    color: var(--green);
+    color: var(--link);
     text-decoration: none;
 }
 a:hover {
+    color: var(--link-hover);
     text-decoration: underline;
 }
 main {
@@ -100,7 +118,7 @@ main {
     min-width: 0;
 }
 .search > span {
-    color: var(--green);
+    color: var(--accent);
     font-size: 22px;
 }
 input[type="search"] {
@@ -126,17 +144,17 @@ select {
 }
 button:hover,
 select:hover {
-    border-color: var(--green);
+    border-color: var(--focus);
 }
 button:focus-visible,
 a:focus-visible,
 select:focus-visible,
 summary:focus-visible {
-    outline: 2px solid var(--green);
+    outline: 2px solid var(--focus);
     outline-offset: 4px;
 }
 .search:focus-within {
-    border-color: var(--green);
+    border-color: var(--focus);
 }
 .toolbar {
     display: flex;
@@ -153,13 +171,13 @@ summary:focus-visible {
     letter-spacing: 1px;
 }
 .toolbar button[aria-pressed="true"] {
-    background: var(--green);
-    color: #10200c;
-    border-color: var(--green);
+    background: var(--active);
+    color: var(--accent);
+    border-color: var(--focus);
     font-weight: 700;
 }
 #count {
-    color: var(--green);
+    color: var(--number);
     font-size: 12px;
 }
 .filters {
@@ -183,7 +201,7 @@ summary:focus-visible {
     cursor: pointer;
 }
 input[type="checkbox"] {
-    accent-color: var(--green);
+    accent-color: var(--accent);
 }
 .legend {
     display: flex;
@@ -207,12 +225,12 @@ kbd {
     font: inherit;
     font-size: 0.88em;
     line-height: 1.5;
-    background: #17251b;
-    border: 1px solid #36503a;
-    border-bottom: 2px solid #486044;
+    background: var(--key-bg);
+    border: 1px solid var(--key-border);
+    border-bottom: 2px solid var(--key-shadow);
     border-radius: 3px;
     padding: 1px 7px;
-    color: var(--green);
+    color: var(--accent);
     white-space: nowrap;
 }
 #cards {
@@ -234,14 +252,14 @@ kbd {
     border-bottom: 1px solid var(--line);
     display: flex;
     justify-content: space-between;
-    color: var(--green);
+    color: var(--accent);
 }
 .card h2 span {
     font-size: 11px;
     color: var(--muted);
 }
 details {
-    border-bottom: 1px solid #203025;
+    border-bottom: 1px solid var(--row-line);
 }
 details:last-child {
     border-bottom: 0;
@@ -259,7 +277,7 @@ summary::-webkit-details-marker {
     display: none;
 }
 summary:hover {
-    background: #1b2a1e;
+    background: var(--hover);
 }
 .keys {
     display: flex;
@@ -275,7 +293,7 @@ summary:hover {
 }
 .tag {
     display: block;
-    color: var(--amber);
+    color: var(--tag);
     font-size: 10px;
     letter-spacing: 0.5px;
 }
@@ -292,7 +310,7 @@ summary:hover {
     color: var(--text);
 }
 .meta strong {
-    color: var(--green);
+    color: var(--accent);
 }
 .meta p {
     margin: 10px 0 0;
@@ -339,7 +357,7 @@ footer {
     color: var(--muted);
 }
 .footer-socials a:hover {
-    color: var(--green);
+    color: var(--accent);
 }
 .footer-socials svg {
     width: 18px;
