@@ -366,9 +366,9 @@ window.KEYMAP_DATA = {
       "group": "Editor leader",
       "block": 8,
       "key": "space t",
-      "action": "terminal_panel::ToggleFocus",
-      "label": "Toggle Focus",
-      "disabled": false,
+      "action": null,
+      "label": "Disabled / reserved prefix",
+      "disabled": true,
       "kind": "bindings"
     },
     {

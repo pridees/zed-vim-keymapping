@@ -96,7 +96,7 @@
       "space g g": "git_panel::ToggleFocus",
       "space g d": "git::Diff",
       "space g shift-d": "git::CompareWithBranch",
-      "space t": "terminal_panel::ToggleFocus",
+      "space t": null,
       "space u h": "editor::ToggleInlayHints",
 
       // LazyVim: language server actions.
