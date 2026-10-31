@@ -18,3 +18,38 @@ Preserve exact Zed contexts, action parameters, precedence and disabled prefix r
 Inspect the actual changes before committing. Validate generator coverage, JavaScript syntax, search/filter behavior, keyboard access, and narrow/wide layouts when browser tooling is available. State when visual testing was unavailable. Do not change unrelated Zed settings. Keep the site framework-free, responsive, and usable without external fonts or services.
 
 Publishing changes requires user authorization; a request to publish includes the associated commit, push and GitHub Pages deployment. Do not automatically update the legacy gist unless requested.
+
+## Deployment
+
+- Repository: https://github.com/pridees/zed-vim-keymapping
+- Live site: https://pridees.github.io/zed-vim-keymapping/
+- GitHub Pages publishes the `docs/` directory from `main`. A push to `main` triggers deployment automatically. There is no separate hosting service or manual upload step.
+- Generated `docs/keymaps.js` must be committed. GitHub Pages does not run the local generator. Preserve `docs/.nojekyll`.
+
+Before an authorized publication, run from the repository root:
+
+```sh
+node scripts/build.mjs
+node scripts/build.mjs --check
+node scripts/check-ui.mjs
+node --check docs/app.js
+node --check docs/labels.js
+git diff --check
+git status --short
+```
+
+Review the diff, stage only intended files, inspect `git diff --cached`, and commit with a descriptive message. Push the commit with `git push origin main`. Do not force-push. If the remote has advanced, inspect and reconcile the changes before retrying.
+
+Check deployment status with GitHub CLI:
+
+```sh
+gh api repos/pridees/zed-vim-keymapping/pages/builds/latest \
+  --jq '{status, commit, error}'
+git rev-parse HEAD
+```
+
+Wait until the build reports `built` for the pushed commit. An older successful build does not verify the new deployment. If the build fails, inspect the error and the repository's Pages deployment logs; do not report publication as successful.
+
+Fetch the live page and any changed assets (`app.js`, `labels.js`, `style.css`, `keymaps.js`) and compare their contents with the committed files in `docs/`. A query parameter containing the commit SHA can avoid stale cached responses. Confirm that the page and assets return successful HTTP responses. Check the rendered page when browser tooling is available; distinguish HTTP/content checks from visual validation.
+
+After successful deployment, return the live site URL and briefly describe the changes. If the request only authorizes a local edit, leave the changes uncommitted and do not push. Do not reconfigure Pages or update the legacy gist for routine deployments.
