@@ -1,31 +1,26 @@
 # Zed Vim Keymapping
 
-Personal Zed Vim keymap with a full-screen, searchable terminal-style cheat sheet.
+A Vim keymap for everyday development in Zed, paired with a searchable cheat sheet that keeps shortcuts close at hand.
+
+Navigate files and tabs, jump to definitions, review Git changes, and work with Zed's AI tools from the keyboard. Common commands are grouped under `Space`, making them easier to find and remember.
 
 **[Open the cheat sheet](https://pridees.github.io/zed-vim-keymapping/)**
 
-Custom leader keys, project tree, Git, agent controls and native Vim bindings. `Space` is the leader. Exact contexts and action parameters are available on each row. Native bindings are pinned to Zed **1.25.3**; custom context overrides are marked. Helix-only bindings are excluded. Native lists Vim editing commands and Vim-style navigation, including actions implemented outside `vim::`. Ordinary Zed UI shortcuts (field traversal, notebook execution, agent submission, and editor aliases) are excluded. Standard keyboard aliases are hidden when an equivalent Vim binding exists in the same context; the installed keymap is unchanged.
+Find a shortcut by key or command, browse commands by task, and explore both custom shortcuts and familiar Vim commands. Keep the cheat sheet open while you work, or use it to learn your next shortcut.
 
 ## Installation
 
 Enable `"vim_mode": true` in Zed settings. Run the commands below from the cloned repository root. They create Zed's user configuration directory and copy `keymap.json` into it. Back up any existing keymap before replacing it; these commands replace the whole file rather than merge bindings.
 
-### Linux
+### Linux / macOS
 
-Uses `$XDG_CONFIG_HOME/zed`, falling back to `~/.config/zed`. `cp -i` asks before overwriting an existing file.
-
-```sh
-zed_config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/zed"
-mkdir -p "$zed_config_dir"
-cp -i keymap.json "$zed_config_dir/keymap.json"
-```
-
-### macOS
-
-Uses `~/.config/zed`. `cp -i` asks before overwriting an existing file.
+Uses `~/.config/zed`, or `$XDG_CONFIG_HOME/zed` on Linux when configured. `cp -i` asks before overwriting an existing file.
 
 ```sh
 zed_config_dir="$HOME/.config/zed"
+if [ "$(uname -s)" = "Linux" ]; then
+    zed_config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/zed"
+fi
 mkdir -p "$zed_config_dir"
 cp -i keymap.json "$zed_config_dir/keymap.json"
 ```
