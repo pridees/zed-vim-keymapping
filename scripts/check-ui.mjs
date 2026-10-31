@@ -34,3 +34,14 @@ assert.equal(vm.runInContext("label(data.find(r=>r.action==='diagnostics::Deploy
 assert.equal(vm.runInContext("label(data.find(r=>r.key==='space s r'))", sandbox), 'Replace across project');
 assert.equal(vm.runInContext("label(data.find(r=>r.key==='g shift-d' && r.context.includes('GitPanel')))", sandbox), 'Open file diff');
 console.log(`All ${descriptions.length} binding descriptions are nonempty and at most three words.`);
+
+for (const key of ['space s s', 'space s shift-s']) {
+ const entry = vm.runInContext(`data.find(r => r.source === 'custom' && r.key === ${JSON.stringify(key)})`, sandbox);
+ const expected = key === 'space s s' ? 'Find file symbol' : 'Find project symbol';
+ assert.equal(entry.label, expected);
+ assert.equal(sandbox.window.keymapLabel(entry), expected);
+}
+for (const row of sandbox.window.KEYMAP_DATA.rows) {
+ assert.equal(row.label, sandbox.window.keymapLabel(row), 'Stored and rendered descriptions differ');
+ for (const override of row.overrides || []) assert(!/^(Toggle|Open|Deploy|Spawn)$/.test(override.label));
+}

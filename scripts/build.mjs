@@ -1,6 +1,10 @@
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+const labelsContext = { window: {} };
+vm.runInNewContext(fs.readFileSync(new URL('../docs/labels.js', import.meta.url), 'utf8'), labelsContext);
+const describe = labelsContext.window.keymapLabel;
 const read = p => vm.runInNewContext('(' + fs.readFileSync(new URL('../' + p, import.meta.url), 'utf8') + ')', Object.create(null), {timeout: 1000});
 const custom = read('keymap.json'), defaults = read('reference/vim.json');
 const rows = [];
@@ -28,7 +32,6 @@ for (const [source, blocks] of [['custom',custom],['vim',defaults]]) {
  }
  });
 }
-for (const row of rows.filter(r => r.source === 'vim')) row.overrides = rows.filter(r => r.source === 'custom' && r.key === row.key).map(r => ({context:r.context, label:r.label, action:r.action}));
 for (const row of rows) {
  if (row.source === 'custom' && row.kind === 'bindings' && rows.some(r => r.source === 'custom' && r.kind === 'unbind' && r.block > row.block && r.context === row.context && r.key === row.key && JSON.stringify(r.action) === JSON.stringify(row.action))) { row.disabled = true; row.label = 'Removed by later unbind'; }
 }
@@ -49,6 +52,16 @@ assert(!visible.some(r => r.key === 'ctrl-w ctrl-h' && r.action === 'workspace::
 // These are distinct Vim commands, even though the upstream action name is shared.
 assert(visible.some(r => r.key === 'ctrl-p' && r.action === 'editor::ShowWordCompletions'));
 assert(visible.some(r => r.key === 'ctrl-n' && r.action === 'editor::ShowWordCompletions'));
+// Store the same descriptions used by the UI, including override details.
+for (const row of visible) {
+ row.label = describe(row);
+ assert(typeof row.label === 'string' && row.label.trim(), `Missing description: ${row.key}`);
+ assert(row.label.split(/\s+/).length <= 3, `Long description: ${row.label}`);
+}
+for (const row of visible.filter(r => r.source === 'vim')) {
+ row.overrides = rows.filter(r => r.source === 'custom' && r.key === row.key)
+  .map(r => ({context:r.context, label:r.label, action:r.action}));
+}
 const data = {version:'1.25.3', commit:'8dd255c3eafb5231056fe4e6f601cedd011f1c93', rows:visible};
 assert.equal(rows.filter(r=>r.source==='custom').length, custom.reduce((n,b)=>n+Object.keys(b.bindings||{}).length+Object.keys(b.unbind||{}).length,0));
 assert(effective.some(r=>r.context==='ProjectPanel && not_editing' && r.key==='y' && r.action==='workspace::CopyRelativePath'));
@@ -58,3 +71,16 @@ const content = 'window.KEYMAP_DATA = ' + JSON.stringify(data,null,2) + ';\n';
 if (process.argv.includes('--check')) assert.equal(fs.readFileSync(output,'utf8'),content,'Cheat sheet is stale. Run node scripts/build.mjs');
 else fs.writeFileSync(output,content);
 console.log(`${rows.filter(r=>r.source==='custom').length} custom entries; ${visible.filter(r=>r.source==='vim').length} inherited Vim entries; ${effective.length-visible.length} standard aliases hidden. Coverage OK.`);
+
+// Content versions prevent browsers from reusing stale scripts after deployment.
+const indexPath = new URL('../docs/index.html', import.meta.url);
+const originalHtml = fs.readFileSync(indexPath, 'utf8');
+let html = originalHtml;
+for (const asset of ['style.css', 'keymaps.js', 'labels.js', 'app.js']) {
+ const bytes = asset === 'keymaps.js' ? content : fs.readFileSync(new URL('../docs/' + asset, import.meta.url));
+ const hash = createHash('sha256').update(bytes).digest('hex').slice(0,12);
+ const escaped = asset.replaceAll('.', '\\.');
+ html = html.replace(new RegExp(`((?:src|href)="${escaped})(?:\\?v=[a-f0-9]+)?"`, 'g'), `$1?v=${hash}"`);
+}
+if (process.argv.includes('--check')) assert.equal(originalHtml, html, 'Asset versions are stale. Run node scripts/build.mjs');
+else fs.writeFileSync(indexPath, html);

@@ -9,7 +9,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-h",
       "action": "workspace::ActivatePaneLeft",
-      "label": "Activate Pane Left",
+      "label": "Focus left pane",
       "disabled": false,
       "kind": "bindings"
     },
@@ -20,7 +20,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-j",
       "action": "workspace::ActivatePaneDown",
-      "label": "Activate Pane Down",
+      "label": "Focus lower pane",
       "disabled": false,
       "kind": "bindings"
     },
@@ -31,7 +31,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-k",
       "action": "workspace::ActivatePaneUp",
-      "label": "Activate Pane Up",
+      "label": "Focus upper pane",
       "disabled": false,
       "kind": "bindings"
     },
@@ -42,7 +42,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-l",
       "action": "workspace::ActivatePaneRight",
-      "label": "Activate Pane Right",
+      "label": "Focus right pane",
       "disabled": false,
       "kind": "bindings"
     },
@@ -53,7 +53,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "alt-r",
       "action": "multi_workspace::ToggleWorkspaceSidebar",
-      "label": "Toggle Workspace Sidebar",
+      "label": "Toggle workspace sidebar",
       "disabled": false,
       "kind": "bindings"
     },
@@ -64,7 +64,7 @@ window.KEYMAP_DATA = {
       "block": 3,
       "key": "ctrl-alt-j",
       "action": "multi_workspace::ToggleWorkspaceSidebar",
-      "label": "Toggle Workspace Sidebar",
+      "label": "Binding removed",
       "disabled": true,
       "kind": "unbind"
     },
@@ -75,7 +75,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "ctrl-/",
       "action": "terminal_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle terminal panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -86,7 +86,7 @@ window.KEYMAP_DATA = {
       "block": 5,
       "key": "ctrl-`",
       "action": "terminal_panel::Toggle",
-      "label": "Toggle",
+      "label": "Binding removed",
       "disabled": true,
       "kind": "unbind"
     },
@@ -103,7 +103,7 @@ window.KEYMAP_DATA = {
           "comment_empty_lines": true
         }
       ],
-      "label": "Removed by later unbind",
+      "label": "Binding removed",
       "disabled": true,
       "kind": "bindings"
     },
@@ -120,7 +120,7 @@ window.KEYMAP_DATA = {
           "comment_empty_lines": true
         }
       ],
-      "label": "Toggle Comments",
+      "label": "Binding removed",
       "disabled": true,
       "kind": "unbind"
     },
@@ -131,7 +131,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-h",
       "action": "pane::ActivatePreviousItem",
-      "label": "Activate Previous Item",
+      "label": "Previous tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -142,7 +142,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-l",
       "action": "pane::ActivateNextItem",
-      "label": "Activate Next Item",
+      "label": "Next tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -153,7 +153,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b b",
       "action": "pane::AlternateFile",
-      "label": "Alternate File",
+      "label": "Alternate tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -164,7 +164,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b o",
       "action": "pane::CloseOtherItems",
-      "label": "Close Other Items",
+      "label": "Close other tabs",
       "disabled": false,
       "kind": "bindings"
     },
@@ -175,7 +175,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b h",
       "action": "pane::CloseItemsToTheLeft",
-      "label": "Close Items To The Left",
+      "label": "Close left tabs",
       "disabled": false,
       "kind": "bindings"
     },
@@ -186,7 +186,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b l",
       "action": "pane::CloseItemsToTheRight",
-      "label": "Close Items To The Right",
+      "label": "Close right tabs",
       "disabled": false,
       "kind": "bindings"
     },
@@ -197,7 +197,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b a",
       "action": "pane::CloseAllItems",
-      "label": "Close All Items",
+      "label": "Close all tabs",
       "disabled": false,
       "kind": "bindings"
     },
@@ -208,7 +208,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b c",
       "action": "pane::CloseCleanItems",
-      "label": "Close Clean Items",
+      "label": "Close unmodified tabs",
       "disabled": false,
       "kind": "bindings"
     },
@@ -219,7 +219,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b p",
       "action": "pane::TogglePinTab",
-      "label": "Toggle Pin Tab",
+      "label": "Toggle tab pin",
       "disabled": false,
       "kind": "bindings"
     },
@@ -230,7 +230,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space b u",
       "action": "pane::ReopenClosedItem",
-      "label": "Reopen Closed Item",
+      "label": "Reopen closed tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -241,7 +241,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space -",
       "action": "pane::SplitDown",
-      "label": "Split Down",
+      "label": "Split pane down",
       "disabled": false,
       "kind": "bindings"
     },
@@ -252,7 +252,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space |",
       "action": "pane::SplitRight",
-      "label": "Split Right",
+      "label": "Split pane right",
       "disabled": false,
       "kind": "bindings"
     },
@@ -263,7 +263,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space /",
       "action": "pane::DeploySearch",
-      "label": "Deploy Search",
+      "label": "Search project",
       "disabled": false,
       "kind": "bindings"
     },
@@ -274,7 +274,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space s g",
       "action": "pane::DeploySearch",
-      "label": "Deploy Search",
+      "label": "Search project",
       "disabled": false,
       "kind": "bindings"
     },
@@ -290,7 +290,7 @@ window.KEYMAP_DATA = {
           "replace_enabled": true
         }
       ],
-      "label": "Deploy Search",
+      "label": "Replace across project",
       "disabled": false,
       "kind": "bindings"
     },
@@ -301,7 +301,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space s s",
       "action": "outline::Toggle",
-      "label": "Toggle",
+      "label": "Find file symbol",
       "disabled": false,
       "kind": "bindings"
     },
@@ -312,7 +312,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space s shift-s",
       "action": "project_symbols::Toggle",
-      "label": "Toggle",
+      "label": "Find project symbol",
       "disabled": false,
       "kind": "bindings"
     },
@@ -323,7 +323,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space g",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -334,7 +334,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space g g",
       "action": "git_panel::ToggleFocus",
-      "label": "Toggle Focus",
+      "label": "Focus Git panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -345,7 +345,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space g d",
       "action": "git::Diff",
-      "label": "Diff",
+      "label": "Open project diff",
       "disabled": false,
       "kind": "bindings"
     },
@@ -356,7 +356,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space g shift-d",
       "action": "git::CompareWithBranch",
-      "label": "Compare With Branch",
+      "label": "Compare with branch",
       "disabled": false,
       "kind": "bindings"
     },
@@ -367,7 +367,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space t",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -378,7 +378,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space u h",
       "action": "editor::ToggleInlayHints",
-      "label": "Toggle Inlay Hints",
+      "label": "Toggle inlay hints",
       "disabled": false,
       "kind": "bindings"
     },
@@ -389,7 +389,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "g d",
       "action": "editor::GoToDefinition",
-      "label": "Go To Definition",
+      "label": "Jump to definition",
       "disabled": false,
       "kind": "bindings"
     },
@@ -400,7 +400,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "g r",
       "action": "editor::FindAllReferences",
-      "label": "Find All References",
+      "label": "Find symbol references",
       "disabled": false,
       "kind": "bindings"
     },
@@ -411,7 +411,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c r",
       "action": "editor::Rename",
-      "label": "Rename",
+      "label": "Rename symbol",
       "disabled": false,
       "kind": "bindings"
     },
@@ -422,7 +422,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c a",
       "action": "editor::ToggleCodeActions",
-      "label": "Toggle Code Actions",
+      "label": "Show code actions",
       "disabled": false,
       "kind": "bindings"
     },
@@ -433,7 +433,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c f",
       "action": "editor::Format",
-      "label": "Format",
+      "label": "Format document",
       "disabled": false,
       "kind": "bindings"
     },
@@ -444,7 +444,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c d",
       "action": "editor::Hover",
-      "label": "Hover",
+      "label": "Show symbol information",
       "disabled": false,
       "kind": "bindings"
     },
@@ -455,7 +455,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c s",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -466,7 +466,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c i",
       "action": "call_hierarchy::ShowIncomingCalls",
-      "label": "Show Incoming Calls",
+      "label": "Show incoming calls",
       "disabled": false,
       "kind": "bindings"
     },
@@ -477,7 +477,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c o",
       "action": "call_hierarchy::ShowOutgoingCalls",
-      "label": "Show Outgoing Calls",
+      "label": "Show outgoing calls",
       "disabled": false,
       "kind": "bindings"
     },
@@ -488,7 +488,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "space c l",
       "action": "editor::RestartLanguageServer",
-      "label": "Restart Language Server",
+      "label": "Restart language server",
       "disabled": false,
       "kind": "bindings"
     },
@@ -499,7 +499,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "g s",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -513,7 +513,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "y s"
       ],
-      "label": "Send y s",
+      "label": "Add surrounding delimiters",
       "disabled": false,
       "kind": "bindings"
     },
@@ -527,7 +527,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "d s"
       ],
-      "label": "Send d s",
+      "label": "Delete surrounding delimiters",
       "disabled": false,
       "kind": "bindings"
     },
@@ -541,7 +541,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "c s"
       ],
-      "label": "Send c s",
+      "label": "Change surrounding delimiters",
       "disabled": false,
       "kind": "bindings"
     },
@@ -558,7 +558,7 @@ window.KEYMAP_DATA = {
           "comment_empty_lines": false
         }
       ],
-      "label": "Toggle Comments",
+      "label": "Toggle line comments",
       "disabled": false,
       "kind": "bindings"
     },
@@ -569,7 +569,7 @@ window.KEYMAP_DATA = {
       "block": 10,
       "key": "[ space",
       "action": "vim::InsertEmptyLineAbove",
-      "label": "Insert Empty Line Above",
+      "label": "Blank line above",
       "disabled": false,
       "kind": "bindings"
     },
@@ -580,7 +580,7 @@ window.KEYMAP_DATA = {
       "block": 10,
       "key": "] space",
       "action": "vim::InsertEmptyLineBelow",
-      "label": "Insert Empty Line Below",
+      "label": "Blank line below",
       "disabled": false,
       "kind": "bindings"
     },
@@ -591,7 +591,7 @@ window.KEYMAP_DATA = {
       "block": 11,
       "key": "space c a",
       "action": "editor::ToggleCodeActions",
-      "label": "Toggle Code Actions",
+      "label": "Show code actions",
       "disabled": false,
       "kind": "bindings"
     },
@@ -602,7 +602,7 @@ window.KEYMAP_DATA = {
       "block": 11,
       "key": "space c f",
       "action": "editor::FormatSelections",
-      "label": "Format Selections",
+      "label": "Format selection",
       "disabled": false,
       "kind": "bindings"
     },
@@ -613,7 +613,7 @@ window.KEYMAP_DATA = {
       "block": 12,
       "key": "space a",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -624,7 +624,7 @@ window.KEYMAP_DATA = {
       "block": 12,
       "key": "space a a",
       "action": "agent::FocusAgent",
-      "label": "Focus Agent",
+      "label": "Focus agent panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -635,7 +635,7 @@ window.KEYMAP_DATA = {
       "block": 12,
       "key": "space a t",
       "action": "agent::AddSelectionToThread",
-      "label": "Add Selection To Thread",
+      "label": "Attach selected context",
       "disabled": false,
       "kind": "bindings"
     },
@@ -659,7 +659,7 @@ window.KEYMAP_DATA = {
           "editor::ShowCompletions"
         ]
       ],
-      "label": "Focus Agent → Move To End → Insert Snippet → Show Completions",
+      "label": "Attach diagnostics context",
       "disabled": false,
       "kind": "bindings"
     },
@@ -670,7 +670,7 @@ window.KEYMAP_DATA = {
       "block": 13,
       "key": "space a",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -681,7 +681,7 @@ window.KEYMAP_DATA = {
       "block": 13,
       "key": "space a a",
       "action": "agent::FocusAgent",
-      "label": "Focus Agent",
+      "label": "Focus agent panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -692,7 +692,7 @@ window.KEYMAP_DATA = {
       "block": 13,
       "key": "space a t",
       "action": "agent::AddSelectionToThread",
-      "label": "Add Selection To Thread",
+      "label": "Attach selected context",
       "disabled": false,
       "kind": "bindings"
     },
@@ -716,7 +716,7 @@ window.KEYMAP_DATA = {
           "editor::ShowCompletions"
         ]
       ],
-      "label": "Focus Agent → Move To End → Insert Snippet → Show Completions",
+      "label": "Attach diagnostics context",
       "disabled": false,
       "kind": "bindings"
     },
@@ -727,7 +727,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "j",
       "action": "vim::MenuSelectNext",
-      "label": "Menu Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings"
     },
@@ -738,7 +738,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "k",
       "action": "vim::MenuSelectPrevious",
-      "label": "Menu Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings"
     },
@@ -749,7 +749,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "h",
       "action": "project_panel::CollapseSelectedEntry",
-      "label": "Collapse Selected Entry",
+      "label": "Collapse selected folder",
       "disabled": false,
       "kind": "bindings"
     },
@@ -760,7 +760,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "l",
       "action": "project_panel::OpenPermanent",
-      "label": "Open Permanent",
+      "label": "Open selected file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -771,7 +771,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "enter",
       "action": "project_panel::OpenPermanent",
-      "label": "Open Permanent",
+      "label": "Open selected file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -782,7 +782,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "t",
       "action": "project_panel::OpenPermanent",
-      "label": "Open Permanent",
+      "label": "Open selected file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -793,7 +793,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "s",
       "action": "project_panel::OpenSplitVertical",
-      "label": "Open Split Vertical",
+      "label": "Open right split",
       "disabled": false,
       "kind": "bindings"
     },
@@ -804,7 +804,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-s",
       "action": "project_panel::OpenSplitHorizontal",
-      "label": "Open Split Horizontal",
+      "label": "Open lower split",
       "disabled": false,
       "kind": "bindings"
     },
@@ -815,7 +815,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-p",
       "action": "project_panel::Open",
-      "label": "Open",
+      "label": "Preview selected file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -826,7 +826,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-o",
       "action": "workspace::OpenWithSystem",
-      "label": "Open With System",
+      "label": "Open externally",
       "disabled": false,
       "kind": "bindings"
     },
@@ -837,7 +837,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "backspace",
       "action": "project_panel::SelectParent",
-      "label": "Select Parent",
+      "label": "Select parent folder",
       "disabled": false,
       "kind": "bindings"
     },
@@ -848,7 +848,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings"
     },
@@ -859,7 +859,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings"
     },
@@ -870,7 +870,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-c",
       "action": "project_panel::CollapseSelectedEntry",
-      "label": "Collapse Selected Entry",
+      "label": "Collapse selected folder",
       "disabled": false,
       "kind": "bindings"
     },
@@ -881,7 +881,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "z",
       "action": "project_panel::CollapseAllEntries",
-      "label": "Collapse All Entries",
+      "label": "Collapse all folders",
       "disabled": false,
       "kind": "bindings"
     },
@@ -892,7 +892,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "a",
       "action": "project_panel::NewFile",
-      "label": "New File",
+      "label": "Create file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -903,7 +903,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-a",
       "action": "project_panel::NewDirectory",
-      "label": "New Directory",
+      "label": "Create folder",
       "disabled": false,
       "kind": "bindings"
     },
@@ -914,7 +914,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "r",
       "action": "project_panel::Rename",
-      "label": "Rename",
+      "label": "Rename selected entry",
       "disabled": false,
       "kind": "bindings"
     },
@@ -930,7 +930,7 @@ window.KEYMAP_DATA = {
           "skip_prompt": false
         }
       ],
-      "label": "Delete",
+      "label": "Delete selected entry",
       "disabled": false,
       "kind": "bindings"
     },
@@ -946,7 +946,7 @@ window.KEYMAP_DATA = {
           "skip_prompt": false
         }
       ],
-      "label": "Trash",
+      "label": "Trash selected entry",
       "disabled": false,
       "kind": "bindings"
     },
@@ -957,7 +957,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "c",
       "action": "project_panel::Copy",
-      "label": "Copy",
+      "label": "Copy selected entry",
       "disabled": false,
       "kind": "bindings"
     },
@@ -968,7 +968,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "x",
       "action": "project_panel::Cut",
-      "label": "Cut",
+      "label": "Cut selected entry",
       "disabled": false,
       "kind": "bindings"
     },
@@ -979,7 +979,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "p",
       "action": "project_panel::Paste",
-      "label": "Paste",
+      "label": "Paste copied entry",
       "disabled": false,
       "kind": "bindings"
     },
@@ -990,7 +990,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "y",
       "action": "workspace::CopyRelativePath",
-      "label": "Copy Relative Path",
+      "label": "Copy relative path",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1001,7 +1001,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-y",
       "action": "workspace::CopyPath",
-      "label": "Copy Path",
+      "label": "Copy full path",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1012,7 +1012,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "u",
       "action": "project_panel::Undo",
-      "label": "Undo",
+      "label": "Undo file operation",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1023,7 +1023,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "/",
       "action": "file_finder::Toggle",
-      "label": "Toggle",
+      "label": "Find project file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1034,7 +1034,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-h",
       "action": "project_panel::ToggleHideHidden",
-      "label": "Toggle Hide Hidden",
+      "label": "Toggle hidden files",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1045,7 +1045,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "[ g",
       "action": "project_panel::SelectPrevGitEntry",
-      "label": "Select Prev Git Entry",
+      "label": "Previous changed file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1056,7 +1056,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "] g",
       "action": "project_panel::SelectNextGitEntry",
-      "label": "Select Next Git Entry",
+      "label": "Next changed file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1067,7 +1067,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "?",
       "action": "project_panel::OpenContextMenu",
-      "label": "Open Context Menu",
+      "label": "Open context menu",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1078,7 +1078,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "q",
       "action": "project_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle project tree",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1089,7 +1089,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "space",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1100,7 +1100,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "space a",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1111,7 +1111,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "space a a",
       "action": "agent::FocusAgent",
-      "label": "Focus Agent",
+      "label": "Focus agent panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1135,7 +1135,7 @@ window.KEYMAP_DATA = {
           "editor::ShowCompletions"
         ]
       ],
-      "label": "Focus Agent → Move To End → Insert Snippet → Show Completions",
+      "label": "Attach diagnostics context",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1146,7 +1146,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-d",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1157,7 +1157,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "shift-r",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1168,7 +1168,7 @@ window.KEYMAP_DATA = {
       "block": 14,
       "key": "o",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1185,7 +1185,7 @@ window.KEYMAP_DATA = {
           "agent::NewThread"
         ]
       ],
-      "label": "Focus Agent → New Thread",
+      "label": "New agent thread",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1202,7 +1202,7 @@ window.KEYMAP_DATA = {
           "agent::OpenAddContextMenu"
         ]
       ],
-      "label": "Focus Agent → Open Add Context Menu",
+      "label": "Choose agent context",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1219,7 +1219,7 @@ window.KEYMAP_DATA = {
           "agent::OpenAgentDiff"
         ]
       ],
-      "label": "Focus Agent → Open Agent Diff",
+      "label": "Review agent changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1230,7 +1230,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "space",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1241,7 +1241,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "space a",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1252,7 +1252,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "space a a",
       "action": "agent::Toggle",
-      "label": "Toggle",
+      "label": "Toggle agent panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1263,7 +1263,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "space a m",
       "action": "agent::ToggleModelSelector",
-      "label": "Toggle Model Selector",
+      "label": "Choose agent model",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1274,7 +1274,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "space a f",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1285,7 +1285,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "space a e",
       "action": "agent::ToggleThinkingEffortMenu",
-      "label": "Toggle Thinking Effort Menu",
+      "label": "Choose reasoning effort",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1296,7 +1296,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "g a",
       "action": "git::ToggleStaged",
-      "label": "Toggle Staged",
+      "label": "Toggle staging",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1307,7 +1307,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "g x",
       "action": "git::Restore",
-      "label": "Restore",
+      "label": "Discard selected changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1318,7 +1318,7 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "g space",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1329,7 +1329,7 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "g f",
       "action": "editor::OpenExcerpts",
-      "label": "Open Excerpts",
+      "label": "Open source files",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1340,7 +1340,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "space",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1351,7 +1351,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "enter",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1368,7 +1368,7 @@ window.KEYMAP_DATA = {
           "workspace::FocusCenterPane"
         ]
       ],
-      "label": "Confirm → Focus Center Pane",
+      "label": "Focus selected diff",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1379,7 +1379,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "s",
       "action": "git::ToggleStaged",
-      "label": "Toggle Staged",
+      "label": "Toggle staging",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1390,7 +1390,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "shift-s",
       "action": "git::StageAll",
-      "label": "Stage All",
+      "label": "Stage all changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1401,7 +1401,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "t",
       "action": "git_panel::ToggleTreeView",
-      "label": "Toggle Tree View",
+      "label": "Toggle tree layout",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1412,7 +1412,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "b",
       "action": "git::Branch",
-      "label": "Branch",
+      "label": "Choose Git branch",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1423,7 +1423,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "p",
       "action": "git::Pull",
-      "label": "Pull",
+      "label": "Pull Git changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1434,7 +1434,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "shift-p",
       "action": "git::Push",
-      "label": "Push",
+      "label": "Push Git changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1445,7 +1445,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "r",
       "action": "git::PullRebase",
-      "label": "Pull Rebase",
+      "label": "Pull with rebase",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1456,7 +1456,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "f",
       "action": "git::Fetch",
-      "label": "Fetch",
+      "label": "Fetch Git remotes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1467,7 +1467,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "shift-f p",
       "action": "git::ForcePush",
-      "label": "Force Push",
+      "label": "Force Git push",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1483,7 +1483,7 @@ window.KEYMAP_DATA = {
           "skip_prompt": false
         }
       ],
-      "label": "Restore File",
+      "label": "Discard file changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1494,7 +1494,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "tab",
       "action": "git_panel::FocusEditor",
-      "label": "Focus Editor",
+      "label": "Focus commit editor",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1505,7 +1505,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "c",
       "action": "git_panel::FocusEditor",
-      "label": "Focus Editor",
+      "label": "Focus commit editor",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1516,7 +1516,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "g d",
       "action": "menu::Confirm",
-      "label": "Confirm",
+      "label": "Open project diff",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1527,7 +1527,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "g shift-d",
       "action": "menu::SecondaryConfirm",
-      "label": "Secondary Confirm",
+      "label": "Open file diff",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1538,7 +1538,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "g f",
       "action": "git::ViewFile",
-      "label": "View File",
+      "label": "Open source file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1549,7 +1549,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "g h",
       "action": "git::FileHistory",
-      "label": "File History",
+      "label": "Show file history",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1560,7 +1560,7 @@ window.KEYMAP_DATA = {
       "block": 20,
       "key": "tab",
       "action": "git_panel::FocusChanges",
-      "label": "Focus Changes",
+      "label": "Focus changed files",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1571,7 +1571,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space e",
       "action": "project_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle project tree",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1582,7 +1582,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1593,7 +1593,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space space",
       "action": "file_finder::Toggle",
-      "label": "Toggle",
+      "label": "Find project file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1604,7 +1604,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space s f",
       "action": "file_finder::Toggle",
-      "label": "Toggle",
+      "label": "Find project file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1615,7 +1615,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f n",
       "action": "workspace::NewFile",
-      "label": "New File",
+      "label": "New file",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1626,7 +1626,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f h",
       "action": "git::FileHistory",
-      "label": "File History",
+      "label": "Show file history",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1637,7 +1637,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f y",
       "action": "workspace::CopyRelativePath",
-      "label": "Copy Relative Path",
+      "label": "Copy relative path",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1648,7 +1648,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f shift-y",
       "action": "workspace::CopyPath",
-      "label": "Copy Path",
+      "label": "Copy full path",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1659,7 +1659,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f p",
       "action": "projects::OpenRecent",
-      "label": "Open Recent",
+      "label": "Open recent project",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1670,7 +1670,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space f b",
       "action": "tab_switcher::OpenInActivePane",
-      "label": "Open In Active Pane",
+      "label": "Choose open tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1686,7 +1686,7 @@ window.KEYMAP_DATA = {
           "close_pinned": true
         }
       ],
-      "label": "Close Active Item",
+      "label": "Close any tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1697,7 +1697,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space g shift-g",
       "action": "git_graph::Open",
-      "label": "Open",
+      "label": "Open Git graph",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1708,7 +1708,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space g b",
       "action": "git::Branch",
-      "label": "Branch",
+      "label": "Choose Git branch",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1719,7 +1719,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space g f",
       "action": "git::Fetch",
-      "label": "Fetch",
+      "label": "Fetch Git remotes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1730,7 +1730,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space g p",
       "action": "git::Pull",
-      "label": "Pull",
+      "label": "Pull Git changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1741,7 +1741,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space g shift-p",
       "action": "git::Push",
-      "label": "Push",
+      "label": "Push Git changes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1752,7 +1752,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space g r",
       "action": "git::PullRebase",
-      "label": "Pull Rebase",
+      "label": "Pull with rebase",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1763,7 +1763,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space x",
       "action": "diagnostics::Deploy",
-      "label": "Deploy",
+      "label": "Show project diagnostics",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1774,7 +1774,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space r",
       "action": "task::Spawn",
-      "label": "Spawn",
+      "label": "Run task",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1785,7 +1785,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space shift-r",
       "action": "task::Rerun",
-      "label": "Rerun",
+      "label": "Rerun last task",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1796,7 +1796,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -1807,7 +1807,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w h",
       "action": "workspace::ToggleLeftDock",
-      "label": "Toggle Left Dock",
+      "label": "Toggle left dock",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1818,7 +1818,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w j",
       "action": "workspace::ToggleBottomDock",
-      "label": "Toggle Bottom Dock",
+      "label": "Toggle bottom dock",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1829,7 +1829,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w k",
       "action": "workspace::ToggleRightDock",
-      "label": "Toggle Right Dock",
+      "label": "Toggle right dock",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1840,7 +1840,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w tab",
       "action": "workspace::ToggleAllDocks",
-      "label": "Toggle All Docks",
+      "label": "Toggle all docks",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1860,7 +1860,7 @@ window.KEYMAP_DATA = {
           ]
         ]
       ],
-      "label": "Close Active Dock → Activate Pane",
+      "label": "Close active dock",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1880,7 +1880,7 @@ window.KEYMAP_DATA = {
           ]
         ]
       ],
-      "label": "Close All Docks → Activate Pane",
+      "label": "Close all docks",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1891,7 +1891,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w e",
       "action": "project_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle project tree",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1902,7 +1902,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w g",
       "action": "git_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle Git panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1913,7 +1913,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w t",
       "action": "terminal_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle terminal panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1924,7 +1924,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w a",
       "action": "agent::Toggle",
-      "label": "Toggle",
+      "label": "Toggle agent panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1935,7 +1935,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w o",
       "action": "outline_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle outline panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1946,7 +1946,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w d",
       "action": "debug_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle debug panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1957,7 +1957,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w c",
       "action": "collab_panel::Toggle",
-      "label": "Toggle",
+      "label": "Toggle collaboration panel",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1968,7 +1968,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w m",
       "action": "workspace::ToggleZoom",
-      "label": "Toggle Zoom",
+      "label": "Toggle pane zoom",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1979,7 +1979,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w l",
       "action": "lsp_tool::ToggleMenu",
-      "label": "Toggle Menu",
+      "label": "Open LSP tools",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1996,7 +1996,7 @@ window.KEYMAP_DATA = {
           "pane::SplitDown"
         ]
       ],
-      "label": "Focus Center Pane → Split Down",
+      "label": "Split editor down",
       "disabled": false,
       "kind": "bindings"
     },
@@ -2013,7 +2013,7 @@ window.KEYMAP_DATA = {
           "pane::SplitRight"
         ]
       ],
-      "label": "Focus Center Pane → Split Right",
+      "label": "Split editor right",
       "disabled": false,
       "kind": "bindings"
     },
@@ -2024,7 +2024,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "space w =",
       "action": "workspace::ResetPaneSizes",
-      "label": "Reset Pane Sizes",
+      "label": "Equalize pane sizes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -2041,7 +2041,7 @@ window.KEYMAP_DATA = {
           "pane::JoinAll"
         ]
       ],
-      "label": "Focus Center Pane → Join All",
+      "label": "Join editor panes",
       "disabled": false,
       "kind": "bindings"
     },
@@ -2052,7 +2052,7 @@ window.KEYMAP_DATA = {
       "block": 22,
       "key": "space w q",
       "action": "pane::CloseActiveItem",
-      "label": "Close Active Item",
+      "label": "Close active tab",
       "disabled": false,
       "kind": "bindings"
     },
@@ -2063,7 +2063,7 @@ window.KEYMAP_DATA = {
       "block": 23,
       "key": "ctrl-;",
       "action": "editor::ToggleFocus",
-      "label": "Toggle Focus",
+      "label": "Focus editor",
       "disabled": false,
       "kind": "bindings"
     },
@@ -2074,7 +2074,7 @@ window.KEYMAP_DATA = {
       "block": 24,
       "key": "space",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings"
     },
@@ -2085,7 +2085,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "0",
       "action": "vim::StartOfLine",
-      "label": "Start Of Line",
+      "label": "Line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2100,7 +2100,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         1
       ],
-      "label": "Number",
+      "label": "Count digit 1",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2115,7 +2115,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         2
       ],
-      "label": "Number",
+      "label": "Count digit 2",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2130,7 +2130,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         3
       ],
-      "label": "Number",
+      "label": "Count digit 3",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2145,7 +2145,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         4
       ],
-      "label": "Number",
+      "label": "Count digit 4",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2160,7 +2160,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         5
       ],
-      "label": "Number",
+      "label": "Count digit 5",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2175,7 +2175,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         6
       ],
-      "label": "Number",
+      "label": "Count digit 6",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2190,7 +2190,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         7
       ],
-      "label": "Number",
+      "label": "Count digit 7",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2205,7 +2205,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         8
       ],
-      "label": "Number",
+      "label": "Count digit 8",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2220,7 +2220,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         9
       ],
-      "label": "Number",
+      "label": "Count digit 9",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2237,7 +2237,7 @@ window.KEYMAP_DATA = {
           "around": false
         }
       ],
-      "label": "Push Object",
+      "label": "Inside text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2254,13 +2254,13 @@ window.KEYMAP_DATA = {
           "around": true
         }
       ],
-      "label": "Push Object",
+      "label": "Around text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New File",
+          "label": "Create file",
           "action": "project_panel::NewFile"
         }
       ]
@@ -2272,13 +2272,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "h",
       "action": "vim::Left",
-      "label": "Left",
+      "label": "Move left",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Collapse Selected Entry",
+          "label": "Collapse selected folder",
           "action": "project_panel::CollapseSelectedEntry"
         }
       ]
@@ -2290,13 +2290,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "backspace",
       "action": "vim::WrappingLeft",
-      "label": "Wrapping Left",
+      "label": "Move left wrapping",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Parent",
+          "label": "Select parent folder",
           "action": "project_panel::SelectParent"
         }
       ]
@@ -2308,13 +2308,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "j",
       "action": "vim::Down",
-      "label": "Down",
+      "label": "Move down",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -2326,7 +2326,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-m",
       "action": "vim::NextLineStart",
-      "label": "Next Line Start",
+      "label": "Next line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2338,7 +2338,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "+",
       "action": "vim::NextLineStart",
-      "label": "Next Line Start",
+      "label": "Next line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2350,18 +2350,18 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "enter",
       "action": "vim::NextLineStart",
-      "label": "Next Line Start",
+      "label": "Next line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -2373,7 +2373,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "-",
       "action": "vim::PreviousLineStart",
-      "label": "Previous Line Start",
+      "label": "Previous line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2385,7 +2385,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-tab",
       "action": "vim::Tab",
-      "label": "Tab",
+      "label": "Next tab stop",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2397,18 +2397,18 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "tab",
       "action": "vim::Tab",
-      "label": "Tab",
+      "label": "Next tab stop",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -2420,13 +2420,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "k",
       "action": "vim::Up",
-      "label": "Up",
+      "label": "Move up",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -2438,18 +2438,18 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "l",
       "action": "vim::Right",
-      "label": "Right",
+      "label": "Move right",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Confirm → Focus Center Pane",
+          "label": "Focus selected diff",
           "action": [
             "action::Sequence",
             [
@@ -2467,7 +2467,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "$",
       "action": "vim::EndOfLine",
-      "label": "End Of Line",
+      "label": "Line end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2479,7 +2479,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "^",
       "action": "vim::FirstNonWhitespace",
-      "label": "First Non Whitespace",
+      "label": "First nonblank character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2491,7 +2491,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "_",
       "action": "vim::StartOfLineDownward",
-      "label": "Start Of Line Downward",
+      "label": "Counted line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2503,7 +2503,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g _",
       "action": "vim::EndOfLineDownward",
-      "label": "End Of Line Downward",
+      "label": "Counted line end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2515,13 +2515,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-g",
       "action": "vim::EndOfDocument",
-      "label": "End Of Document",
+      "label": "Document end",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -2533,7 +2533,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "{",
       "action": "vim::StartOfParagraph",
-      "label": "Start Of Paragraph",
+      "label": "Previous paragraph boundary",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2545,7 +2545,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "}",
       "action": "vim::EndOfParagraph",
-      "label": "End Of Paragraph",
+      "label": "Next paragraph boundary",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2557,7 +2557,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "(",
       "action": "vim::SentenceBackward",
-      "label": "Sentence Backward",
+      "label": "Previous sentence",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2569,7 +2569,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": ")",
       "action": "vim::SentenceForward",
-      "label": "Sentence Forward",
+      "label": "Next sentence",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2581,7 +2581,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "|",
       "action": "vim::GoToColumn",
-      "label": "Go To Column",
+      "label": "Go to column",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2593,7 +2593,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "w",
       "action": "vim::NextWordStart",
-      "label": "Next Word Start",
+      "label": "Next word start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2605,7 +2605,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "e",
       "action": "vim::NextWordEnd",
-      "label": "Next Word End",
+      "label": "Next word end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2617,13 +2617,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "b",
       "action": "vim::PreviousWordStart",
-      "label": "Previous Word Start",
+      "label": "Previous word start",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Branch",
+          "label": "Choose Git branch",
           "action": "git::Branch"
         }
       ]
@@ -2635,7 +2635,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g e",
       "action": "vim::PreviousWordEnd",
-      "label": "Previous Word End",
+      "label": "Previous word end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2652,7 +2652,7 @@ window.KEYMAP_DATA = {
           "ignore_punctuation": true
         }
       ],
-      "label": "Next Word Start",
+      "label": "Next WORD start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2669,7 +2669,7 @@ window.KEYMAP_DATA = {
           "ignore_punctuation": true
         }
       ],
-      "label": "Next Word End",
+      "label": "Next WORD end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2686,7 +2686,7 @@ window.KEYMAP_DATA = {
           "ignore_punctuation": true
         }
       ],
-      "label": "Previous Word Start",
+      "label": "Previous WORD start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2703,7 +2703,7 @@ window.KEYMAP_DATA = {
           "ignore_punctuation": true
         }
       ],
-      "label": "Previous Word End",
+      "label": "Previous WORD end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2715,13 +2715,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "/",
       "action": "vim::Search",
-      "label": "Search",
+      "label": "Search forward",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Find project file",
           "action": "file_finder::Toggle"
         }
       ]
@@ -2733,7 +2733,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g /",
       "action": "pane::DeploySearch",
-      "label": "Deploy Search",
+      "label": "Search project",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2750,13 +2750,13 @@ window.KEYMAP_DATA = {
           "backwards": true
         }
       ],
-      "label": "Search",
+      "label": "Search backward",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Context Menu",
+          "label": "Open context menu",
           "action": "project_panel::OpenContextMenu"
         }
       ]
@@ -2768,7 +2768,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "*",
       "action": "vim::MoveToNext",
-      "label": "Move To Next",
+      "label": "Next matching word",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2780,7 +2780,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "#",
       "action": "vim::MoveToPrevious",
-      "label": "Move To Previous",
+      "label": "Previous matching word",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2792,7 +2792,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "n",
       "action": "vim::MoveToNextMatch",
-      "label": "Move To Next Match",
+      "label": "Next search match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2804,7 +2804,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-n",
       "action": "vim::MoveToPreviousMatch",
-      "label": "Move To Previous Match",
+      "label": "Previous search match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2821,7 +2821,7 @@ window.KEYMAP_DATA = {
           "match_quotes": true
         }
       ],
-      "label": "Matching",
+      "label": "Jump matching bracket",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2839,13 +2839,13 @@ window.KEYMAP_DATA = {
           "multiline": false
         }
       ],
-      "label": "Push Find Forward",
+      "label": "Find next character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Fetch",
+          "label": "Fetch Git remotes",
           "action": "git::Fetch"
         }
       ]
@@ -2863,18 +2863,18 @@ window.KEYMAP_DATA = {
           "multiline": false
         }
       ],
-      "label": "Push Find Forward",
+      "label": "Till next character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Tree View",
+          "label": "Toggle tree layout",
           "action": "git_panel::ToggleTreeView"
         }
       ]
@@ -2892,7 +2892,7 @@ window.KEYMAP_DATA = {
           "multiline": false
         }
       ],
-      "label": "Push Find Backward",
+      "label": "Find previous character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2910,13 +2910,13 @@ window.KEYMAP_DATA = {
           "multiline": false
         }
       ],
-      "label": "Push Find Backward",
+      "label": "Till previous character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Trash",
+          "label": "Trash selected entry",
           "action": [
             "project_panel::Trash",
             {
@@ -2933,7 +2933,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "m",
       "action": "vim::PushMark",
-      "label": "Push Mark",
+      "label": "Set named mark",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2950,7 +2950,7 @@ window.KEYMAP_DATA = {
           "line": true
         }
       ],
-      "label": "Push Jump",
+      "label": "Jump mark line",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2967,7 +2967,7 @@ window.KEYMAP_DATA = {
           "line": false
         }
       ],
-      "label": "Push Jump",
+      "label": "Jump mark position",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2979,7 +2979,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": ";",
       "action": "vim::RepeatFind",
-      "label": "Repeat Find",
+      "label": "Repeat character search",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -2991,7 +2991,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": ",",
       "action": "vim::RepeatFindReversed",
-      "label": "Repeat Find Reversed",
+      "label": "Reverse character search",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3003,7 +3003,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-o",
       "action": "pane::GoBack",
-      "label": "Go Back",
+      "label": "Previous navigation location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3015,7 +3015,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-i",
       "action": "pane::GoForward",
-      "label": "Go Forward",
+      "label": "Next navigation location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3027,7 +3027,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-]",
       "action": "editor::GoToDefinition",
-      "label": "Go To Definition",
+      "label": "Jump to definition",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3039,7 +3039,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-t",
       "action": "pane::GoToOlderTag",
-      "label": "Go To Older Tag",
+      "label": "Previous definition jump",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3051,7 +3051,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "escape",
       "action": "vim::SwitchToNormalMode",
-      "label": "Switch To Normal Mode",
+      "label": "Enter Normal mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3063,7 +3063,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-[",
       "action": "vim::SwitchToNormalMode",
-      "label": "Switch To Normal Mode",
+      "label": "Enter Normal mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3075,7 +3075,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "v",
       "action": "vim::ToggleVisual",
-      "label": "Toggle Visual",
+      "label": "Toggle character selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3087,7 +3087,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-v",
       "action": "vim::ToggleVisualLine",
-      "label": "Toggle Visual Line",
+      "label": "Toggle line selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3099,7 +3099,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-g",
       "action": "vim::ShowLocation",
-      "label": "Show Location",
+      "label": "Show cursor location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3111,7 +3111,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-v",
       "action": "vim::ToggleVisualBlock",
-      "label": "Toggle Visual Block",
+      "label": "Toggle block selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3123,7 +3123,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-q",
       "action": "vim::ToggleVisualBlock",
-      "label": "Toggle Visual Block",
+      "label": "Toggle block selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3135,7 +3135,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-k",
       "action": "editor::Hover",
-      "label": "Hover",
+      "label": "Show symbol information",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3147,13 +3147,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-r",
       "action": "vim::ToggleReplace",
-      "label": "Toggle Replace",
+      "label": "Enter Replace mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -3165,7 +3165,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-f",
       "action": "vim::PageDown",
-      "label": "Page Down",
+      "label": "Page down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3177,7 +3177,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-b",
       "action": "vim::PageUp",
-      "label": "Page Up",
+      "label": "Page up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3189,7 +3189,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-d",
       "action": "vim::ScrollDown",
-      "label": "Scroll Down",
+      "label": "Half-page down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3201,7 +3201,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-u",
       "action": "vim::ScrollUp",
-      "label": "Scroll Up",
+      "label": "Half-page up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3213,7 +3213,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-e",
       "action": "vim::LineDown",
-      "label": "Line Down",
+      "label": "Scroll line down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3225,7 +3225,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-y",
       "action": "vim::LineUp",
-      "label": "Line Up",
+      "label": "Scroll line up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3237,7 +3237,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-r",
       "action": "vim::PushReplaceWithRegister",
-      "label": "Push Replace With Register",
+      "label": "Replace using register",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3249,7 +3249,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g r n",
       "action": "editor::Rename",
-      "label": "Rename",
+      "label": "Rename symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3261,7 +3261,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g r r",
       "action": "editor::FindAllReferences",
-      "label": "Find All References",
+      "label": "Find symbol references",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3273,7 +3273,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g r i",
       "action": "editor::GoToImplementation",
-      "label": "Go To Implementation",
+      "label": "Jump to implementation",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3285,7 +3285,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g r a",
       "action": "editor::ToggleCodeActions",
-      "label": "Toggle Code Actions",
+      "label": "Show code actions",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3297,13 +3297,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g g",
       "action": "vim::StartOfDocument",
-      "label": "Start Of Document",
+      "label": "Document start",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -3315,13 +3315,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g h",
       "action": "editor::Hover",
-      "label": "Hover",
+      "label": "Show symbol information",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "File History",
+          "label": "Show file history",
           "action": "git::FileHistory"
         }
       ]
@@ -3333,7 +3333,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g B",
       "action": "editor::BlameHover",
-      "label": "Blame Hover",
+      "label": "Show line blame",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3345,18 +3345,18 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g d",
       "action": "editor::GoToDefinition",
-      "label": "Go To Definition",
+      "label": "Jump to definition",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-          "label": "Go To Definition",
+          "label": "Jump to definition",
           "action": "editor::GoToDefinition"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Confirm",
+          "label": "Open project diff",
           "action": "menu::Confirm"
         }
       ]
@@ -3368,13 +3368,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-d",
       "action": "editor::GoToDeclaration",
-      "label": "Go To Declaration",
+      "label": "Jump to declaration",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Secondary Confirm",
+          "label": "Open file diff",
           "action": "menu::SecondaryConfirm"
         }
       ]
@@ -3386,7 +3386,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g y",
       "action": "editor::GoToTypeDefinition",
-      "label": "Go To Type Definition",
+      "label": "Jump to type",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3398,7 +3398,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-i",
       "action": "editor::GoToImplementation",
-      "label": "Go To Implementation",
+      "label": "Jump to implementation",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3410,13 +3410,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g x",
       "action": "editor::OpenUrl",
-      "label": "Open Url",
+      "label": "Open URL",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-          "label": "Restore",
+          "label": "Discard selected changes",
           "action": "git::Restore"
         }
       ]
@@ -3428,18 +3428,18 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g f",
       "action": "editor::OpenSelectedFilename",
-      "label": "Open Selected Filename",
+      "label": "Open referenced file",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "Editor && multibuffer && (vim_mode == normal || vim_mode == visual) && !menu",
-          "label": "Open Excerpts",
+          "label": "Open source files",
           "action": "editor::OpenExcerpts"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "View File",
+          "label": "Open source file",
           "action": "git::ViewFile"
         }
       ]
@@ -3451,7 +3451,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g n",
       "action": "vim::SelectNextMatch",
-      "label": "Select Next Match",
+      "label": "Select search match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3463,7 +3463,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-n",
       "action": "vim::SelectPreviousMatch",
-      "label": "Select Previous Match",
+      "label": "Select previous match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3475,7 +3475,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g l",
       "action": "vim::SelectNext",
-      "label": "Select Next",
+      "label": "Select next occurrence",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3487,7 +3487,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-l",
       "action": "vim::SelectPrevious",
-      "label": "Select Previous",
+      "label": "Select previous occurrence",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3504,7 +3504,7 @@ window.KEYMAP_DATA = {
           "replace_newest": true
         }
       ],
-      "label": "Select Next",
+      "label": "Skip match forward",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3521,7 +3521,7 @@ window.KEYMAP_DATA = {
           "replace_newest": true
         }
       ],
-      "label": "Select Previous",
+      "label": "Skip match backward",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3533,13 +3533,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g a",
       "action": "editor::SelectAllMatches",
-      "label": "Select All Matches",
+      "label": "Select all matches",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -3551,13 +3551,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g s",
       "action": "outline::Toggle",
-      "label": "Toggle",
+      "label": "Find file symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -3569,7 +3569,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-o",
       "action": "outline::Toggle",
-      "label": "Toggle",
+      "label": "Find file symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3581,7 +3581,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-s",
       "action": "project_symbols::Toggle",
-      "label": "Toggle",
+      "label": "Find project symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3593,7 +3593,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g .",
       "action": "editor::ToggleCodeActions",
-      "label": "Toggle Code Actions",
+      "label": "Show code actions",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3605,7 +3605,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g shift-a",
       "action": "editor::FindAllReferences",
-      "label": "Find All References",
+      "label": "Find symbol references",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3617,13 +3617,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g space",
       "action": "editor::OpenExcerpts",
-      "label": "Open Excerpts",
+      "label": "Open source files",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "Editor && multibuffer && (vim_mode == normal || vim_mode == visual) && !menu",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -3640,7 +3640,7 @@ window.KEYMAP_DATA = {
           "partial_word": true
         }
       ],
-      "label": "Move To Next",
+      "label": "Next substring match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3657,7 +3657,7 @@ window.KEYMAP_DATA = {
           "partial_word": true
         }
       ],
-      "label": "Move To Previous",
+      "label": "Previous substring match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3674,7 +3674,7 @@ window.KEYMAP_DATA = {
           "display_lines": true
         }
       ],
-      "label": "Down",
+      "label": "Screen line down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3691,7 +3691,7 @@ window.KEYMAP_DATA = {
           "display_lines": true
         }
       ],
-      "label": "Up",
+      "label": "Screen line up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3708,7 +3708,7 @@ window.KEYMAP_DATA = {
           "display_lines": true
         }
       ],
-      "label": "End Of Line",
+      "label": "Screen line end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3725,7 +3725,7 @@ window.KEYMAP_DATA = {
           "display_lines": true
         }
       ],
-      "label": "Start Of Line",
+      "label": "Screen line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3742,7 +3742,7 @@ window.KEYMAP_DATA = {
           "display_lines": true
         }
       ],
-      "label": "Middle Of Line",
+      "label": "Screen line midpoint",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3759,7 +3759,7 @@ window.KEYMAP_DATA = {
           "display_lines": true
         }
       ],
-      "label": "First Non Whitespace",
+      "label": "Screen first nonblank",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3771,7 +3771,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g v",
       "action": "vim::RestoreVisualSelection",
-      "label": "Restore Visual Selection",
+      "label": "Restore previous selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3783,7 +3783,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g ]",
       "action": "editor::GoToDiagnostic",
-      "label": "Go To Diagnostic",
+      "label": "Next diagnostic",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3795,7 +3795,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g [",
       "action": "editor::GoToPreviousDiagnostic",
-      "label": "Go To Previous Diagnostic",
+      "label": "Previous diagnostic",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3807,7 +3807,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g i",
       "action": "vim::InsertAtPrevious",
-      "label": "Insert At Previous",
+      "label": "Resume previous insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3819,7 +3819,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g ,",
       "action": "vim::ChangeListNewer",
-      "label": "Change List Newer",
+      "label": "Newer edit location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3831,7 +3831,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "g ;",
       "action": "vim::ChangeListOlder",
-      "label": "Change List Older",
+      "label": "Older edit location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3843,18 +3843,18 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-h",
       "action": "vim::WindowTop",
-      "label": "Window Top",
+      "label": "Viewport top line",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-          "label": "Activate Previous Item",
+          "label": "Previous tab",
           "action": "pane::ActivatePreviousItem"
         },
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle Hide Hidden",
+          "label": "Toggle hidden files",
           "action": "project_panel::ToggleHideHidden"
         }
       ]
@@ -3866,7 +3866,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-m",
       "action": "vim::WindowMiddle",
-      "label": "Window Middle",
+      "label": "Viewport middle line",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3878,13 +3878,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-l",
       "action": "vim::WindowBottom",
-      "label": "Window Bottom",
+      "label": "Viewport bottom line",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-          "label": "Activate Next Item",
+          "label": "Next tab",
           "action": "pane::ActivateNextItem"
         }
       ]
@@ -3896,13 +3896,13 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "q",
       "action": "vim::ToggleRecord",
-      "label": "Toggle Record",
+      "label": "Toggle macro recording",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Toggle project tree",
           "action": "project_panel::Toggle"
         }
       ]
@@ -3914,7 +3914,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "shift-q",
       "action": "vim::ReplayLastRecording",
-      "label": "Replay Last Recording",
+      "label": "Replay last macro",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3926,7 +3926,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "@",
       "action": "vim::PushReplayRegister",
-      "label": "Push Replay Register",
+      "label": "Replay register macro",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3941,7 +3941,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "z t ^"
       ],
-      "label": "Send z t ^",
+      "label": "Top-align line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3956,7 +3956,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "z b ^"
       ],
-      "label": "Send z b ^",
+      "label": "Bottom-align line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3971,7 +3971,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "shift-h k z b ^"
       ],
-      "label": "Send shift-h k z b ^",
+      "label": "Previous screenful",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3986,7 +3986,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "shift-l j z t ^"
       ],
-      "label": "Send shift-l j z t ^",
+      "label": "Next screenful",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -3998,7 +3998,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z t",
       "action": "editor::ScrollCursorTop",
-      "label": "Scroll Cursor Top",
+      "label": "Align cursor top",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4010,7 +4010,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z z",
       "action": "editor::ScrollCursorCenter",
-      "label": "Scroll Cursor Center",
+      "label": "Center cursor vertically",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4025,7 +4025,7 @@ window.KEYMAP_DATA = {
         "workspace::SendKeystrokes",
         "z z ^"
       ],
-      "label": "Send z z ^",
+      "label": "Center line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4037,7 +4037,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z b",
       "action": "editor::ScrollCursorBottom",
-      "label": "Scroll Cursor Bottom",
+      "label": "Align cursor bottom",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4049,7 +4049,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z a",
       "action": "editor::ToggleFold",
-      "label": "Toggle Fold",
+      "label": "Toggle code fold",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4061,7 +4061,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-a",
       "action": "editor::ToggleFoldRecursive",
-      "label": "Toggle Fold Recursive",
+      "label": "Toggle nested folds",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4073,7 +4073,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z c",
       "action": "editor::Fold",
-      "label": "Fold",
+      "label": "Fold code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4085,7 +4085,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-c",
       "action": "editor::FoldRecursive",
-      "label": "Fold Recursive",
+      "label": "Fold nested code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4097,7 +4097,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z o",
       "action": "editor::UnfoldLines",
-      "label": "Unfold Lines",
+      "label": "Unfold code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4109,7 +4109,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-o",
       "action": "editor::UnfoldRecursive",
-      "label": "Unfold Recursive",
+      "label": "Unfold nested code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4121,7 +4121,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z f",
       "action": "editor::FoldSelectedRanges",
-      "label": "Fold Selected Ranges",
+      "label": "Fold selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4133,7 +4133,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-m",
       "action": "editor::FoldAll",
-      "label": "Fold All",
+      "label": "Fold all code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4145,7 +4145,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-r",
       "action": "editor::UnfoldAll",
-      "label": "Unfold All",
+      "label": "Unfold all code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4157,7 +4157,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z l",
       "action": "vim::ColumnRight",
-      "label": "Column Right",
+      "label": "Scroll column right",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4169,7 +4169,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z h",
       "action": "vim::ColumnLeft",
-      "label": "Column Left",
+      "label": "Scroll column left",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4181,7 +4181,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-l",
       "action": "vim::HalfPageRight",
-      "label": "Half Page Right",
+      "label": "Half-page right",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4193,7 +4193,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "z shift-h",
       "action": "vim::HalfPageLeft",
-      "label": "Half Page Left",
+      "label": "Half-page left",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4210,7 +4210,7 @@ window.KEYMAP_DATA = {
           "save_intent": "skip"
         }
       ],
-      "label": "Close Active Item",
+      "label": "Close without saving",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4227,7 +4227,7 @@ window.KEYMAP_DATA = {
           "save_intent": "save_all"
         }
       ],
-      "label": "Close Active Item",
+      "label": "Close active tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4239,7 +4239,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w d",
       "action": "editor::GoToDefinitionSplit",
-      "label": "Go To Definition Split",
+      "label": "Split definition view",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4251,7 +4251,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w g d",
       "action": "editor::GoToDefinitionSplit",
-      "label": "Go To Definition Split",
+      "label": "Split definition view",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4263,7 +4263,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w ]",
       "action": "editor::GoToDefinitionSplit",
-      "label": "Go To Definition Split",
+      "label": "Split definition view",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4275,7 +4275,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w shift-d",
       "action": "editor::GoToTypeDefinitionSplit",
-      "label": "Go To Type Definition Split",
+      "label": "Split type view",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4287,7 +4287,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w g shift-d",
       "action": "editor::GoToTypeDefinitionSplit",
-      "label": "Go To Type Definition Split",
+      "label": "Split type view",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4299,7 +4299,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w space",
       "action": "editor::OpenExcerptsSplit",
-      "label": "Open Excerpts Split",
+      "label": "Split source files",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4311,7 +4311,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-w g space",
       "action": "editor::OpenExcerptsSplit",
-      "label": "Open Excerpts Split",
+      "label": "Split source files",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4323,7 +4323,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": "ctrl-^",
       "action": "pane::AlternateFile",
-      "label": "Alternate File",
+      "label": "Alternate tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4335,7 +4335,7 @@ window.KEYMAP_DATA = {
       "block": 0,
       "key": ".",
       "action": "vim::Repeat",
-      "label": "Repeat",
+      "label": "Repeat last change",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4347,7 +4347,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] ]",
       "action": "vim::NextSectionStart",
-      "label": "Next Section Start",
+      "label": "Next section start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4359,7 +4359,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] [",
       "action": "vim::NextSectionEnd",
-      "label": "Next Section End",
+      "label": "Next section end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4371,7 +4371,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ [",
       "action": "vim::PreviousSectionStart",
-      "label": "Previous Section Start",
+      "label": "Previous section start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4383,7 +4383,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ ]",
       "action": "vim::PreviousSectionEnd",
-      "label": "Previous Section End",
+      "label": "Previous section end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4395,7 +4395,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] m",
       "action": "vim::NextMethodStart",
-      "label": "Next Method Start",
+      "label": "Next method start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4407,7 +4407,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] shift-m",
       "action": "vim::NextMethodEnd",
-      "label": "Next Method End",
+      "label": "Next method end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4419,7 +4419,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ m",
       "action": "vim::PreviousMethodStart",
-      "label": "Previous Method Start",
+      "label": "Previous method start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4431,7 +4431,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ shift-m",
       "action": "vim::PreviousMethodEnd",
-      "label": "Previous Method End",
+      "label": "Previous method end",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4443,7 +4443,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ *",
       "action": "vim::PreviousComment",
-      "label": "Previous Comment",
+      "label": "Previous comment",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4455,7 +4455,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ /",
       "action": "vim::PreviousComment",
-      "label": "Previous Comment",
+      "label": "Previous comment",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4467,7 +4467,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] *",
       "action": "vim::NextComment",
-      "label": "Next Comment",
+      "label": "Next comment",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4479,7 +4479,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] /",
       "action": "vim::NextComment",
-      "label": "Next Comment",
+      "label": "Next comment",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4491,7 +4491,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ -",
       "action": "vim::PreviousLesserIndent",
-      "label": "Previous Lesser Indent",
+      "label": "Previous shallower indent",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4503,7 +4503,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ +",
       "action": "vim::PreviousGreaterIndent",
-      "label": "Previous Greater Indent",
+      "label": "Previous deeper indent",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4515,7 +4515,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ =",
       "action": "vim::PreviousSameIndent",
-      "label": "Previous Same Indent",
+      "label": "Previous equal indent",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4527,7 +4527,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] -",
       "action": "vim::NextLesserIndent",
-      "label": "Next Lesser Indent",
+      "label": "Next shallower indent",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4539,7 +4539,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] +",
       "action": "vim::NextGreaterIndent",
-      "label": "Next Greater Indent",
+      "label": "Next deeper indent",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4551,7 +4551,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] =",
       "action": "vim::NextSameIndent",
-      "label": "Next Same Indent",
+      "label": "Next equal indent",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4563,7 +4563,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] b",
       "action": "pane::ActivateNextItem",
-      "label": "Activate Next Item",
+      "label": "Next tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4575,7 +4575,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ b",
       "action": "pane::ActivatePreviousItem",
-      "label": "Activate Previous Item",
+      "label": "Previous tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4587,7 +4587,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] shift-b",
       "action": "pane::ActivateLastItem",
-      "label": "Activate Last Item",
+      "label": "Last tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4602,7 +4602,7 @@ window.KEYMAP_DATA = {
         "pane::ActivateItem",
         0
       ],
-      "label": "Activate Item",
+      "label": "First tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4614,13 +4614,13 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] space",
       "action": "vim::InsertEmptyLineBelow",
-      "label": "Insert Empty Line Below",
+      "label": "Blank line below",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "Editor && vim_mode == normal && !menu",
-          "label": "Insert Empty Line Below",
+          "label": "Blank line below",
           "action": "vim::InsertEmptyLineBelow"
         }
       ]
@@ -4632,13 +4632,13 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ space",
       "action": "vim::InsertEmptyLineAbove",
-      "label": "Insert Empty Line Above",
+      "label": "Blank line above",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "Editor && vim_mode == normal && !menu",
-          "label": "Insert Empty Line Above",
+          "label": "Blank line above",
           "action": "vim::InsertEmptyLineAbove"
         }
       ]
@@ -4650,7 +4650,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ e",
       "action": "editor::MoveLineUp",
-      "label": "Move Line Up",
+      "label": "Move line up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4662,7 +4662,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] e",
       "action": "editor::MoveLineDown",
-      "label": "Move Line Down",
+      "label": "Move line down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4674,7 +4674,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ f",
       "action": "workspace::FollowNextCollaborator",
-      "label": "Follow Next Collaborator",
+      "label": "Follow next collaborator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4686,7 +4686,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] f",
       "action": "workspace::FollowNextCollaborator",
-      "label": "Follow Next Collaborator",
+      "label": "Follow next collaborator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4703,7 +4703,7 @@ window.KEYMAP_DATA = {
           "char": "}"
         }
       ],
-      "label": "Unmatched Forward",
+      "label": "Next unmatched }",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4720,7 +4720,7 @@ window.KEYMAP_DATA = {
           "char": "{"
         }
       ],
-      "label": "Unmatched Backward",
+      "label": "Previous unmatched {",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4737,7 +4737,7 @@ window.KEYMAP_DATA = {
           "char": ")"
         }
       ],
-      "label": "Unmatched Forward",
+      "label": "Next unmatched )",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4754,7 +4754,7 @@ window.KEYMAP_DATA = {
           "char": "("
         }
       ],
-      "label": "Unmatched Backward",
+      "label": "Previous unmatched (",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4766,7 +4766,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ r",
       "action": "vim::GoToPreviousReference",
-      "label": "Go To Previous Reference",
+      "label": "Previous symbol reference",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4778,7 +4778,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] r",
       "action": "vim::GoToNextReference",
-      "label": "Go To Next Reference",
+      "label": "Next symbol reference",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4790,7 +4790,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "[ x",
       "action": "vim::SelectLargerSyntaxNode",
-      "label": "Select Larger Syntax Node",
+      "label": "Expand syntax selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4802,7 +4802,7 @@ window.KEYMAP_DATA = {
       "block": 1,
       "key": "] x",
       "action": "vim::SelectSmallerSyntaxNode",
-      "label": "Select Smaller Syntax Node",
+      "label": "Shrink syntax selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4814,7 +4814,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "i",
       "action": "vim::InsertBefore",
-      "label": "Insert Before",
+      "label": "Insert before cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4826,13 +4826,13 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "a",
       "action": "vim::InsertAfter",
-      "label": "Insert After",
+      "label": "Insert after cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New File",
+          "label": "Create file",
           "action": "project_panel::NewFile"
         }
       ]
@@ -4844,7 +4844,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "ctrl-[",
       "action": "editor::Cancel",
-      "label": "Cancel",
+      "label": "Cancel editor action",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4856,7 +4856,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": ":",
       "action": "command_palette::Toggle",
-      "label": "Toggle",
+      "label": "Open command palette",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4868,18 +4868,18 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "c",
       "action": "vim::PushChange",
-      "label": "Push Change",
+      "label": "Change motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -4891,13 +4891,13 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "shift-c",
       "action": "vim::ChangeToEndOfLine",
-      "label": "Change To End Of Line",
+      "label": "Change line suffix",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Collapse Selected Entry",
+          "label": "Collapse selected folder",
           "action": "project_panel::CollapseSelectedEntry"
         }
       ]
@@ -4909,13 +4909,13 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "d",
       "action": "vim::PushDelete",
-      "label": "Push Delete",
+      "label": "Delete motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Delete",
+          "label": "Delete selected entry",
           "action": [
             "project_panel::Delete",
             {
@@ -4925,7 +4925,7 @@ window.KEYMAP_DATA = {
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Restore File",
+          "label": "Discard file changes",
           "action": [
             "git::RestoreFile",
             {
@@ -4942,7 +4942,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g shift-j",
       "action": "vim::JoinLinesNoWhitespace",
-      "label": "Join Lines No Whitespace",
+      "label": "Join without spaces",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -4954,13 +4954,13 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "y",
       "action": "vim::PushYank",
-      "label": "Push Yank",
+      "label": "Copy motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy Relative Path",
+          "label": "Copy relative path",
           "action": "workspace::CopyRelativePath"
         }
       ]
@@ -4972,13 +4972,13 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "shift-y",
       "action": "vim::YankLine",
-      "label": "Yank Line",
+      "label": "Copy current line",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy Path",
+          "label": "Copy full path",
           "action": "workspace::CopyPath"
         }
       ]
@@ -4990,13 +4990,13 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "x",
       "action": "vim::DeleteRight",
-      "label": "Delete Right",
+      "label": "Delete next character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Cut",
+          "label": "Cut selected entry",
           "action": "project_panel::Cut"
         }
       ]
@@ -5008,7 +5008,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "shift-x",
       "action": "vim::DeleteLeft",
-      "label": "Delete Left",
+      "label": "Delete previous character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5020,7 +5020,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "ctrl-a",
       "action": "vim::Increment",
-      "label": "Increment",
+      "label": "Increment number",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5032,7 +5032,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "ctrl-x",
       "action": "vim::Decrement",
-      "label": "Decrement",
+      "label": "Decrement number",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5044,7 +5044,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "ctrl-r",
       "action": "vim::Redo",
-      "label": "Redo",
+      "label": "Redo change",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5056,7 +5056,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": ">",
       "action": "vim::PushIndent",
-      "label": "Push Indent",
+      "label": "Indent motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5068,7 +5068,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "<",
       "action": "vim::PushOutdent",
-      "label": "Push Outdent",
+      "label": "Outdent motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5080,7 +5080,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "=",
       "action": "vim::PushAutoIndent",
-      "label": "Push Auto Indent",
+      "label": "Reindent motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5092,7 +5092,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "!",
       "action": "vim::PushShellCommand",
-      "label": "Push Shell Command",
+      "label": "Filter motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5104,7 +5104,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g u",
       "action": "vim::PushLowercase",
-      "label": "Push Lowercase",
+      "label": "Lowercase motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5116,7 +5116,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g shift-u",
       "action": "vim::PushUppercase",
-      "label": "Push Uppercase",
+      "label": "Uppercase motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5128,7 +5128,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g ~",
       "action": "vim::PushOppositeCase",
-      "label": "Push Opposite Case",
+      "label": "Invert target case",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5140,7 +5140,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g ?",
       "action": "vim::PushRot13",
-      "label": "Push Rot13",
+      "label": "ROT13 motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5152,7 +5152,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g w",
       "action": "vim::PushRewrap",
-      "label": "Push Rewrap",
+      "label": "Rewrap motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5164,7 +5164,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g q",
       "action": "vim::PushRewrap",
-      "label": "Push Rewrap",
+      "label": "Rewrap motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5176,7 +5176,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "] d",
       "action": "editor::GoToDiagnostic",
-      "label": "Go To Diagnostic",
+      "label": "Next diagnostic",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5188,7 +5188,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "[ d",
       "action": "editor::GoToPreviousDiagnostic",
-      "label": "Go To Previous Diagnostic",
+      "label": "Previous diagnostic",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5200,7 +5200,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "] c",
       "action": "editor::GoToHunk",
-      "label": "Go To Hunk",
+      "label": "Next diff hunk",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5212,7 +5212,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "[ c",
       "action": "editor::GoToPreviousHunk",
-      "label": "Go To Previous Hunk",
+      "label": "Previous diff hunk",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5224,7 +5224,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g c",
       "action": "vim::PushToggleComments",
-      "label": "Push Toggle Comments",
+      "label": "Comment motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5236,7 +5236,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "g b",
       "action": "vim::PushToggleBlockComments",
-      "label": "Push Toggle Block Comments",
+      "label": "Block-comment motion target",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5251,7 +5251,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         0
       ],
-      "label": "Number",
+      "label": "Count digit 0",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5263,7 +5263,7 @@ window.KEYMAP_DATA = {
       "block": 3,
       "key": ":",
       "action": "vim::CountCommand",
-      "label": "Count Command",
+      "label": "Command counted lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5275,7 +5275,7 @@ window.KEYMAP_DATA = {
       "block": 3,
       "key": "%",
       "action": "vim::GoToPercentage",
-      "label": "Go To Percentage",
+      "label": "Jump file percentage",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5287,7 +5287,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": ":",
       "action": "vim::VisualCommand",
-      "label": "Visual Command",
+      "label": "Command selected range",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5299,13 +5299,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "u",
       "action": "vim::ConvertToLowerCase",
-      "label": "Convert To Lower Case",
+      "label": "Lowercase selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Undo",
+          "label": "Undo file operation",
           "action": "project_panel::Undo"
         }
       ]
@@ -5317,7 +5317,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-u",
       "action": "vim::ConvertToUpperCase",
-      "label": "Convert To Upper Case",
+      "label": "Uppercase selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5329,13 +5329,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-o",
       "action": "vim::OtherEnd",
-      "label": "Other End",
+      "label": "Opposite selection corner",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open With System",
+          "label": "Open externally",
           "action": "workspace::OpenWithSystem"
         }
       ]
@@ -5347,13 +5347,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "o",
       "action": "vim::OtherEndRowAware",
-      "label": "Other End Row Aware",
+      "label": "Opposite selection endpoint",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -5365,13 +5365,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "d",
       "action": "vim::VisualDelete",
-      "label": "Visual Delete",
+      "label": "Delete selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Delete",
+          "label": "Delete selected entry",
           "action": [
             "project_panel::Delete",
             {
@@ -5381,7 +5381,7 @@ window.KEYMAP_DATA = {
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Restore File",
+          "label": "Discard file changes",
           "action": [
             "git::RestoreFile",
             {
@@ -5398,13 +5398,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "x",
       "action": "vim::VisualDelete",
-      "label": "Visual Delete",
+      "label": "Delete selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Cut",
+          "label": "Cut selected entry",
           "action": "project_panel::Cut"
         }
       ]
@@ -5416,13 +5416,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-d",
       "action": "vim::VisualDeleteLine",
-      "label": "Visual Delete Line",
+      "label": "Delete selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -5434,7 +5434,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-x",
       "action": "vim::VisualDeleteLine",
-      "label": "Visual Delete Line",
+      "label": "Delete selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5446,13 +5446,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "y",
       "action": "vim::VisualYank",
-      "label": "Visual Yank",
+      "label": "Copy selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy Relative Path",
+          "label": "Copy relative path",
           "action": "workspace::CopyRelativePath"
         }
       ]
@@ -5464,13 +5464,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-y",
       "action": "vim::VisualYankLine",
-      "label": "Visual Yank Line",
+      "label": "Copy selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy Path",
+          "label": "Copy full path",
           "action": "workspace::CopyPath"
         }
       ]
@@ -5482,18 +5482,18 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "p",
       "action": "vim::Paste",
-      "label": "Paste",
+      "label": "Paste over selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Paste",
+          "label": "Paste copied entry",
           "action": "project_panel::Paste"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull",
+          "label": "Pull Git changes",
           "action": "git::Pull"
         }
       ]
@@ -5510,18 +5510,18 @@ window.KEYMAP_DATA = {
           "preserve_clipboard": true
         }
       ],
-      "label": "Paste",
+      "label": "Paste preserving register",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open",
+          "label": "Preview selected file",
           "action": "project_panel::Open"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Push",
+          "label": "Push Git changes",
           "action": "git::Push"
         }
       ]
@@ -5533,18 +5533,18 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "c",
       "action": "vim::Substitute",
-      "label": "Substitute",
+      "label": "Replace selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -5556,18 +5556,18 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "s",
       "action": "vim::Substitute",
-      "label": "Substitute",
+      "label": "Replace selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -5579,13 +5579,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-r",
       "action": "vim::SubstituteLine",
-      "label": "Substitute Line",
+      "label": "Replace selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -5597,18 +5597,18 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-s",
       "action": "vim::SubstituteLine",
-      "label": "Substitute Line",
+      "label": "Replace selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Horizontal",
+          "label": "Open lower split",
           "action": "project_panel::OpenSplitHorizontal"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Stage All",
+          "label": "Stage all changes",
           "action": "git::StageAll"
         }
       ]
@@ -5620,7 +5620,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "~",
       "action": "vim::ChangeCase",
-      "label": "Change Case",
+      "label": "Invert character case",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5637,7 +5637,7 @@ window.KEYMAP_DATA = {
           "partial_word": true
         }
       ],
-      "label": "Move To Next",
+      "label": "Next substring match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5654,7 +5654,7 @@ window.KEYMAP_DATA = {
           "partial_word": true
         }
       ],
-      "label": "Move To Previous",
+      "label": "Previous substring match",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5666,7 +5666,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "ctrl-a",
       "action": "vim::Increment",
-      "label": "Increment",
+      "label": "Increment number",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5678,7 +5678,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "ctrl-x",
       "action": "vim::Decrement",
-      "label": "Decrement",
+      "label": "Decrement number",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5695,7 +5695,7 @@ window.KEYMAP_DATA = {
           "step": true
         }
       ],
-      "label": "Increment",
+      "label": "Increment progressive sequence",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5712,7 +5712,7 @@ window.KEYMAP_DATA = {
           "step": true
         }
       ],
-      "label": "Decrement",
+      "label": "Decrement progressive sequence",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5724,7 +5724,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-i",
       "action": "vim::InsertBefore",
-      "label": "Insert Before",
+      "label": "Insert before cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5736,13 +5736,13 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-a",
       "action": "vim::InsertAfter",
-      "label": "Insert After",
+      "label": "Insert after cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New Directory",
+          "label": "Create folder",
           "action": "project_panel::NewDirectory"
         }
       ]
@@ -5754,7 +5754,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g shift-i",
       "action": "vim::VisualInsertFirstNonWhiteSpace",
-      "label": "Visual Insert First Non White Space",
+      "label": "Insert line starts",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5766,7 +5766,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g shift-a",
       "action": "vim::VisualInsertEndOfLine",
-      "label": "Visual Insert End Of Line",
+      "label": "Append selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5778,7 +5778,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "shift-j",
       "action": "vim::JoinLines",
-      "label": "Join Lines",
+      "label": "Join with spaces",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5790,7 +5790,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g shift-j",
       "action": "vim::JoinLinesNoWhitespace",
-      "label": "Join Lines No Whitespace",
+      "label": "Join without spaces",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5802,18 +5802,18 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "r",
       "action": "vim::PushReplace",
-      "label": "Push Replace",
+      "label": "Replace character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Rename",
+          "label": "Rename selected entry",
           "action": "project_panel::Rename"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull Rebase",
+          "label": "Pull with rebase",
           "action": "git::PullRebase"
         }
       ]
@@ -5825,7 +5825,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "ctrl-c",
       "action": "vim::SwitchToNormalMode",
-      "label": "Switch To Normal Mode",
+      "label": "Enter Normal mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5837,7 +5837,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "ctrl-[",
       "action": "vim::SwitchToNormalMode",
-      "label": "Switch To Normal Mode",
+      "label": "Enter Normal mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5849,7 +5849,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "escape",
       "action": "vim::SwitchToNormalMode",
-      "label": "Switch To Normal Mode",
+      "label": "Enter Normal mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5861,7 +5861,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": ">",
       "action": "vim::Indent",
-      "label": "Indent",
+      "label": "Indent selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5873,7 +5873,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "<",
       "action": "vim::Outdent",
-      "label": "Outdent",
+      "label": "Outdent selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5885,7 +5885,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "=",
       "action": "vim::AutoIndent",
-      "label": "Auto Indent",
+      "label": "Reindent selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5897,7 +5897,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "!",
       "action": "vim::ShellCommand",
-      "label": "Shell Command",
+      "label": "Filter selected text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5914,7 +5914,7 @@ window.KEYMAP_DATA = {
           "around": false
         }
       ],
-      "label": "Push Object",
+      "label": "Inside text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5931,13 +5931,13 @@ window.KEYMAP_DATA = {
           "around": true
         }
       ],
-      "label": "Push Object",
+      "label": "Around text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New File",
+          "label": "Create file",
           "action": "project_panel::NewFile"
         }
       ]
@@ -5954,7 +5954,7 @@ window.KEYMAP_DATA = {
           "preserve_clipboard": true
         }
       ],
-      "label": "Paste",
+      "label": "Paste preserving register",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5966,7 +5966,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g c",
       "action": "vim::ToggleComments",
-      "label": "Toggle Comments",
+      "label": "Toggle line comments",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5978,7 +5978,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g b",
       "action": "vim::ToggleBlockComments",
-      "label": "Toggle Block Comments",
+      "label": "Toggle block comments",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5990,7 +5990,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g q",
       "action": "vim::Rewrap",
-      "label": "Rewrap",
+      "label": "Rewrap selected text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6002,7 +6002,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g w",
       "action": "vim::Rewrap",
-      "label": "Rewrap",
+      "label": "Rewrap selected text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6014,7 +6014,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "g ?",
       "action": "vim::ConvertToRot13",
-      "label": "Convert To Rot13",
+      "label": "ROT13 selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6026,7 +6026,7 @@ window.KEYMAP_DATA = {
       "block": 4,
       "key": "\"",
       "action": "vim::PushRegister",
-      "label": "Push Register",
+      "label": "Choose register",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6038,7 +6038,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-c",
       "action": "vim::NormalBefore",
-      "label": "Normal Before",
+      "label": "Exit insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6050,7 +6050,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-[",
       "action": "vim::NormalBefore",
-      "label": "Normal Before",
+      "label": "Exit insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6062,7 +6062,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "escape",
       "action": "vim::NormalBefore",
-      "label": "Normal Before",
+      "label": "Exit insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6074,7 +6074,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": []
@@ -6086,7 +6086,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-o",
       "action": "editor::ShowCompletions",
-      "label": "Show Completions",
+      "label": "Show completions",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6098,7 +6098,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-a",
       "action": "assistant::InlineAssist",
-      "label": "Inline Assist",
+      "label": "Open inline assistant",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6110,7 +6110,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-c",
       "action": "editor::ShowEditPrediction",
-      "label": "Show Edit Prediction",
+      "label": "Show edit prediction",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6122,7 +6122,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-l",
       "action": "editor::ToggleCodeActions",
-      "label": "Toggle Code Actions",
+      "label": "Show code actions",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6134,7 +6134,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-z",
       "action": "editor::Cancel",
-      "label": "Cancel",
+      "label": "Cancel editor action",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6146,7 +6146,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-e",
       "action": "vim::LineDown",
-      "label": "Line Down",
+      "label": "Scroll line down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6158,7 +6158,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-x ctrl-y",
       "action": "vim::LineUp",
-      "label": "Line Up",
+      "label": "Scroll line up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6176,7 +6176,7 @@ window.KEYMAP_DATA = {
           "ignore_brackets": false
         }
       ],
-      "label": "Delete To Previous Word Start",
+      "label": "Delete previous word",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6188,7 +6188,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-u",
       "action": "editor::DeleteToBeginningOfLine",
-      "label": "Delete To Beginning Of Line",
+      "label": "Delete line prefix",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6200,7 +6200,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-t",
       "action": "vim::Indent",
-      "label": "Indent",
+      "label": "Indent selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6212,7 +6212,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-d",
       "action": "vim::Outdent",
-      "label": "Outdent",
+      "label": "Outdent selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6224,7 +6224,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-y",
       "action": "vim::InsertFromAbove",
-      "label": "Insert From Above",
+      "label": "Copy character above",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6236,7 +6236,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-e",
       "action": "vim::InsertFromBelow",
-      "label": "Insert From Below",
+      "label": "Copy character below",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6251,7 +6251,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6263,7 +6263,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-shift-v",
       "action": "editor::Paste",
-      "label": "Paste",
+      "label": "Paste clipboard",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6278,7 +6278,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6293,7 +6293,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6305,7 +6305,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-r",
       "action": "vim::PushRegister",
-      "label": "Push Register",
+      "label": "Choose register",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6317,7 +6317,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "insert",
       "action": "vim::ToggleReplace",
-      "label": "Toggle Replace",
+      "label": "Enter Replace mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6329,7 +6329,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-o",
       "action": "vim::TemporaryNormal",
-      "label": "Temporary Normal",
+      "label": "One Normal command",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6341,7 +6341,7 @@ window.KEYMAP_DATA = {
       "block": 6,
       "key": "ctrl-s",
       "action": "editor::ShowSignatureHelp",
-      "label": "Show Signature Help",
+      "label": "Show function signature",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6353,7 +6353,7 @@ window.KEYMAP_DATA = {
       "block": 7,
       "key": "ctrl-d",
       "action": "vim::ScrollDown",
-      "label": "Scroll Down",
+      "label": "Half-page down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6365,7 +6365,7 @@ window.KEYMAP_DATA = {
       "block": 7,
       "key": "ctrl-u",
       "action": "vim::ScrollUp",
-      "label": "Scroll Up",
+      "label": "Half-page up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6377,7 +6377,7 @@ window.KEYMAP_DATA = {
       "block": 7,
       "key": "ctrl-e",
       "action": "vim::LineDown",
-      "label": "Line Down",
+      "label": "Scroll line down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6389,7 +6389,7 @@ window.KEYMAP_DATA = {
       "block": 7,
       "key": "ctrl-y",
       "action": "vim::LineUp",
-      "label": "Line Up",
+      "label": "Scroll line up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6401,7 +6401,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "escape",
       "action": "editor::Cancel",
-      "label": "Cancel",
+      "label": "Cancel editor action",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6413,13 +6413,13 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-d",
       "action": "vim::DeleteToEndOfLine",
-      "label": "Delete To End Of Line",
+      "label": "Delete line suffix",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -6431,7 +6431,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-j",
       "action": "vim::JoinLines",
-      "label": "Join Lines",
+      "label": "Join with spaces",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6443,13 +6443,13 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-y",
       "action": "vim::YankLine",
-      "label": "Yank Line",
+      "label": "Copy current line",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy Path",
+          "label": "Copy full path",
           "action": "workspace::CopyPath"
         }
       ]
@@ -6461,7 +6461,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-i",
       "action": "vim::InsertFirstNonWhitespace",
-      "label": "Insert First Non Whitespace",
+      "label": "Insert line start",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6473,13 +6473,13 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-a",
       "action": "vim::InsertEndOfLine",
-      "label": "Insert End Of Line",
+      "label": "Append line end",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New Directory",
+          "label": "Create folder",
           "action": "project_panel::NewDirectory"
         }
       ]
@@ -6491,13 +6491,13 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "o",
       "action": "vim::InsertLineBelow",
-      "label": "Insert Line Below",
+      "label": "Insert line below",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -6509,13 +6509,13 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-o",
       "action": "vim::InsertLineAbove",
-      "label": "Insert Line Above",
+      "label": "Insert line above",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open With System",
+          "label": "Open externally",
           "action": "workspace::OpenWithSystem"
         }
       ]
@@ -6527,7 +6527,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "~",
       "action": "vim::ChangeCase",
-      "label": "Change Case",
+      "label": "Invert character case",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6539,7 +6539,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "ctrl-a",
       "action": "vim::Increment",
-      "label": "Increment",
+      "label": "Increment number",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6551,7 +6551,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "ctrl-x",
       "action": "vim::Decrement",
-      "label": "Decrement",
+      "label": "Decrement number",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6563,18 +6563,18 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "p",
       "action": "vim::Paste",
-      "label": "Paste",
+      "label": "Paste after cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Paste",
+          "label": "Paste copied entry",
           "action": "project_panel::Paste"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull",
+          "label": "Pull Git changes",
           "action": "git::Pull"
         }
       ]
@@ -6591,18 +6591,18 @@ window.KEYMAP_DATA = {
           "before": true
         }
       ],
-      "label": "Paste",
+      "label": "Paste before cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open",
+          "label": "Preview selected file",
           "action": "project_panel::Open"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Push",
+          "label": "Push Git changes",
           "action": "git::Push"
         }
       ]
@@ -6614,13 +6614,13 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "u",
       "action": "vim::Undo",
-      "label": "Undo",
+      "label": "Undo change",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Undo",
+          "label": "Undo file operation",
           "action": "project_panel::Undo"
         }
       ]
@@ -6632,7 +6632,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-u",
       "action": "vim::UndoLastLine",
-      "label": "Undo Last Line",
+      "label": "Undo line changes",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6644,18 +6644,18 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "r",
       "action": "vim::PushReplace",
-      "label": "Push Replace",
+      "label": "Replace character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Rename",
+          "label": "Rename selected entry",
           "action": "project_panel::Rename"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull Rebase",
+          "label": "Pull with rebase",
           "action": "git::PullRebase"
         }
       ]
@@ -6667,18 +6667,18 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "s",
       "action": "vim::Substitute",
-      "label": "Substitute",
+      "label": "Replace selection",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -6690,18 +6690,18 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "shift-s",
       "action": "vim::SubstituteLine",
-      "label": "Substitute Line",
+      "label": "Replace selected lines",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Horizontal",
+          "label": "Open lower split",
           "action": "project_panel::OpenSplitHorizontal"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Stage All",
+          "label": "Stage all changes",
           "action": "git::StageAll"
         }
       ]
@@ -6713,7 +6713,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "\"",
       "action": "vim::PushRegister",
-      "label": "Push Register",
+      "label": "Choose register",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6725,7 +6725,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "ctrl-pagedown",
       "action": "pane::ActivateNextItem",
-      "label": "Activate Next Item",
+      "label": "Next tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6737,7 +6737,7 @@ window.KEYMAP_DATA = {
       "block": 8,
       "key": "ctrl-pageup",
       "action": "pane::ActivatePreviousItem",
-      "label": "Activate Previous Item",
+      "label": "Previous tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6749,7 +6749,7 @@ window.KEYMAP_DATA = {
       "block": 15,
       "key": "ctrl-p",
       "action": "editor::ShowWordCompletions",
-      "label": "Show Word Completions",
+      "label": "Complete buffer word",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6761,7 +6761,7 @@ window.KEYMAP_DATA = {
       "block": 15,
       "key": "ctrl-n",
       "action": "editor::ShowWordCompletions",
-      "label": "Show Word Completions",
+      "label": "Complete buffer word",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6773,7 +6773,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "ctrl-p",
       "action": "editor::SignatureHelpPrevious",
-      "label": "Signature Help Previous",
+      "label": "Previous function signature",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6785,7 +6785,7 @@ window.KEYMAP_DATA = {
       "block": 16,
       "key": "ctrl-n",
       "action": "editor::SignatureHelpNext",
-      "label": "Signature Help Next",
+      "label": "Next function signature",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6797,7 +6797,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "ctrl-c",
       "action": "vim::NormalBefore",
-      "label": "Normal Before",
+      "label": "Exit insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6809,7 +6809,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "ctrl-[",
       "action": "vim::NormalBefore",
-      "label": "Normal Before",
+      "label": "Exit insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6821,7 +6821,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "escape",
       "action": "vim::NormalBefore",
-      "label": "Normal Before",
+      "label": "Exit insertion",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6836,7 +6836,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6848,7 +6848,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "ctrl-shift-v",
       "action": "editor::Paste",
-      "label": "Paste",
+      "label": "Paste clipboard",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6863,7 +6863,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6878,7 +6878,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6890,13 +6890,13 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "backspace",
       "action": "vim::UndoReplace",
-      "label": "Undo Replace",
+      "label": "Undo character replacement",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Parent",
+          "label": "Select parent folder",
           "action": "project_panel::SelectParent"
         }
       ]
@@ -6908,18 +6908,18 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "tab",
       "action": "vim::Tab",
-      "label": "Tab",
+      "label": "Next tab stop",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -6931,18 +6931,18 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "enter",
       "action": "vim::Enter",
-      "label": "Enter",
+      "label": "Insert newline",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -6954,7 +6954,7 @@ window.KEYMAP_DATA = {
       "block": 17,
       "key": "insert",
       "action": "vim::InsertBefore",
-      "label": "Insert Before",
+      "label": "Insert before cursor",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6966,18 +6966,18 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "tab",
       "action": "vim::Tab",
-      "label": "Tab",
+      "label": "Next tab stop",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -6989,18 +6989,18 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "enter",
       "action": "vim::Enter",
-      "label": "Enter",
+      "label": "Insert newline",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -7012,7 +7012,7 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "ctrl-c",
       "action": "vim::ClearOperators",
-      "label": "Clear Operators",
+      "label": "Cancel pending operator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7024,7 +7024,7 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "ctrl-[",
       "action": "vim::ClearOperators",
-      "label": "Clear Operators",
+      "label": "Cancel pending operator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7036,7 +7036,7 @@ window.KEYMAP_DATA = {
       "block": 18,
       "key": "escape",
       "action": "vim::ClearOperators",
-      "label": "Clear Operators",
+      "label": "Cancel pending operator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7051,7 +7051,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7066,7 +7066,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Push Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7078,7 +7078,7 @@ window.KEYMAP_DATA = {
       "block": 19,
       "key": "escape",
       "action": "vim::SwitchToNormalMode",
-      "label": "Switch To Normal Mode",
+      "label": "Enter Normal mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7090,7 +7090,7 @@ window.KEYMAP_DATA = {
       "block": 20,
       "key": "ctrl-c",
       "action": "vim::ClearOperators",
-      "label": "Clear Operators",
+      "label": "Cancel pending operator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7102,7 +7102,7 @@ window.KEYMAP_DATA = {
       "block": 20,
       "key": "ctrl-[",
       "action": "vim::ClearOperators",
-      "label": "Clear Operators",
+      "label": "Cancel pending operator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7114,7 +7114,7 @@ window.KEYMAP_DATA = {
       "block": 20,
       "key": "escape",
       "action": "vim::ClearOperators",
-      "label": "Clear Operators",
+      "label": "Cancel pending operator",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7126,7 +7126,7 @@ window.KEYMAP_DATA = {
       "block": 20,
       "key": "g c",
       "action": "vim::Comment",
-      "label": "Comment",
+      "label": "Comment text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7138,7 +7138,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "w",
       "action": "vim::Word",
-      "label": "Word",
+      "label": "Word text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7155,7 +7155,7 @@ window.KEYMAP_DATA = {
           "ignore_punctuation": true
         }
       ],
-      "label": "Word",
+      "label": "WORD text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7167,18 +7167,18 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "t",
       "action": "vim::Tag",
-      "label": "Tag",
+      "label": "Tag text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Tree View",
+          "label": "Toggle tree layout",
           "action": "git_panel::ToggleTreeView"
         }
       ]
@@ -7190,18 +7190,18 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "s",
       "action": "vim::Sentence",
-      "label": "Sentence",
+      "label": "Sentence text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -7213,18 +7213,18 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "p",
       "action": "vim::Paragraph",
-      "label": "Paragraph",
+      "label": "Paragraph text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Paste",
+          "label": "Paste copied entry",
           "action": "project_panel::Paste"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull",
+          "label": "Pull Git changes",
           "action": "git::Pull"
         }
       ]
@@ -7236,7 +7236,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "'",
       "action": "vim::Quotes",
-      "label": "Quotes",
+      "label": "Single-quoted text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7248,7 +7248,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "`",
       "action": "vim::BackQuotes",
-      "label": "Back Quotes",
+      "label": "Backtick-quoted text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7260,7 +7260,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "\"",
       "action": "vim::DoubleQuotes",
-      "label": "Double Quotes",
+      "label": "Double-quoted text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7272,13 +7272,13 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "q",
       "action": "vim::MiniQuotes",
-      "label": "Mini Quotes",
+      "label": "Nearest quoted text",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Toggle project tree",
           "action": "project_panel::Toggle"
         }
       ]
@@ -7290,7 +7290,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "|",
       "action": "vim::VerticalBars",
-      "label": "Vertical Bars",
+      "label": "Bar-delimited text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7307,7 +7307,7 @@ window.KEYMAP_DATA = {
           "opening": true
         }
       ],
-      "label": "Parentheses",
+      "label": "Parenthesized text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7319,7 +7319,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": ")",
       "action": "vim::Parentheses",
-      "label": "Parentheses",
+      "label": "Parenthesized text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7331,13 +7331,13 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "b",
       "action": "vim::Parentheses",
-      "label": "Parentheses",
+      "label": "Parenthesized text",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Branch",
+          "label": "Choose Git branch",
           "action": "git::Branch"
         }
       ]
@@ -7354,7 +7354,7 @@ window.KEYMAP_DATA = {
           "opening": true
         }
       ],
-      "label": "Square Brackets",
+      "label": "Square-bracketed text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7366,7 +7366,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "]",
       "action": "vim::SquareBrackets",
-      "label": "Square Brackets",
+      "label": "Square-bracketed text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7378,18 +7378,18 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "r",
       "action": "vim::SquareBrackets",
-      "label": "Square Brackets",
+      "label": "Square-bracketed text",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Rename",
+          "label": "Rename selected entry",
           "action": "project_panel::Rename"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull Rebase",
+          "label": "Pull with rebase",
           "action": "git::PullRebase"
         }
       ]
@@ -7406,7 +7406,7 @@ window.KEYMAP_DATA = {
           "opening": true
         }
       ],
-      "label": "Curly Brackets",
+      "label": "Brace-delimited text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7418,7 +7418,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "}",
       "action": "vim::CurlyBrackets",
-      "label": "Curly Brackets",
+      "label": "Brace-delimited text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7430,7 +7430,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "shift-b",
       "action": "vim::CurlyBrackets",
-      "label": "Curly Brackets",
+      "label": "Brace-delimited text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7447,7 +7447,7 @@ window.KEYMAP_DATA = {
           "opening": true
         }
       ],
-      "label": "Angle Brackets",
+      "label": "Angle-bracketed text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7459,7 +7459,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": ">",
       "action": "vim::AngleBrackets",
-      "label": "Angle Brackets",
+      "label": "Angle-bracketed text",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7471,13 +7471,13 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "a",
       "action": "vim::Argument",
-      "label": "Argument",
+      "label": "Argument text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New File",
+          "label": "Create file",
           "action": "project_panel::NewFile"
         }
       ]
@@ -7489,7 +7489,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "i",
       "action": "vim::IndentObj",
-      "label": "Indent Obj",
+      "label": "Indentation text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7506,7 +7506,7 @@ window.KEYMAP_DATA = {
           "include_below": true
         }
       ],
-      "label": "Indent Obj",
+      "label": "Indentation including below",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7518,13 +7518,13 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "f",
       "action": "vim::Method",
-      "label": "Method",
+      "label": "Method text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Fetch",
+          "label": "Fetch Git remotes",
           "action": "git::Fetch"
         }
       ]
@@ -7536,18 +7536,18 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "c",
       "action": "vim::Class",
-      "label": "Class",
+      "label": "Class text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -7559,7 +7559,7 @@ window.KEYMAP_DATA = {
       "block": 21,
       "key": "e",
       "action": "vim::EntireFile",
-      "label": "Entire File",
+      "label": "Entire file object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7571,7 +7571,7 @@ window.KEYMAP_DATA = {
       "block": 22,
       "key": "m",
       "action": "vim::AnyPair",
-      "label": "Any Pair",
+      "label": "Nearest paired delimiters",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7583,18 +7583,18 @@ window.KEYMAP_DATA = {
       "block": 22,
       "key": "t",
       "action": "vim::Class",
-      "label": "Class",
+      "label": "Class text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Tree View",
+          "label": "Toggle tree layout",
           "action": "git_panel::ToggleTreeView"
         }
       ]
@@ -7606,18 +7606,18 @@ window.KEYMAP_DATA = {
       "block": 22,
       "key": "c",
       "action": "vim::Comment",
-      "label": "Comment",
+      "label": "Comment text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -7629,13 +7629,13 @@ window.KEYMAP_DATA = {
       "block": 22,
       "key": "x",
       "action": "vim::Tag",
-      "label": "Tag",
+      "label": "Tag text object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Cut",
+          "label": "Cut selected entry",
           "action": "project_panel::Cut"
         }
       ]
@@ -7647,18 +7647,18 @@ window.KEYMAP_DATA = {
       "block": 26,
       "key": "c",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -7670,13 +7670,13 @@ window.KEYMAP_DATA = {
       "block": 26,
       "key": "x",
       "action": "vim::Exchange",
-      "label": "Exchange",
+      "label": "Exchange text regions",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Cut",
+          "label": "Cut selected entry",
           "action": "project_panel::Cut"
         }
       ]
@@ -7688,13 +7688,13 @@ window.KEYMAP_DATA = {
       "block": 26,
       "key": "d",
       "action": "editor::Rename",
-      "label": "Rename",
+      "label": "Rename symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Delete",
+          "label": "Delete selected entry",
           "action": [
             "project_panel::Delete",
             {
@@ -7704,7 +7704,7 @@ window.KEYMAP_DATA = {
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Restore File",
+          "label": "Discard file changes",
           "action": [
             "git::RestoreFile",
             {
@@ -7724,18 +7724,18 @@ window.KEYMAP_DATA = {
         "vim::PushChangeSurrounds",
         {}
       ],
-      "label": "Push Change Surrounds",
+      "label": "Change surrounding delimiters",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -7747,13 +7747,13 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "d",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Delete",
+          "label": "Delete selected entry",
           "action": [
             "project_panel::Delete",
             {
@@ -7763,7 +7763,7 @@ window.KEYMAP_DATA = {
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Restore File",
+          "label": "Discard file changes",
           "action": [
             "git::RestoreFile",
             {
@@ -7780,18 +7780,18 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "s",
       "action": "vim::PushDeleteSurrounds",
-      "label": "Push Delete Surrounds",
+      "label": "Delete surrounding delimiters",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -7803,7 +7803,7 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "v",
       "action": "vim::PushForcedMotion",
-      "label": "Push Forced Motion",
+      "label": "Force motion type",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7815,13 +7815,13 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "o",
       "action": "editor::ToggleSelectedDiffHunks",
-      "label": "Toggle Selected Diff Hunks",
+      "label": "Toggle diff hunks",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -7833,13 +7833,13 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "shift-o",
       "action": "git::ToggleStaged",
-      "label": "Toggle Staged",
+      "label": "Toggle staging",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open With System",
+          "label": "Open externally",
           "action": "workspace::OpenWithSystem"
         }
       ]
@@ -7851,18 +7851,18 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "p",
       "action": "git::Restore",
-      "label": "Restore",
+      "label": "Discard selected changes",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Paste",
+          "label": "Paste copied entry",
           "action": "project_panel::Paste"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull",
+          "label": "Pull Git changes",
           "action": "git::Pull"
         }
       ]
@@ -7874,13 +7874,13 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "u",
       "action": "git::StageAndNext",
-      "label": "Stage And Next",
+      "label": "Stage; next hunk",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Undo",
+          "label": "Undo file operation",
           "action": "project_panel::Undo"
         }
       ]
@@ -7892,7 +7892,7 @@ window.KEYMAP_DATA = {
       "block": 27,
       "key": "shift-u",
       "action": "git::UnstageAndNext",
-      "label": "Unstage And Next",
+      "label": "Unstage; next hunk",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7904,7 +7904,7 @@ window.KEYMAP_DATA = {
       "block": 28,
       "key": "g u",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7916,13 +7916,13 @@ window.KEYMAP_DATA = {
       "block": 28,
       "key": "u",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Undo",
+          "label": "Undo file operation",
           "action": "project_panel::Undo"
         }
       ]
@@ -7934,7 +7934,7 @@ window.KEYMAP_DATA = {
       "block": 29,
       "key": "g shift-u",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7946,7 +7946,7 @@ window.KEYMAP_DATA = {
       "block": 29,
       "key": "shift-u",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7958,7 +7958,7 @@ window.KEYMAP_DATA = {
       "block": 30,
       "key": "g ~",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7970,7 +7970,7 @@ window.KEYMAP_DATA = {
       "block": 30,
       "key": "~",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7982,7 +7982,7 @@ window.KEYMAP_DATA = {
       "block": 31,
       "key": "g ?",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -7994,13 +7994,13 @@ window.KEYMAP_DATA = {
       "block": 31,
       "key": "?",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Context Menu",
+          "label": "Open context menu",
           "action": "project_panel::OpenContextMenu"
         }
       ]
@@ -8012,7 +8012,7 @@ window.KEYMAP_DATA = {
       "block": 32,
       "key": "g q",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8024,13 +8024,13 @@ window.KEYMAP_DATA = {
       "block": 32,
       "key": "q",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Toggle project tree",
           "action": "project_panel::Toggle"
         }
       ]
@@ -8042,7 +8042,7 @@ window.KEYMAP_DATA = {
       "block": 32,
       "key": "g w",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8054,7 +8054,7 @@ window.KEYMAP_DATA = {
       "block": 32,
       "key": "w",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8066,13 +8066,13 @@ window.KEYMAP_DATA = {
       "block": 33,
       "key": "y",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy Relative Path",
+          "label": "Copy relative path",
           "action": "workspace::CopyRelativePath"
         }
       ]
@@ -8084,7 +8084,7 @@ window.KEYMAP_DATA = {
       "block": 33,
       "key": "v",
       "action": "vim::PushForcedMotion",
-      "label": "Push Forced Motion",
+      "label": "Force motion type",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8099,18 +8099,18 @@ window.KEYMAP_DATA = {
         "vim::PushAddSurrounds",
         {}
       ],
-      "label": "Push Add Surrounds",
+      "label": "Add surrounding delimiters",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -8122,18 +8122,18 @@ window.KEYMAP_DATA = {
       "block": 34,
       "key": "s",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Split Vertical",
+          "label": "Open right split",
           "action": "project_panel::OpenSplitVertical"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Toggle Staged",
+          "label": "Toggle staging",
           "action": "git::ToggleStaged"
         }
       ]
@@ -8145,7 +8145,7 @@ window.KEYMAP_DATA = {
       "block": 35,
       "key": ">",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8157,7 +8157,7 @@ window.KEYMAP_DATA = {
       "block": 36,
       "key": "<",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8169,7 +8169,7 @@ window.KEYMAP_DATA = {
       "block": 37,
       "key": "=",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8181,7 +8181,7 @@ window.KEYMAP_DATA = {
       "block": 38,
       "key": "!",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8193,18 +8193,18 @@ window.KEYMAP_DATA = {
       "block": 39,
       "key": "c",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -8216,18 +8216,18 @@ window.KEYMAP_DATA = {
       "block": 40,
       "key": "c",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -8239,18 +8239,18 @@ window.KEYMAP_DATA = {
       "block": 41,
       "key": "r",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Rename",
+          "label": "Rename selected entry",
           "action": "project_panel::Rename"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Pull Rebase",
+          "label": "Pull with rebase",
           "action": "git::PullRebase"
         }
       ]
@@ -8262,13 +8262,13 @@ window.KEYMAP_DATA = {
       "block": 41,
       "key": "shift-r",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -8280,13 +8280,13 @@ window.KEYMAP_DATA = {
       "block": 42,
       "key": "x",
       "action": "vim::CurrentLine",
-      "label": "Current Line",
+      "label": "Current line object",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Cut",
+          "label": "Cut selected entry",
           "action": "project_panel::Cut"
         }
       ]
@@ -8298,18 +8298,18 @@ window.KEYMAP_DATA = {
       "block": 42,
       "key": "c",
       "action": "vim::ClearExchange",
-      "label": "Clear Exchange",
+      "label": "Cancel text exchange",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Copy",
+          "label": "Copy selected entry",
           "action": "project_panel::Copy"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         }
       ]
@@ -8327,7 +8327,7 @@ window.KEYMAP_DATA = {
           "\u0000"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8345,7 +8345,7 @@ window.KEYMAP_DATA = {
           "\u0001"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8363,7 +8363,7 @@ window.KEYMAP_DATA = {
           "\u0002"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8381,7 +8381,7 @@ window.KEYMAP_DATA = {
           "\u0003"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8399,7 +8399,7 @@ window.KEYMAP_DATA = {
           "\u0004"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8417,7 +8417,7 @@ window.KEYMAP_DATA = {
           "\u0005"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8435,7 +8435,7 @@ window.KEYMAP_DATA = {
           "\u0006"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8453,7 +8453,7 @@ window.KEYMAP_DATA = {
           "\u0007"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8471,7 +8471,7 @@ window.KEYMAP_DATA = {
           "\t"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8489,7 +8489,7 @@ window.KEYMAP_DATA = {
           "\r"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8507,7 +8507,7 @@ window.KEYMAP_DATA = {
           "\u000e"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8525,7 +8525,7 @@ window.KEYMAP_DATA = {
           "\u000f"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8543,7 +8543,7 @@ window.KEYMAP_DATA = {
           "\u0010"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8561,7 +8561,7 @@ window.KEYMAP_DATA = {
           "\u0011"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8579,7 +8579,7 @@ window.KEYMAP_DATA = {
           "\u0012"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8597,7 +8597,7 @@ window.KEYMAP_DATA = {
           "\u0013"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8615,7 +8615,7 @@ window.KEYMAP_DATA = {
           "\u0014"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8633,7 +8633,7 @@ window.KEYMAP_DATA = {
           "\u0015"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8651,7 +8651,7 @@ window.KEYMAP_DATA = {
           "\u0016"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8669,7 +8669,7 @@ window.KEYMAP_DATA = {
           "\u0017"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8687,7 +8687,7 @@ window.KEYMAP_DATA = {
           "\u0018"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8705,7 +8705,7 @@ window.KEYMAP_DATA = {
           "\u0019"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8723,7 +8723,7 @@ window.KEYMAP_DATA = {
           "\u001a"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8741,7 +8741,7 @@ window.KEYMAP_DATA = {
           "\u001b"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8759,7 +8759,7 @@ window.KEYMAP_DATA = {
           "\u001c"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8777,7 +8777,7 @@ window.KEYMAP_DATA = {
           "\u001d"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8795,7 +8795,7 @@ window.KEYMAP_DATA = {
           "\u001e"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8813,7 +8813,7 @@ window.KEYMAP_DATA = {
           "\u001f"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8831,7 +8831,7 @@ window.KEYMAP_DATA = {
           "\u001b"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8849,18 +8849,18 @@ window.KEYMAP_DATA = {
           "\r"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -8878,18 +8878,18 @@ window.KEYMAP_DATA = {
           "\t"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -8907,13 +8907,13 @@ window.KEYMAP_DATA = {
           "\b"
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Parent",
+          "label": "Select parent folder",
           "action": "project_panel::SelectParent"
         }
       ]
@@ -8931,7 +8931,7 @@ window.KEYMAP_DATA = {
           ""
         ]
       ],
-      "label": "Literal",
+      "label": "Insert literal character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8943,18 +8943,18 @@ window.KEYMAP_DATA = {
       "block": 44,
       "key": "enter",
       "action": "vim::SearchSubmit",
-      "label": "Search Submit",
+      "label": "Confirm search",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -8966,7 +8966,7 @@ window.KEYMAP_DATA = {
       "block": 44,
       "key": "escape",
       "action": "buffer_search::Dismiss",
-      "label": "Dismiss",
+      "label": "Close file search",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8978,7 +8978,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": []
@@ -8990,7 +8990,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w h",
       "action": "workspace::ActivatePaneLeft",
-      "label": "Activate Pane Left",
+      "label": "Focus left pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9002,7 +9002,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w l",
       "action": "workspace::ActivatePaneRight",
-      "label": "Activate Pane Right",
+      "label": "Focus right pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9014,7 +9014,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w k",
       "action": "workspace::ActivatePaneUp",
-      "label": "Activate Pane Up",
+      "label": "Focus upper pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9026,7 +9026,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w j",
       "action": "workspace::ActivatePaneDown",
-      "label": "Activate Pane Down",
+      "label": "Focus lower pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9038,7 +9038,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-left",
       "action": "workspace::SwapPaneLeft",
-      "label": "Swap Pane Left",
+      "label": "Swap pane left",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9050,7 +9050,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-right",
       "action": "workspace::SwapPaneRight",
-      "label": "Swap Pane Right",
+      "label": "Swap pane right",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9062,7 +9062,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-up",
       "action": "workspace::SwapPaneUp",
-      "label": "Swap Pane Up",
+      "label": "Swap pane up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9074,7 +9074,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-down",
       "action": "workspace::SwapPaneDown",
-      "label": "Swap Pane Down",
+      "label": "Swap pane down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9086,7 +9086,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w x",
       "action": "workspace::SwapPaneAdjacent",
-      "label": "Swap Pane Adjacent",
+      "label": "Swap adjacent panes",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9098,7 +9098,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-h",
       "action": "workspace::MovePaneLeft",
-      "label": "Move Pane Left",
+      "label": "Move pane left",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9110,7 +9110,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-l",
       "action": "workspace::MovePaneRight",
-      "label": "Move Pane Right",
+      "label": "Move pane right",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9122,7 +9122,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-k",
       "action": "workspace::MovePaneUp",
-      "label": "Move Pane Up",
+      "label": "Move pane up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9134,7 +9134,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-j",
       "action": "workspace::MovePaneDown",
-      "label": "Move Pane Down",
+      "label": "Move pane down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9146,7 +9146,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w >",
       "action": "vim::ResizePaneRight",
-      "label": "Resize Pane Right",
+      "label": "Widen pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9158,7 +9158,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w <",
       "action": "vim::ResizePaneLeft",
-      "label": "Resize Pane Left",
+      "label": "Narrow pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9170,7 +9170,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w -",
       "action": "vim::ResizePaneDown",
-      "label": "Resize Pane Down",
+      "label": "Shorten pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9182,7 +9182,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w +",
       "action": "vim::ResizePaneUp",
-      "label": "Resize Pane Up",
+      "label": "Heighten pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9194,7 +9194,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w _",
       "action": "vim::MaximizePane",
-      "label": "Maximize Pane",
+      "label": "Maximize pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9206,7 +9206,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w =",
       "action": "vim::ResetPaneSizes",
-      "label": "Reset Pane Sizes",
+      "label": "Equalize pane sizes",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9218,7 +9218,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w g t",
       "action": "pane::ActivateNextItem",
-      "label": "Activate Next Item",
+      "label": "Next tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9230,7 +9230,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w g shift-t",
       "action": "pane::ActivatePreviousItem",
-      "label": "Activate Previous Item",
+      "label": "Previous tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9242,7 +9242,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w w",
       "action": "workspace::ActivateNextPane",
-      "label": "Activate Next Pane",
+      "label": "Focus next pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9254,7 +9254,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w p",
       "action": "workspace::ActivatePreviousPane",
-      "label": "Activate Previous Pane",
+      "label": "Focus previous pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9266,7 +9266,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w shift-w",
       "action": "workspace::ActivatePreviousPane",
-      "label": "Activate Previous Pane",
+      "label": "Focus previous pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9278,7 +9278,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w v",
       "action": "pane::SplitVertical",
-      "label": "Split Vertical",
+      "label": "Split pane right",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9290,7 +9290,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w s",
       "action": "pane::SplitHorizontal",
-      "label": "Split Horizontal",
+      "label": "Split pane down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9302,7 +9302,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w c",
       "action": "pane::CloseActiveItem",
-      "label": "Close Active Item",
+      "label": "Close active tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9314,7 +9314,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w q",
       "action": "pane::CloseActiveItem",
-      "label": "Close Active Item",
+      "label": "Close active tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9326,7 +9326,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w a",
       "action": "pane::CloseAllItems",
-      "label": "Close All Items",
+      "label": "Close all tabs",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9338,7 +9338,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w o",
       "action": "workspace::CloseInactiveTabsAndPanes",
-      "label": "Close Inactive Tabs And Panes",
+      "label": "Keep active editor",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9350,7 +9350,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "ctrl-w n",
       "action": "workspace::NewFileSplitHorizontal",
-      "label": "New File Split Horizontal",
+      "label": "New split file",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9362,7 +9362,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "g t",
       "action": "vim::GoToTab",
-      "label": "Go To Tab",
+      "label": "Next tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9374,7 +9374,7 @@ window.KEYMAP_DATA = {
       "block": 45,
       "key": "g shift-t",
       "action": "vim::GoToPreviousTab",
-      "label": "Go To Previous Tab",
+      "label": "Previous tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9386,7 +9386,7 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": ":",
       "action": "command_palette::Toggle",
-      "label": "Toggle",
+      "label": "Open command palette",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9398,7 +9398,7 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "g /",
       "action": "pane::DeploySearch",
-      "label": "Deploy Search",
+      "label": "Search project",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9410,7 +9410,7 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "] b",
       "action": "pane::ActivateNextItem",
-      "label": "Activate Next Item",
+      "label": "Next tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9422,7 +9422,7 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "[ b",
       "action": "pane::ActivatePreviousItem",
-      "label": "Activate Previous Item",
+      "label": "Previous tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9434,7 +9434,7 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "] shift-b",
       "action": "pane::ActivateLastItem",
-      "label": "Activate Last Item",
+      "label": "Last tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9449,7 +9449,7 @@ window.KEYMAP_DATA = {
         "pane::ActivateItem",
         0
       ],
-      "label": "Activate Item",
+      "label": "First tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9461,13 +9461,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space f",
       "action": "file_finder::Toggle",
-      "label": "Toggle",
+      "label": "Find project file",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -9479,13 +9479,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space /",
       "action": "pane::DeploySearch",
-      "label": "Deploy Search",
+      "label": "Search project",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-          "label": "Deploy Search",
+          "label": "Search project",
           "action": "pane::DeploySearch"
         }
       ]
@@ -9497,7 +9497,7 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space shift-s",
       "action": "project_symbols::Toggle",
-      "label": "Toggle",
+      "label": "Find project symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9509,13 +9509,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space w h",
       "action": "workspace::ActivatePaneLeft",
-      "label": "Activate Pane Left",
+      "label": "Focus left pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-          "label": "Toggle Left Dock",
+          "label": "Toggle left dock",
           "action": "workspace::ToggleLeftDock"
         }
       ]
@@ -9527,13 +9527,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space w j",
       "action": "workspace::ActivatePaneDown",
-      "label": "Activate Pane Down",
+      "label": "Focus lower pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-          "label": "Toggle Bottom Dock",
+          "label": "Toggle bottom dock",
           "action": "workspace::ToggleBottomDock"
         }
       ]
@@ -9545,13 +9545,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space w k",
       "action": "workspace::ActivatePaneUp",
-      "label": "Activate Pane Up",
+      "label": "Focus upper pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-          "label": "Toggle Right Dock",
+          "label": "Toggle right dock",
           "action": "workspace::ToggleRightDock"
         }
       ]
@@ -9563,13 +9563,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space w l",
       "action": "workspace::ActivatePaneRight",
-      "label": "Activate Pane Right",
+      "label": "Focus right pane",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-          "label": "Toggle Menu",
+          "label": "Open LSP tools",
           "action": "lsp_tool::ToggleMenu"
         }
       ]
@@ -9581,13 +9581,13 @@ window.KEYMAP_DATA = {
       "block": 46,
       "key": "space w q",
       "action": "pane::CloseActiveItem",
-      "label": "Close Active Item",
+      "label": "Close active tab",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-          "label": "Close Active Dock → Activate Pane",
+          "label": "Close active dock",
           "action": [
             "action::Sequence",
             [
@@ -9601,7 +9601,7 @@ window.KEYMAP_DATA = {
         },
         {
           "context": "(VimControl || !vim_mode) && !Dock && (!Terminal || vi_mode)",
-          "label": "Close Active Item",
+          "label": "Close active tab",
           "action": "pane::CloseActiveItem"
         }
       ]
@@ -9616,7 +9616,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         0
       ],
-      "label": "Number",
+      "label": "Count digit 0",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9631,7 +9631,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         1
       ],
-      "label": "Number",
+      "label": "Count digit 1",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9646,7 +9646,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         2
       ],
-      "label": "Number",
+      "label": "Count digit 2",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9661,7 +9661,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         3
       ],
-      "label": "Number",
+      "label": "Count digit 3",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9676,7 +9676,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         4
       ],
-      "label": "Number",
+      "label": "Count digit 4",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9691,7 +9691,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         5
       ],
-      "label": "Number",
+      "label": "Count digit 5",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9706,7 +9706,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         6
       ],
-      "label": "Number",
+      "label": "Count digit 6",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9721,7 +9721,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         7
       ],
-      "label": "Number",
+      "label": "Count digit 7",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9736,7 +9736,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         8
       ],
-      "label": "Number",
+      "label": "Count digit 8",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9751,7 +9751,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         9
       ],
-      "label": "Number",
+      "label": "Count digit 9",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9763,7 +9763,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": ":",
       "action": "command_palette::Toggle",
-      "label": "Toggle",
+      "label": "Open command palette",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9775,7 +9775,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "%",
       "action": "project_panel::NewFile",
-      "label": "New File",
+      "label": "Create file",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9787,7 +9787,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "escape",
       "action": "vim::ToggleProjectPanelFocus",
-      "label": "Toggle Project Panel Focus",
+      "label": "Toggle project focus",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9799,7 +9799,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "v",
       "action": "project_panel::OpenSplitVertical",
-      "label": "Open Split Vertical",
+      "label": "Open right split",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9811,7 +9811,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "z d",
       "action": "project_panel::CompareMarkedFiles",
-      "label": "Compare Marked Files",
+      "label": "Compare marked files",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9823,7 +9823,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "] c",
       "action": "project_panel::SelectNextGitEntry",
-      "label": "Select Next Git Entry",
+      "label": "Next changed file",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9835,7 +9835,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "[ c",
       "action": "project_panel::SelectPrevGitEntry",
-      "label": "Select Prev Git Entry",
+      "label": "Previous changed file",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9847,7 +9847,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "] d",
       "action": "project_panel::SelectNextDiagnostic",
-      "label": "Select Next Diagnostic",
+      "label": "Next diagnostic file",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9859,7 +9859,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "[ d",
       "action": "project_panel::SelectPrevDiagnostic",
-      "label": "Select Prev Diagnostic",
+      "label": "Previous diagnostic file",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9871,7 +9871,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "}",
       "action": "project_panel::SelectNextDirectory",
-      "label": "Select Next Directory",
+      "label": "Next folder",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9883,7 +9883,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "{",
       "action": "project_panel::SelectPrevDirectory",
-      "label": "Select Prev Directory",
+      "label": "Previous folder",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9895,7 +9895,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "-",
       "action": "project_panel::SelectParent",
-      "label": "Select Parent",
+      "label": "Select parent folder",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9907,7 +9907,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "ctrl-u",
       "action": "project_panel::ScrollUp",
-      "label": "Scroll Up",
+      "label": "Scroll tree up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9919,7 +9919,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "ctrl-d",
       "action": "project_panel::ScrollDown",
-      "label": "Scroll Down",
+      "label": "Scroll tree down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9931,7 +9931,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "z t",
       "action": "project_panel::ScrollCursorTop",
-      "label": "Scroll Cursor Top",
+      "label": "Align selection top",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9943,7 +9943,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "z z",
       "action": "project_panel::ScrollCursorCenter",
-      "label": "Scroll Cursor Center",
+      "label": "Center selected entry",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9955,7 +9955,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "z c",
       "action": "project_panel::ScrollCursorCenter",
-      "label": "Scroll Cursor Center",
+      "label": "Center selected entry",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9967,7 +9967,7 @@ window.KEYMAP_DATA = {
       "block": 47,
       "key": "z b",
       "action": "project_panel::ScrollCursorBottom",
-      "label": "Scroll Cursor Bottom",
+      "label": "Align selection bottom",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9982,7 +9982,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         0
       ],
-      "label": "Number",
+      "label": "Count digit 0",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9997,7 +9997,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         1
       ],
-      "label": "Number",
+      "label": "Count digit 1",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10012,7 +10012,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         2
       ],
-      "label": "Number",
+      "label": "Count digit 2",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10027,7 +10027,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         3
       ],
-      "label": "Number",
+      "label": "Count digit 3",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10042,7 +10042,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         4
       ],
-      "label": "Number",
+      "label": "Count digit 4",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10057,7 +10057,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         5
       ],
-      "label": "Number",
+      "label": "Count digit 5",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10072,7 +10072,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         6
       ],
-      "label": "Number",
+      "label": "Count digit 6",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10087,7 +10087,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         7
       ],
-      "label": "Number",
+      "label": "Count digit 7",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10102,7 +10102,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         8
       ],
-      "label": "Number",
+      "label": "Count digit 8",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10117,7 +10117,7 @@ window.KEYMAP_DATA = {
         "vim::Number",
         9
       ],
-      "label": "Number",
+      "label": "Count digit 9",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10129,13 +10129,13 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "h",
       "action": "outline_panel::CollapseSelectedEntry",
-      "label": "Collapse Selected Entry",
+      "label": "Collapse outline entry",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Collapse Selected Entry",
+          "label": "Collapse selected folder",
           "action": "project_panel::CollapseSelectedEntry"
         }
       ]
@@ -10147,13 +10147,13 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "j",
       "action": "vim::MenuSelectNext",
-      "label": "Menu Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -10165,13 +10165,13 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "k",
       "action": "vim::MenuSelectPrevious",
-      "label": "Menu Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -10183,18 +10183,18 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "l",
       "action": "outline_panel::ExpandSelectedEntry",
-      "label": "Expand Selected Entry",
+      "label": "Expand outline entry",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Confirm → Focus Center Pane",
+          "label": "Focus selected diff",
           "action": [
             "action::Sequence",
             [
@@ -10212,13 +10212,13 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -10230,13 +10230,13 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -10248,7 +10248,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "-",
       "action": "outline_panel::SelectParent",
-      "label": "Select Parent",
+      "label": "Select parent symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10260,18 +10260,18 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "enter",
       "action": "editor::ToggleFocus",
-      "label": "Toggle Focus",
+      "label": "Focus editor",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -10283,13 +10283,13 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "/",
       "action": "menu::Cancel",
-      "label": "Cancel",
+      "label": "Dismiss menu",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Find project file",
           "action": "file_finder::Toggle"
         }
       ]
@@ -10301,7 +10301,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "ctrl-u",
       "action": "outline_panel::ScrollUp",
-      "label": "Scroll Up",
+      "label": "Scroll outline up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10313,7 +10313,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "ctrl-d",
       "action": "outline_panel::ScrollDown",
-      "label": "Scroll Down",
+      "label": "Scroll outline down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10325,7 +10325,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "z t",
       "action": "outline_panel::ScrollCursorTop",
-      "label": "Scroll Cursor Top",
+      "label": "Align selection top",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10337,7 +10337,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "z z",
       "action": "outline_panel::ScrollCursorCenter",
-      "label": "Scroll Cursor Center",
+      "label": "Center selected symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10349,7 +10349,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "z c",
       "action": "outline_panel::ScrollCursorCenter",
-      "label": "Scroll Cursor Center",
+      "label": "Center selected symbol",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10361,7 +10361,7 @@ window.KEYMAP_DATA = {
       "block": 48,
       "key": "z b",
       "action": "outline_panel::ScrollCursorBottom",
-      "label": "Scroll Cursor Bottom",
+      "label": "Align selection bottom",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10373,18 +10373,18 @@ window.KEYMAP_DATA = {
       "block": 49,
       "key": "enter",
       "action": "menu::Cancel",
-      "label": "Cancel",
+      "label": "Dismiss menu",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -10396,18 +10396,18 @@ window.KEYMAP_DATA = {
       "block": 50,
       "key": "tab",
       "action": "git_graph::FocusNextTabStop",
-      "label": "Focus Next Tab Stop",
+      "label": "Focus next control",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -10419,7 +10419,7 @@ window.KEYMAP_DATA = {
       "block": 50,
       "key": "shift-tab",
       "action": "git_graph::FocusPreviousTabStop",
-      "label": "Focus Previous Tab Stop",
+      "label": "Focus previous control",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10431,18 +10431,18 @@ window.KEYMAP_DATA = {
       "block": 51,
       "key": "tab",
       "action": "git_graph::FocusNextTabStop",
-      "label": "Focus Next Tab Stop",
+      "label": "Focus next control",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -10454,7 +10454,7 @@ window.KEYMAP_DATA = {
       "block": 51,
       "key": "shift-tab",
       "action": "git_graph::FocusPreviousTabStop",
-      "label": "Focus Previous Tab Stop",
+      "label": "Focus previous control",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10466,13 +10466,13 @@ window.KEYMAP_DATA = {
       "block": 52,
       "key": "j",
       "action": "vim::MenuSelectNext",
-      "label": "Menu Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -10484,13 +10484,13 @@ window.KEYMAP_DATA = {
       "block": 52,
       "key": "k",
       "action": "vim::MenuSelectPrevious",
-      "label": "Menu Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -10502,7 +10502,7 @@ window.KEYMAP_DATA = {
       "block": 52,
       "key": "ctrl-d",
       "action": "git_graph::ScrollDown",
-      "label": "Scroll Down",
+      "label": "Scroll graph down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10514,7 +10514,7 @@ window.KEYMAP_DATA = {
       "block": 52,
       "key": "ctrl-u",
       "action": "git_graph::ScrollUp",
-      "label": "Scroll Up",
+      "label": "Scroll graph up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10526,13 +10526,13 @@ window.KEYMAP_DATA = {
       "block": 52,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -10544,13 +10544,13 @@ window.KEYMAP_DATA = {
       "block": 52,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -10562,13 +10562,13 @@ window.KEYMAP_DATA = {
       "block": 53,
       "key": "j",
       "action": "menu::SelectNext",
-      "label": "Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -10580,13 +10580,13 @@ window.KEYMAP_DATA = {
       "block": 53,
       "key": "k",
       "action": "menu::SelectPrevious",
-      "label": "Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -10598,18 +10598,18 @@ window.KEYMAP_DATA = {
       "block": 53,
       "key": "g f",
       "action": "menu::Confirm",
-      "label": "Confirm",
+      "label": "Open project diff",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "Editor && multibuffer && (vim_mode == normal || vim_mode == visual) && !menu",
-          "label": "Open Excerpts",
+          "label": "Open source files",
           "action": "editor::OpenExcerpts"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "View File",
+          "label": "Open source file",
           "action": "git::ViewFile"
         }
       ]
@@ -10621,13 +10621,13 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "h",
       "action": "git_panel::CollapseSelectedEntry",
-      "label": "Collapse Selected Entry",
+      "label": "Collapse selected folder",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Collapse Selected Entry",
+          "label": "Collapse selected folder",
           "action": "project_panel::CollapseSelectedEntry"
         }
       ]
@@ -10639,18 +10639,18 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "l",
       "action": "git_panel::ExpandSelectedEntry",
-      "label": "Expand Selected Entry",
+      "label": "Expand selected folder",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Confirm → Focus Center Pane",
+          "label": "Focus selected diff",
           "action": [
             "action::Sequence",
             [
@@ -10668,13 +10668,13 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -10686,13 +10686,13 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -10704,7 +10704,7 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "i",
       "action": "git_panel::FocusEditor",
-      "label": "Focus Editor",
+      "label": "Focus commit editor",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10716,13 +10716,13 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "x",
       "action": "git::ToggleStaged",
-      "label": "Toggle Staged",
+      "label": "Toggle staging",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Cut",
+          "label": "Cut selected entry",
           "action": "project_panel::Cut"
         }
       ]
@@ -10734,7 +10734,7 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "shift-x",
       "action": "git::StageAll",
-      "label": "Stage All",
+      "label": "Stage all changes",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10746,13 +10746,13 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "g x",
       "action": "git::StageRange",
-      "label": "Stage Range",
+      "label": "Stage selected range",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-          "label": "Restore",
+          "label": "Discard selected changes",
           "action": "git::Restore"
         }
       ]
@@ -10764,7 +10764,7 @@ window.KEYMAP_DATA = {
       "block": 54,
       "key": "shift-u",
       "action": "git::UnstageAll",
-      "label": "Unstage All",
+      "label": "Unstage all changes",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10776,13 +10776,13 @@ window.KEYMAP_DATA = {
       "block": 55,
       "key": "/",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Find project file",
           "action": "file_finder::Toggle"
         }
       ]
@@ -10794,13 +10794,13 @@ window.KEYMAP_DATA = {
       "block": 55,
       "key": "?",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Context Menu",
+          "label": "Open context menu",
           "action": "project_panel::OpenContextMenu"
         }
       ]
@@ -10812,7 +10812,7 @@ window.KEYMAP_DATA = {
       "block": 55,
       "key": "#",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": []
@@ -10824,7 +10824,7 @@ window.KEYMAP_DATA = {
       "block": 55,
       "key": "*",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": []
@@ -10836,7 +10836,7 @@ window.KEYMAP_DATA = {
       "block": 55,
       "key": "n",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": []
@@ -10848,7 +10848,7 @@ window.KEYMAP_DATA = {
       "block": 55,
       "key": "shift-n",
       "action": null,
-      "label": "Disabled / reserved prefix",
+      "label": "Disabled / prefix",
       "disabled": true,
       "kind": "bindings",
       "overrides": []
@@ -10860,7 +10860,7 @@ window.KEYMAP_DATA = {
       "block": 56,
       "key": "ctrl-u",
       "action": "editor::DeleteToBeginningOfLine",
-      "label": "Delete To Beginning Of Line",
+      "label": "Delete line prefix",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10872,7 +10872,7 @@ window.KEYMAP_DATA = {
       "block": 56,
       "key": "ctrl-w",
       "action": "editor::DeleteToPreviousWordStart",
-      "label": "Delete To Previous Word Start",
+      "label": "Delete previous word",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10884,7 +10884,7 @@ window.KEYMAP_DATA = {
       "block": 56,
       "key": "ctrl-p",
       "action": "menu::SelectPrevious",
-      "label": "Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10896,7 +10896,7 @@ window.KEYMAP_DATA = {
       "block": 56,
       "key": "ctrl-n",
       "action": "menu::SelectNext",
-      "label": "Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10908,7 +10908,7 @@ window.KEYMAP_DATA = {
       "block": 57,
       "key": "ctrl-c",
       "action": "menu::Cancel",
-      "label": "Cancel",
+      "label": "Dismiss menu",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10920,7 +10920,7 @@ window.KEYMAP_DATA = {
       "block": 57,
       "key": "escape",
       "action": "menu::Cancel",
-      "label": "Cancel",
+      "label": "Dismiss menu",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10932,18 +10932,18 @@ window.KEYMAP_DATA = {
       "block": 58,
       "key": "tab",
       "action": "git_panel::FocusChanges",
-      "label": "Focus Changes",
+      "label": "Focus changed files",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -10955,7 +10955,7 @@ window.KEYMAP_DATA = {
       "block": 58,
       "key": "shift-tab",
       "action": "git_panel::FocusChanges",
-      "label": "Focus Changes",
+      "label": "Focus changed files",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10967,18 +10967,18 @@ window.KEYMAP_DATA = {
       "block": 59,
       "key": "tab",
       "action": "editor::AcceptEditPrediction",
-      "label": "Accept Edit Prediction",
+      "label": "Accept edit prediction",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -10990,18 +10990,18 @@ window.KEYMAP_DATA = {
       "block": 60,
       "key": "enter",
       "action": "agent::Chat",
-      "label": "Chat",
+      "label": "Send agent message",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -11013,18 +11013,18 @@ window.KEYMAP_DATA = {
       "block": 61,
       "key": "l",
       "action": "settings_editor::ExpandNavEntry",
-      "label": "Expand Nav Entry",
+      "label": "Expand settings section",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Confirm → Focus Center Pane",
+          "label": "Focus selected diff",
           "action": [
             "action::Sequence",
             [
@@ -11042,13 +11042,13 @@ window.KEYMAP_DATA = {
       "block": 61,
       "key": "h",
       "action": "settings_editor::CollapseNavEntry",
-      "label": "Collapse Nav Entry",
+      "label": "Collapse settings section",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Collapse Selected Entry",
+          "label": "Collapse selected folder",
           "action": "project_panel::CollapseSelectedEntry"
         }
       ]
@@ -11060,13 +11060,13 @@ window.KEYMAP_DATA = {
       "block": 61,
       "key": "k",
       "action": "settings_editor::FocusPreviousNavEntry",
-      "label": "Focus Previous Nav Entry",
+      "label": "Previous settings section",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -11078,13 +11078,13 @@ window.KEYMAP_DATA = {
       "block": 61,
       "key": "j",
       "action": "settings_editor::FocusNextNavEntry",
-      "label": "Focus Next Nav Entry",
+      "label": "Next settings section",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -11096,13 +11096,13 @@ window.KEYMAP_DATA = {
       "block": 61,
       "key": "g g",
       "action": "settings_editor::FocusFirstNavEntry",
-      "label": "Focus First Nav Entry",
+      "label": "First settings section",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -11114,13 +11114,13 @@ window.KEYMAP_DATA = {
       "block": 61,
       "key": "shift-g",
       "action": "settings_editor::FocusLastNavEntry",
-      "label": "Focus Last Nav Entry",
+      "label": "Last settings section",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -11132,7 +11132,7 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "ctrl-u",
       "action": "markdown::ScrollPageUp",
-      "label": "Scroll Page Up",
+      "label": "Page preview up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11144,7 +11144,7 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "ctrl-d",
       "action": "markdown::ScrollPageDown",
-      "label": "Scroll Page Down",
+      "label": "Page preview down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11156,7 +11156,7 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "ctrl-y",
       "action": "markdown::ScrollUp",
-      "label": "Scroll Up",
+      "label": "Scroll preview up",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11168,7 +11168,7 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "ctrl-e",
       "action": "markdown::ScrollDown",
-      "label": "Scroll Down",
+      "label": "Scroll preview down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11180,7 +11180,7 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "ctrl-o",
       "action": "pane::GoBack",
-      "label": "Go Back",
+      "label": "Previous navigation location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11192,7 +11192,7 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "ctrl-i",
       "action": "pane::GoForward",
-      "label": "Go Forward",
+      "label": "Next navigation location",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11204,13 +11204,13 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "g g",
       "action": "markdown::ScrollToTop",
-      "label": "Scroll To Top",
+      "label": "Preview start",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -11222,13 +11222,13 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "shift-g",
       "action": "markdown::ScrollToBottom",
-      "label": "Scroll To Bottom",
+      "label": "Preview end",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -11240,13 +11240,13 @@ window.KEYMAP_DATA = {
       "block": 62,
       "key": "/",
       "action": "buffer_search::Deploy",
-      "label": "Deploy",
+      "label": "Search current view",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Find project file",
           "action": "file_finder::Toggle"
         }
       ]
@@ -11258,13 +11258,13 @@ window.KEYMAP_DATA = {
       "block": 63,
       "key": "j",
       "action": "menu::SelectNext",
-      "label": "Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -11276,13 +11276,13 @@ window.KEYMAP_DATA = {
       "block": 63,
       "key": "k",
       "action": "menu::SelectPrevious",
-      "label": "Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -11294,13 +11294,13 @@ window.KEYMAP_DATA = {
       "block": 63,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -11312,13 +11312,13 @@ window.KEYMAP_DATA = {
       "block": 63,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -11330,13 +11330,13 @@ window.KEYMAP_DATA = {
       "block": 64,
       "key": "j",
       "action": "notebook::NotebookMoveDown",
-      "label": "Notebook Move Down",
+      "label": "Next notebook cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -11348,13 +11348,13 @@ window.KEYMAP_DATA = {
       "block": 64,
       "key": "k",
       "action": "notebook::NotebookMoveUp",
-      "label": "Notebook Move Up",
+      "label": "Previous notebook cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -11366,7 +11366,7 @@ window.KEYMAP_DATA = {
       "block": 64,
       "key": "escape",
       "action": "notebook::EnterCommandMode",
-      "label": "Enter Command Mode",
+      "label": "Enter Command mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11378,13 +11378,13 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "j",
       "action": "menu::SelectNext",
-      "label": "Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -11396,13 +11396,13 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "k",
       "action": "menu::SelectPrevious",
-      "label": "Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -11414,13 +11414,13 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -11432,13 +11432,13 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -11450,7 +11450,7 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "i",
       "action": "notebook::EnterEditMode",
-      "label": "Enter Edit Mode",
+      "label": "Edit notebook cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11462,13 +11462,13 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "a",
       "action": "notebook::EnterEditMode",
-      "label": "Enter Edit Mode",
+      "label": "Edit notebook cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "New File",
+          "label": "Create file",
           "action": "project_panel::NewFile"
         }
       ]
@@ -11480,18 +11480,18 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "enter",
       "action": "notebook::EnterEditMode",
-      "label": "Enter Edit Mode",
+      "label": "Edit notebook cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -11503,7 +11503,7 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "shift-enter",
       "action": "notebook::RunAndAdvance",
-      "label": "Run And Advance",
+      "label": "Run; next cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11515,7 +11515,7 @@ window.KEYMAP_DATA = {
       "block": 65,
       "key": "ctrl-enter",
       "action": "notebook::Run",
-      "label": "Run",
+      "label": "Run notebook cell",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11527,13 +11527,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "j",
       "action": "menu::SelectNext",
-      "label": "Select Next",
+      "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -11545,13 +11545,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "k",
       "action": "menu::SelectPrevious",
-      "label": "Select Previous",
+      "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -11563,13 +11563,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "h",
       "action": "menu::SelectParent",
-      "label": "Select Parent",
+      "label": "Select parent item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Collapse Selected Entry",
+          "label": "Collapse selected folder",
           "action": "project_panel::CollapseSelectedEntry"
         }
       ]
@@ -11581,18 +11581,18 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "l",
       "action": "menu::SelectChild",
-      "label": "Select Child",
+      "label": "Select child item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Confirm → Focus Center Pane",
+          "label": "Focus selected diff",
           "action": [
             "action::Sequence",
             [
@@ -11610,13 +11610,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "g g",
       "action": "menu::SelectFirst",
-      "label": "Select First",
+      "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select First",
+          "label": "Select first item",
           "action": "menu::SelectFirst"
         }
       ]
@@ -11628,13 +11628,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "shift-g",
       "action": "menu::SelectLast",
-      "label": "Select Last",
+      "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Select Last",
+          "label": "Select last item",
           "action": "menu::SelectLast"
         }
       ]
@@ -11646,13 +11646,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "/",
       "action": "agents_sidebar::FocusSidebarFilter",
-      "label": "Focus Sidebar Filter",
+      "label": "Filter agent threads",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Find project file",
           "action": "file_finder::Toggle"
         }
       ]
@@ -11664,7 +11664,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "d d",
       "action": "agent::RemoveSelectedThread",
-      "label": "Remove Selected Thread",
+      "label": "Delete selected thread",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11676,13 +11676,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "o",
       "action": "agents_sidebar::NewThreadInGroup",
-      "label": "New Thread In Group",
+      "label": "New group thread",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -11694,13 +11694,13 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "shift-o",
       "action": "agents_sidebar::NewThreadInGroup",
-      "label": "New Thread In Group",
+      "label": "New group thread",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open With System",
+          "label": "Open externally",
           "action": "workspace::OpenWithSystem"
         }
       ]
@@ -11712,7 +11712,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "] p",
       "action": "multi_workspace::NextProject",
-      "label": "Next Project",
+      "label": "Next workspace project",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11724,7 +11724,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "[ p",
       "action": "multi_workspace::PreviousProject",
-      "label": "Previous Project",
+      "label": "Previous workspace project",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11736,7 +11736,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "z a",
       "action": "editor::ToggleFold",
-      "label": "Toggle Fold",
+      "label": "Toggle code fold",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11748,7 +11748,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "z c",
       "action": "menu::SelectParent",
-      "label": "Select Parent",
+      "label": "Select parent item",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11760,7 +11760,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "z o",
       "action": "menu::SelectChild",
-      "label": "Select Child",
+      "label": "Select child item",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11772,7 +11772,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "z shift-m",
       "action": "editor::FoldAll",
-      "label": "Fold All",
+      "label": "Fold all code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11784,7 +11784,7 @@ window.KEYMAP_DATA = {
       "block": 66,
       "key": "z shift-r",
       "action": "editor::UnfoldAll",
-      "label": "Unfold All",
+      "label": "Unfold all code",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11796,13 +11796,13 @@ window.KEYMAP_DATA = {
       "block": 67,
       "key": "j",
       "action": "editor::MoveDown",
-      "label": "Move Down",
+      "label": "Move cursor down",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Next",
+          "label": "Select next item",
           "action": "vim::MenuSelectNext"
         }
       ]
@@ -11814,13 +11814,13 @@ window.KEYMAP_DATA = {
       "block": 67,
       "key": "k",
       "action": "editor::MoveUp",
-      "label": "Move Up",
+      "label": "Move cursor up",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Menu Select Previous",
+          "label": "Select previous item",
           "action": "vim::MenuSelectPrevious"
         }
       ]
@@ -11832,13 +11832,13 @@ window.KEYMAP_DATA = {
       "block": 67,
       "key": "/",
       "action": "vim::SwitchToInsertMode",
-      "label": "Switch To Insert Mode",
+      "label": "Enter Insert mode",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Toggle",
+          "label": "Find project file",
           "action": "file_finder::Toggle"
         }
       ]
@@ -11850,7 +11850,7 @@ window.KEYMAP_DATA = {
       "block": 67,
       "key": "escape",
       "action": "menu::Cancel",
-      "label": "Cancel",
+      "label": "Dismiss menu",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11862,18 +11862,18 @@ window.KEYMAP_DATA = {
       "block": 67,
       "key": "enter",
       "action": "editor::Newline",
-      "label": "Newline",
+      "label": "Insert newline",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
-          "label": "Open Permanent",
+          "label": "Open selected file",
           "action": "project_panel::OpenPermanent"
         },
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / reserved prefix",
+          "label": "Disabled / prefix",
           "action": null
         }
       ]
@@ -11885,18 +11885,18 @@ window.KEYMAP_DATA = {
       "block": 68,
       "key": "tab",
       "action": "skill_creator::FocusNextField",
-      "label": "Focus Next Field",
+      "label": "Focus next field",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -11908,7 +11908,7 @@ window.KEYMAP_DATA = {
       "block": 68,
       "key": "shift-tab",
       "action": "skill_creator::FocusPreviousField",
-      "label": "Focus Previous Field",
+      "label": "Focus previous field",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -11920,18 +11920,18 @@ window.KEYMAP_DATA = {
       "block": 69,
       "key": "tab",
       "action": "skill_creator::FocusNextField",
-      "label": "Focus Next Field",
+      "label": "Focus next field",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
         {
           "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus Editor",
+          "label": "Focus commit editor",
           "action": "git_panel::FocusEditor"
         },
         {
           "context": "CommitEditor > Editor",
-          "label": "Focus Changes",
+          "label": "Focus changed files",
           "action": "git_panel::FocusChanges"
         }
       ]
@@ -11943,7 +11943,7 @@ window.KEYMAP_DATA = {
       "block": 69,
       "key": "shift-tab",
       "action": "skill_creator::FocusPreviousField",
-      "label": "Focus Previous Field",
+      "label": "Focus previous field",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
