@@ -1,9 +1,11 @@
 # Zed Vim Keymapping
 
 ```text
-___  __ __    __ __ _ _  _
-  / |_  | \ + \ V / | |\/| = ❤️
-/__ |__ |_/    \_/  | |  |
+_____ _____ ____      __     __ _____ _   _    _  _
+   /  |     |   \     \ \   / /   |   |\ /|   / \/ \
+  /   |___  |   |  +   \ \ / /    |   | V | = \    /
+ /    |     |   /       \ V /     |   |   |    \  /
+/____ |____ |__/         \_/    __|__ |   |     \/
 ```
 
 A Vim keymap for everyday development in Zed, paired with a searchable cheat sheet that keeps shortcuts close at hand.
