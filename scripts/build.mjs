@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
+import { isVimReference } from './native-scope.mjs';
 const labelsContext = { window: {} };
 vm.runInNewContext(fs.readFileSync(new URL('../docs/labels.js', import.meta.url), 'utf8'), labelsContext);
 const describe = labelsContext.window.keymapLabel;
@@ -43,7 +44,8 @@ const conventionalKey = /(?:^| )(?:left|right|up|down|home|end|pageup|pagedown|i
 const duplicateControlChord = /^ctrl-w (?:ctrl-|shift-s$)/;
 const isStandardAlias = row => conventionalKey.test(row.key) || duplicateControlChord.test(row.key);
 const sameAction = (a, b) => a.context === b.context && JSON.stringify(a.action) === JSON.stringify(b.action);
-const visible = effective.filter(row => row.source !== 'vim' || row.disabled || !isStandardAlias(row) ||
+const vimScoped = effective.filter(isVimReference);
+const visible = vimScoped.filter(row => row.source !== 'vim' || row.disabled || !isStandardAlias(row) ||
  !effective.some(other => other !== row && !other.disabled && !isStandardAlias(other) && sameAction(row, other)));
 assert(visible.some(r => r.key === 'h' && r.action === 'vim::Left'));
 assert(!visible.some(r => r.key === 'left' && r.action === 'vim::Left'));
@@ -70,7 +72,7 @@ const output = new URL('../docs/keymaps.js', import.meta.url);
 const content = 'window.KEYMAP_DATA = ' + JSON.stringify(data,null,2) + ';\n';
 if (process.argv.includes('--check')) assert.equal(fs.readFileSync(output,'utf8'),content,'Cheat sheet is stale. Run node scripts/build.mjs');
 else fs.writeFileSync(output,content);
-console.log(`${rows.filter(r=>r.source==='custom').length} custom entries; ${visible.filter(r=>r.source==='vim').length} inherited Vim entries; ${effective.length-visible.length} standard aliases hidden. Coverage OK.`);
+console.log(`${rows.filter(r=>r.source==='custom').length} custom entries; ${visible.filter(r=>r.source==='vim').length} inherited Vim entries; ${effective.length-vimScoped.length} Zed UI shortcuts and ${vimScoped.length-visible.length} standard aliases hidden. Coverage OK.`);
 
 // Content versions prevent browsers from reusing stale scripts after deployment.
 const indexPath = new URL('../docs/index.html', import.meta.url);

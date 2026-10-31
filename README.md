@@ -4,7 +4,7 @@ Personal Zed Vim keymap with a full-screen, searchable terminal-style cheat shee
 
 **[Open the cheat sheet](https://pridees.github.io/zed-vim-keymapping/)**
 
-Custom leader keys, project tree, Git, agent controls and native Vim bindings. `Space` is the leader. Exact contexts and action parameters are available on each row. Native bindings are pinned to Zed **1.25.3**; custom context overrides are marked. Helix-only bindings are excluded. Standard keyboard aliases are hidden when an equivalent Vim binding exists in the same context; the installed keymap is unchanged.
+Custom leader keys, project tree, Git, agent controls and native Vim bindings. `Space` is the leader. Exact contexts and action parameters are available on each row. Native bindings are pinned to Zed **1.25.3**; custom context overrides are marked. Helix-only bindings are excluded. Native lists Vim editing commands and Vim-style navigation, including actions implemented outside `vim::`. Ordinary Zed UI shortcuts (field traversal, notebook execution, agent submission, and editor aliases) are excluded. Standard keyboard aliases are hidden when an equivalent Vim binding exists in the same context; the installed keymap is unchanged.
 
 ## Install
 

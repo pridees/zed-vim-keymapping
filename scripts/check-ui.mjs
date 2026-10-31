@@ -45,3 +45,26 @@ for (const row of sandbox.window.KEYMAP_DATA.rows) {
  assert.equal(row.label, sandbox.window.keymapLabel(row), 'Stored and rendered descriptions differ');
  for (const override of row.overrides || []) assert(!/^(Toggle|Open|Deploy|Spawn)$/.test(override.label));
 }
+
+const nativeRows = sandbox.window.KEYMAP_DATA.rows.filter(r => r.source === 'vim');
+for (const action of ['agent::Chat', 'notebook::Run', 'skill_creator::FocusNextField', 'editor::AcceptEditPrediction']) {
+ assert(!nativeRows.some(r => r.action === action), `Standard UI action leaked: ${action}`);
+}
+for (const [key, action] of [['ctrl-o','pane::GoBack'], ['ctrl-i','pane::GoForward'], ['ctrl-w h','workspace::ActivatePaneLeft'], ['z a','editor::ToggleFold'], ['g d','editor::GoToDefinition'], ['ctrl-p','editor::ShowWordCompletions']]) {
+ assert(nativeRows.some(r => r.key === key && r.action === action), `Vim command missing: ${key}`);
+}
+assert(!nativeRows.some(r => r.key === 'ctrl-pageup'));
+assert(sandbox.window.KEYMAP_DATA.rows.some(r => r.source === 'custom' && r.key === 'tab' && r.action === 'git_panel::FocusChanges'));
+console.log('Native scope OK: Vim commands retained; ordinary Zed UI shortcuts excluded.');
+
+for (const mode of ['insert', 'replace']) {
+ assert(!nativeRows.some(r => r.context === `vim_mode == ${mode}` && r.action === 'editor::Paste'));
+ assert(nativeRows.some(r => r.context === `vim_mode == ${mode}` && r.key === 'ctrl-r' && r.action === 'vim::PushRegister') || mode === 'replace');
+ const literal = nativeRows.find(r => r.context === `vim_mode == ${mode}` && r.key === 'ctrl-v');
+ assert.equal(literal.action[0], 'vim::PushLiteral');
+ assert.equal(literal.label, 'Quote next character');
+ assert(!nativeRows.some(r => r.context === `vim_mode == ${mode}` && ['ctrl-q','ctrl-shift-q'].includes(r.key)));
+}
+assert(nativeRows.some(r => r.key === 'p' && r.action === 'vim::Paste'));
+assert(nativeRows.some(r => r.key === 'shift-r' && r.action === 'vim::ToggleReplace'));
+assert(nativeRows.some(r => r.key === 'g t' && r.action === 'vim::GoToTab'));

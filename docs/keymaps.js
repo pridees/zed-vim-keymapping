@@ -6251,49 +6251,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Insert literal character",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == insert",
-      "group": "Insert mode",
-      "block": 6,
-      "key": "ctrl-shift-v",
-      "action": "editor::Paste",
-      "label": "Paste clipboard",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == insert",
-      "group": "Insert mode",
-      "block": 6,
-      "key": "ctrl-q",
-      "action": [
-        "vim::PushLiteral",
-        {}
-      ],
-      "label": "Insert literal character",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == insert",
-      "group": "Insert mode",
-      "block": 6,
-      "key": "ctrl-shift-q",
-      "action": [
-        "vim::PushLiteral",
-        {}
-      ],
-      "label": "Insert literal character",
+      "label": "Quote next character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6315,33 +6273,9 @@ window.KEYMAP_DATA = {
       "context": "vim_mode == insert",
       "group": "Insert mode",
       "block": 6,
-      "key": "insert",
-      "action": "vim::ToggleReplace",
-      "label": "Enter Replace mode",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == insert",
-      "group": "Insert mode",
-      "block": 6,
       "key": "ctrl-o",
       "action": "vim::TemporaryNormal",
       "label": "One Normal command",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == insert",
-      "group": "Insert mode",
-      "block": 6,
-      "key": "ctrl-s",
-      "action": "editor::ShowSignatureHelp",
-      "label": "Show function signature",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6720,30 +6654,6 @@ window.KEYMAP_DATA = {
     },
     {
       "source": "vim",
-      "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
-      "block": 8,
-      "key": "ctrl-pagedown",
-      "action": "pane::ActivateNextItem",
-      "label": "Next tab",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
-      "block": 8,
-      "key": "ctrl-pageup",
-      "action": "pane::ActivatePreviousItem",
-      "label": "Previous tab",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
       "context": "vim_mode == insert && !(showing_code_actions || showing_completions)",
       "group": "Insert mode",
       "block": 15,
@@ -6836,49 +6746,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Insert literal character",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == replace",
-      "group": "vim_mode == replace",
-      "block": 17,
-      "key": "ctrl-shift-v",
-      "action": "editor::Paste",
-      "label": "Paste clipboard",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == replace",
-      "group": "vim_mode == replace",
-      "block": 17,
-      "key": "ctrl-q",
-      "action": [
-        "vim::PushLiteral",
-        {}
-      ],
-      "label": "Insert literal character",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == replace",
-      "group": "vim_mode == replace",
-      "block": 17,
-      "key": "ctrl-shift-q",
-      "action": [
-        "vim::PushLiteral",
-        {}
-      ],
-      "label": "Insert literal character",
+      "label": "Quote next character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -6946,18 +6814,6 @@ window.KEYMAP_DATA = {
           "action": null
         }
       ]
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == replace",
-      "group": "vim_mode == replace",
-      "block": 17,
-      "key": "insert",
-      "action": "vim::InsertBefore",
-      "label": "Insert before cursor",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
     },
     {
       "source": "vim",
@@ -7051,22 +6907,7 @@ window.KEYMAP_DATA = {
         "vim::PushLiteral",
         {}
       ],
-      "label": "Insert literal character",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == waiting",
-      "group": "vim_mode == waiting",
-      "block": 18,
-      "key": "ctrl-q",
-      "action": [
-        "vim::PushLiteral",
-        {}
-      ],
-      "label": "Insert literal character",
+      "label": "Quote next character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8327,7 +8168,7 @@ window.KEYMAP_DATA = {
           "\u0000"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8345,7 +8186,7 @@ window.KEYMAP_DATA = {
           "\u0001"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8363,7 +8204,7 @@ window.KEYMAP_DATA = {
           "\u0002"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8381,7 +8222,7 @@ window.KEYMAP_DATA = {
           "\u0003"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8399,7 +8240,7 @@ window.KEYMAP_DATA = {
           "\u0004"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8417,7 +8258,7 @@ window.KEYMAP_DATA = {
           "\u0005"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8435,7 +8276,7 @@ window.KEYMAP_DATA = {
           "\u0006"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8453,7 +8294,7 @@ window.KEYMAP_DATA = {
           "\u0007"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8471,7 +8312,7 @@ window.KEYMAP_DATA = {
           "\t"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8489,7 +8330,7 @@ window.KEYMAP_DATA = {
           "\r"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8507,7 +8348,7 @@ window.KEYMAP_DATA = {
           "\u000e"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8525,7 +8366,7 @@ window.KEYMAP_DATA = {
           "\u000f"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8543,7 +8384,7 @@ window.KEYMAP_DATA = {
           "\u0010"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8561,7 +8402,7 @@ window.KEYMAP_DATA = {
           "\u0011"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8579,7 +8420,7 @@ window.KEYMAP_DATA = {
           "\u0012"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8597,7 +8438,7 @@ window.KEYMAP_DATA = {
           "\u0013"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8615,7 +8456,7 @@ window.KEYMAP_DATA = {
           "\u0014"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8633,7 +8474,7 @@ window.KEYMAP_DATA = {
           "\u0015"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8651,7 +8492,7 @@ window.KEYMAP_DATA = {
           "\u0016"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8669,7 +8510,7 @@ window.KEYMAP_DATA = {
           "\u0017"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8687,7 +8528,7 @@ window.KEYMAP_DATA = {
           "\u0018"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8705,7 +8546,7 @@ window.KEYMAP_DATA = {
           "\u0019"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8723,7 +8564,7 @@ window.KEYMAP_DATA = {
           "\u001a"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8741,7 +8582,7 @@ window.KEYMAP_DATA = {
           "\u001b"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8759,7 +8600,7 @@ window.KEYMAP_DATA = {
           "\u001c"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8777,7 +8618,7 @@ window.KEYMAP_DATA = {
           "\u001d"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8795,7 +8636,7 @@ window.KEYMAP_DATA = {
           "\u001e"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8813,7 +8654,7 @@ window.KEYMAP_DATA = {
           "\u001f"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8831,7 +8672,7 @@ window.KEYMAP_DATA = {
           "\u001b"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -8849,7 +8690,7 @@ window.KEYMAP_DATA = {
           "\r"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
@@ -8878,7 +8719,7 @@ window.KEYMAP_DATA = {
           "\t"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
@@ -8907,7 +8748,7 @@ window.KEYMAP_DATA = {
           "\b"
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": [
@@ -8931,7 +8772,7 @@ window.KEYMAP_DATA = {
           ""
         ]
       ],
-      "label": "Insert literal character",
+      "label": "Literal control character",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9027,54 +8868,6 @@ window.KEYMAP_DATA = {
       "key": "ctrl-w j",
       "action": "workspace::ActivatePaneDown",
       "label": "Focus lower pane",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w shift-left",
-      "action": "workspace::SwapPaneLeft",
-      "label": "Swap pane left",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w shift-right",
-      "action": "workspace::SwapPaneRight",
-      "label": "Swap pane right",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w shift-up",
-      "action": "workspace::SwapPaneUp",
-      "label": "Swap pane up",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w shift-down",
-      "action": "workspace::SwapPaneDown",
-      "label": "Swap pane down",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10258,29 +10051,6 @@ window.KEYMAP_DATA = {
       "context": "OutlinePanel && not_editing",
       "group": "Outline Panel",
       "block": 48,
-      "key": "enter",
-      "action": "editor::ToggleFocus",
-      "label": "Focus editor",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "ProjectPanel && not_editing",
-          "label": "Open selected file",
-          "action": "project_panel::OpenPermanent"
-        },
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / prefix",
-          "action": null
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "OutlinePanel && not_editing",
-      "group": "Outline Panel",
-      "block": 48,
       "key": "/",
       "action": "menu::Cancel",
       "label": "Dismiss menu",
@@ -10362,99 +10132,6 @@ window.KEYMAP_DATA = {
       "key": "z b",
       "action": "outline_panel::ScrollCursorBottom",
       "label": "Align selection bottom",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "OutlinePanel && editing",
-      "group": "Outline Panel",
-      "block": 49,
-      "key": "enter",
-      "action": "menu::Cancel",
-      "label": "Dismiss menu",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "ProjectPanel && not_editing",
-          "label": "Open selected file",
-          "action": "project_panel::OpenPermanent"
-        },
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / prefix",
-          "action": null
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "GitGraph",
-      "group": "Git Graph",
-      "block": 50,
-      "key": "tab",
-      "action": "git_graph::FocusNextTabStop",
-      "label": "Focus next control",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus commit editor",
-          "action": "git_panel::FocusEditor"
-        },
-        {
-          "context": "CommitEditor > Editor",
-          "label": "Focus changed files",
-          "action": "git_panel::FocusChanges"
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "GitGraph",
-      "group": "Git Graph",
-      "block": 50,
-      "key": "shift-tab",
-      "action": "git_graph::FocusPreviousTabStop",
-      "label": "Focus previous control",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "GitGraphSearchBar > Editor",
-      "group": "Git Graph Search Bar",
-      "block": 51,
-      "key": "tab",
-      "action": "git_graph::FocusNextTabStop",
-      "label": "Focus next control",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus commit editor",
-          "action": "git_panel::FocusEditor"
-        },
-        {
-          "context": "CommitEditor > Editor",
-          "label": "Focus changed files",
-          "action": "git_panel::FocusChanges"
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "GitGraphSearchBar > Editor",
-      "group": "Git Graph Search Bar",
-      "block": 51,
-      "key": "shift-tab",
-      "action": "git_graph::FocusPreviousTabStop",
-      "label": "Focus previous control",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10927,87 +10604,6 @@ window.KEYMAP_DATA = {
     },
     {
       "source": "vim",
-      "context": "CommitEditor > Editor && VimControl && !menu",
-      "group": "Commit editor",
-      "block": 58,
-      "key": "tab",
-      "action": "git_panel::FocusChanges",
-      "label": "Focus changed files",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus commit editor",
-          "action": "git_panel::FocusEditor"
-        },
-        {
-          "context": "CommitEditor > Editor",
-          "label": "Focus changed files",
-          "action": "git_panel::FocusChanges"
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "CommitEditor > Editor && VimControl && !menu",
-      "group": "Commit editor",
-      "block": 58,
-      "key": "shift-tab",
-      "action": "git_panel::FocusChanges",
-      "label": "Focus changed files",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "Editor && edit_prediction && edit_prediction_mode == eager && !showing_completions",
-      "group": "Editor",
-      "block": 59,
-      "key": "tab",
-      "action": "editor::AcceptEditPrediction",
-      "label": "Accept edit prediction",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus commit editor",
-          "action": "git_panel::FocusEditor"
-        },
-        {
-          "context": "CommitEditor > Editor",
-          "label": "Focus changed files",
-          "action": "git_panel::FocusChanges"
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "MessageEditor > Editor && VimControl",
-      "group": "Message Editor",
-      "block": 60,
-      "key": "enter",
-      "action": "agent::Chat",
-      "label": "Send agent message",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "ProjectPanel && not_editing",
-          "label": "Open selected file",
-          "action": "project_panel::OpenPermanent"
-        },
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / prefix",
-          "action": null
-        }
-      ]
-    },
-    {
-      "source": "vim",
       "context": "SettingsWindow > NavigationMenu && !search",
       "group": "Settings Window",
       "block": 61,
@@ -11475,53 +11071,6 @@ window.KEYMAP_DATA = {
     },
     {
       "source": "vim",
-      "context": "NotebookEditor && notebook_mode == command",
-      "group": "Notebook Editor",
-      "block": 65,
-      "key": "enter",
-      "action": "notebook::EnterEditMode",
-      "label": "Edit notebook cell",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "ProjectPanel && not_editing",
-          "label": "Open selected file",
-          "action": "project_panel::OpenPermanent"
-        },
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / prefix",
-          "action": null
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "NotebookEditor && notebook_mode == command",
-      "group": "Notebook Editor",
-      "block": 65,
-      "key": "shift-enter",
-      "action": "notebook::RunAndAdvance",
-      "label": "Run; next cell",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "NotebookEditor && notebook_mode == command",
-      "group": "Notebook Editor",
-      "block": 65,
-      "key": "ctrl-enter",
-      "action": "notebook::Run",
-      "label": "Run notebook cell",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
       "context": "ThreadsSidebar && !Editor",
       "group": "Threads Sidebar",
       "block": 66,
@@ -11851,99 +11400,6 @@ window.KEYMAP_DATA = {
       "key": "escape",
       "action": "menu::Cancel",
       "label": "Dismiss menu",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "ThreadsSidebar > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
-      "block": 67,
-      "key": "enter",
-      "action": "editor::Newline",
-      "label": "Insert newline",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "ProjectPanel && not_editing",
-          "label": "Open selected file",
-          "action": "project_panel::OpenPermanent"
-        },
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Disabled / prefix",
-          "action": null
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "SkillCreator",
-      "group": "Skill Creator",
-      "block": 68,
-      "key": "tab",
-      "action": "skill_creator::FocusNextField",
-      "label": "Focus next field",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus commit editor",
-          "action": "git_panel::FocusEditor"
-        },
-        {
-          "context": "CommitEditor > Editor",
-          "label": "Focus changed files",
-          "action": "git_panel::FocusChanges"
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "SkillCreator",
-      "group": "Skill Creator",
-      "block": 68,
-      "key": "shift-tab",
-      "action": "skill_creator::FocusPreviousField",
-      "label": "Focus previous field",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "SkillCreator > Editor",
-      "group": "Skill Creator",
-      "block": 69,
-      "key": "tab",
-      "action": "skill_creator::FocusNextField",
-      "label": "Focus next field",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": [
-        {
-          "context": "GitPanel && ChangesList && !Editor",
-          "label": "Focus commit editor",
-          "action": "git_panel::FocusEditor"
-        },
-        {
-          "context": "CommitEditor > Editor",
-          "label": "Focus changed files",
-          "action": "git_panel::FocusChanges"
-        }
-      ]
-    },
-    {
-      "source": "vim",
-      "context": "SkillCreator > Editor",
-      "group": "Skill Creator",
-      "block": 69,
-      "key": "shift-tab",
-      "action": "skill_creator::FocusPreviousField",
-      "label": "Focus previous field",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
