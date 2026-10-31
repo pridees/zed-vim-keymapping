@@ -1,5 +1,11 @@
 # Zed Vim Keymapping
 
+```text
+___  __ __    __ __ _ _  _
+  / |_  | \ + \ V / | |\/| = ❤️
+/__ |__ |_/    \_/  | |  |
+```
+
 A Vim keymap for everyday development in Zed, paired with a searchable cheat sheet that keeps shortcuts close at hand.
 
 Navigate files and tabs, jump to definitions, review Git changes, and work with Zed's AI tools from the keyboard. Common commands are grouped under `Space`, making them easier to find and remember.
@@ -10,7 +16,7 @@ Find a shortcut by key or command, browse commands by task, and explore both cus
 
 ## Installation
 
-Enable Vim mode in Zed, then run one command from the cloned repository root. The installer finds Zed's configuration directory, backs up your existing keymap, and installs this one. It prints the installation and backup paths when finished.
+Enable Vim mode in Zed, then run one command from the cloned repository root. The installer finds Zed's configuration directory, saves your original keymap in a separate backup for each run, and installs this one. It prints the installation and backup paths when finished.
 
 ### Linux / macOS
 
