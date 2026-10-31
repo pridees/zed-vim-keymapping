@@ -60,7 +60,10 @@ console.log('Native scope OK: Vim commands retained; ordinary Zed UI shortcuts e
 for (const mode of ['insert', 'replace']) {
  assert(!nativeRows.some(r => r.context === `vim_mode == ${mode}` && r.action === 'editor::Paste'));
  assert(nativeRows.some(r => r.context === `vim_mode == ${mode}` && r.key === 'ctrl-r' && r.action === 'vim::PushRegister') || mode === 'replace');
- const literal = nativeRows.find(r => r.context === `vim_mode == ${mode}` && r.key === 'ctrl-v');
+ assert(!nativeRows.some(r => r.context === `vim_mode == ${mode}` && r.key === 'ctrl-v'));
+ const customRows = sandbox.window.KEYMAP_DATA.rows.filter(r => r.source === 'custom' && r.context === `vim_mode == ${mode}`);
+ assert.equal(customRows.find(r => r.key === 'ctrl-v').action, 'editor::Paste');
+ const literal = customRows.find(r => r.key === 'ctrl-q');
  assert.equal(literal.action[0], 'vim::PushLiteral');
  assert.equal(literal.label, 'Quote next character');
  assert(!nativeRows.some(r => r.context === `vim_mode == ${mode}` && ['ctrl-q','ctrl-shift-q'].includes(r.key)));
@@ -68,3 +71,5 @@ for (const mode of ['insert', 'replace']) {
 assert(nativeRows.some(r => r.key === 'p' && r.action === 'vim::Paste'));
 assert(nativeRows.some(r => r.key === 'shift-r' && r.action === 'vim::ToggleReplace'));
 assert(nativeRows.some(r => r.key === 'g t' && r.action === 'vim::GoToTab'));
+
+assert(nativeRows.some(r => r.key === 'ctrl-v' && r.action === 'vim::ToggleVisualBlock'));

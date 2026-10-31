@@ -10,7 +10,7 @@ const read = p => vm.runInNewContext('(' + fs.readFileSync(new URL('../' + p, im
 const custom = read('keymap.json'), defaults = read('reference/vim.json');
 const rows = [];
 const title = context => {
- for (const [match, name] of [['AgentPanel','Agent editor'],['GitDiff','Diff editor'],['multibuffer','Multibuffers'],['ProjectPanel','Project tree'],['CommitEditor','Commit editor'],['GitPanel','Git panel'],['Terminal && vi_mode','Terminal selection'],['Dock || Terminal','Dock focus'],['!Dock','Center tabs'],['VimControl || !vim_mode','Workspace leader'],['EmptyPane','Editor leader'],['vim_mode == visual','Visual mode'],['vim_mode == normal','Normal mode'],['vim_mode == insert','Insert mode'],['vim_operator','Operators & objects'],['Workspace','Workspace']]) if (context.includes(match)) return name;
+ for (const [match, name] of [['AgentPanel','Agent editor'],['GitDiff','Diff editor'],['multibuffer','Multibuffers'],['ProjectPanel','Project tree'],['CommitEditor','Commit editor'],['GitPanel','Git panel'],['Terminal && vi_mode','Terminal selection'],['Dock || Terminal','Dock focus'],['!Dock','Center tabs'],['VimControl || !vim_mode','Workspace leader'],['EmptyPane','Editor leader'],['vim_mode == visual','Visual mode'],['vim_mode == normal','Normal mode'],['vim_mode == insert','Insert mode'],['vim_mode == replace','Replace mode'],['vim_operator','Operators & objects'],['Workspace','Workspace']]) if (context.includes(match)) return name;
  if (context === 'Global') return 'Pane navigation';
  if (context.startsWith('VimControl')) return 'Vim motions & commands';
  return context.split(/ &&| >| \|\|/)[0].replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^!/, 'Outside ');

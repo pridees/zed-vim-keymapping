@@ -13,7 +13,7 @@ const interfaceActions = new Set([
 export function isVimReference(row) {
   if (row.source !== 'vim') return true;
   const action = Array.isArray(row.action) ? row.action[0] : row.action;
-  // Literal entry documents characters produced after Ctrl+v, not UI shortcuts.
+  // Literal entry documents characters produced after entering literal mode, not UI shortcuts.
   if (action === 'vim::Literal') return true;
   if (action === 'vim::PushLiteral' && ['ctrl-q', 'ctrl-shift-q'].includes(row.key)) return false;
   if (interfaceActions.has(action)) return false;

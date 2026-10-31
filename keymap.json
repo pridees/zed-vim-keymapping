@@ -119,6 +119,21 @@
     }
   },
   {
+    "context": "vim_mode == insert",
+    "bindings": {
+      // Paste normally; keep literal character entry on Ctrl+Q.
+      "ctrl-v": "editor::Paste",
+      "ctrl-q": ["vim::PushLiteral", {}]
+    }
+  },
+  {
+    "context": "vim_mode == replace",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+      "ctrl-q": ["vim::PushLiteral", {}]
+    }
+  },
+  {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !menu",
     "bindings": {
       "space ,": [
