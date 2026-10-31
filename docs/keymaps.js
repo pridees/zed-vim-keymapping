@@ -2270,18 +2270,6 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu",
       "group": "Vim motions & commands",
       "block": 0,
-      "key": "left",
-      "action": "vim::Left",
-      "label": "Left",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
       "key": "h",
       "action": "vim::Left",
       "label": "Left",
@@ -2312,18 +2300,6 @@ window.KEYMAP_DATA = {
           "action": "project_panel::SelectParent"
         }
       ]
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "down",
-      "action": "vim::Down",
-      "label": "Down",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
     },
     {
       "source": "vim",
@@ -2442,18 +2418,6 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu",
       "group": "Vim motions & commands",
       "block": 0,
-      "key": "up",
-      "action": "vim::Up",
-      "label": "Up",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
       "key": "k",
       "action": "vim::Up",
       "label": "Up",
@@ -2466,18 +2430,6 @@ window.KEYMAP_DATA = {
           "action": "vim::MenuSelectPrevious"
         }
       ]
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "right",
-      "action": "vim::Right",
-      "label": "Right",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
     },
     {
       "source": "vim",
@@ -2507,18 +2459,6 @@ window.KEYMAP_DATA = {
           ]
         }
       ]
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "end",
-      "action": "vim::EndOfLine",
-      "label": "End Of Line",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
     },
     {
       "source": "vim",
@@ -3223,18 +3163,6 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu",
       "group": "Vim motions & commands",
       "block": 0,
-      "key": "home",
-      "action": "vim::StartOfLine",
-      "label": "Start Of Line",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
       "key": "ctrl-f",
       "action": "vim::PageDown",
       "label": "Page Down",
@@ -3247,31 +3175,7 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu",
       "group": "Vim motions & commands",
       "block": 0,
-      "key": "pagedown",
-      "action": "vim::PageDown",
-      "label": "Page Down",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
       "key": "ctrl-b",
-      "action": "vim::PageUp",
-      "label": "Page Up",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "pageup",
       "action": "vim::PageUp",
       "label": "Page Up",
       "disabled": false,
@@ -3780,41 +3684,7 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu",
       "group": "Vim motions & commands",
       "block": 0,
-      "key": "g down",
-      "action": [
-        "vim::Down",
-        {
-          "display_lines": true
-        }
-      ],
-      "label": "Down",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
       "key": "g k",
-      "action": [
-        "vim::Up",
-        {
-          "display_lines": true
-        }
-      ],
-      "label": "Up",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "g up",
       "action": [
         "vim::Up",
         {
@@ -3848,41 +3718,7 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu",
       "group": "Vim motions & commands",
       "block": 0,
-      "key": "g end",
-      "action": [
-        "vim::EndOfLine",
-        {
-          "display_lines": true
-        }
-      ],
-      "label": "End Of Line",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
       "key": "g 0",
-      "action": [
-        "vim::StartOfLine",
-        {
-          "display_lines": true
-        }
-      ],
-      "label": "Start Of Line",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "g home",
       "action": [
         "vim::StartOfLine",
         {
@@ -4426,18 +4262,6 @@ window.KEYMAP_DATA = {
       "group": "Vim motions & commands",
       "block": 0,
       "key": "ctrl-w ]",
-      "action": "editor::GoToDefinitionSplit",
-      "label": "Go To Definition Split",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu",
-      "group": "Vim motions & commands",
-      "block": 0,
-      "key": "ctrl-w ctrl-]",
       "action": "editor::GoToDefinitionSplit",
       "label": "Go To Definition Split",
       "disabled": false,
@@ -5116,18 +4940,6 @@ window.KEYMAP_DATA = {
       "context": "vim_mode == normal",
       "group": "Normal mode",
       "block": 2,
-      "key": "delete",
-      "action": "vim::DeleteRight",
-      "label": "Delete Right",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == normal",
-      "group": "Normal mode",
-      "block": 2,
       "key": "g shift-j",
       "action": "vim::JoinLinesNoWhitespace",
       "label": "Join Lines No Whitespace",
@@ -5353,18 +5165,6 @@ window.KEYMAP_DATA = {
       "key": "g q",
       "action": "vim::PushRewrap",
       "label": "Push Rewrap",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == normal",
-      "group": "Normal mode",
-      "block": 2,
-      "key": "insert",
-      "action": "vim::InsertBefore",
-      "label": "Insert Before",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -5608,18 +5408,6 @@ window.KEYMAP_DATA = {
           "action": "project_panel::Cut"
         }
       ]
-    },
-    {
-      "source": "vim",
-      "context": "vim_mode == visual",
-      "group": "Visual mode",
-      "block": 4,
-      "key": "delete",
-      "action": "vim::VisualDelete",
-      "label": "Visual Delete",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
     },
     {
       "source": "vim",
@@ -9200,102 +8988,6 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w left",
-      "action": "workspace::ActivatePaneLeft",
-      "label": "Activate Pane Left",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w right",
-      "action": "workspace::ActivatePaneRight",
-      "label": "Activate Pane Right",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w up",
-      "action": "workspace::ActivatePaneUp",
-      "label": "Activate Pane Up",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w down",
-      "action": "workspace::ActivatePaneDown",
-      "label": "Activate Pane Down",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-h",
-      "action": "workspace::ActivatePaneLeft",
-      "label": "Activate Pane Left",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-l",
-      "action": "workspace::ActivatePaneRight",
-      "label": "Activate Pane Right",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-k",
-      "action": "workspace::ActivatePaneUp",
-      "label": "Activate Pane Up",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-j",
-      "action": "workspace::ActivatePaneDown",
-      "label": "Activate Pane Down",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w h",
       "action": "workspace::ActivatePaneLeft",
       "label": "Activate Pane Left",
@@ -9393,18 +9085,6 @@ window.KEYMAP_DATA = {
       "group": "Vim motions & commands",
       "block": 45,
       "key": "ctrl-w x",
-      "action": "workspace::SwapPaneAdjacent",
-      "label": "Swap Pane Adjacent",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-x",
       "action": "workspace::SwapPaneAdjacent",
       "label": "Swap Pane Adjacent",
       "disabled": false,
@@ -9548,31 +9228,7 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w ctrl-g t",
-      "action": "pane::ActivateNextItem",
-      "label": "Activate Next Item",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w g shift-t",
-      "action": "pane::ActivatePreviousItem",
-      "label": "Activate Previous Item",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-g shift-t",
       "action": "pane::ActivatePreviousItem",
       "label": "Activate Previous Item",
       "disabled": false,
@@ -9596,31 +9252,7 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w ctrl-w",
-      "action": "workspace::ActivateNextPane",
-      "label": "Activate Next Pane",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w p",
-      "action": "workspace::ActivatePreviousPane",
-      "label": "Activate Previous Pane",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-p",
       "action": "workspace::ActivatePreviousPane",
       "label": "Activate Previous Pane",
       "disabled": false,
@@ -9644,57 +9276,9 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w ctrl-shift-w",
-      "action": "workspace::ActivatePreviousPane",
-      "label": "Activate Previous Pane",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-v",
-      "action": "pane::SplitVertical",
-      "label": "Split Vertical",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w v",
       "action": "pane::SplitVertical",
       "label": "Split Vertical",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w shift-s",
-      "action": "pane::SplitHorizontal",
-      "label": "Split Horizontal",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-s",
-      "action": "pane::SplitHorizontal",
-      "label": "Split Horizontal",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -9716,31 +9300,7 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w ctrl-c",
-      "action": "pane::CloseActiveItem",
-      "label": "Close Active Item",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w c",
-      "action": "pane::CloseActiveItem",
-      "label": "Close Active Item",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-q",
       "action": "pane::CloseActiveItem",
       "label": "Close Active Item",
       "disabled": false,
@@ -9764,18 +9324,6 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w ctrl-a",
-      "action": "pane::CloseAllItems",
-      "label": "Close All Items",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w a",
       "action": "pane::CloseAllItems",
       "label": "Close All Items",
@@ -9788,33 +9336,9 @@ window.KEYMAP_DATA = {
       "context": "VimControl && !menu || !Editor && !Terminal",
       "group": "Vim motions & commands",
       "block": 45,
-      "key": "ctrl-w ctrl-o",
-      "action": "workspace::CloseInactiveTabsAndPanes",
-      "label": "Close Inactive Tabs And Panes",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
       "key": "ctrl-w o",
       "action": "workspace::CloseInactiveTabsAndPanes",
       "label": "Close Inactive Tabs And Panes",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "VimControl && !menu || !Editor && !Terminal",
-      "group": "Vim motions & commands",
-      "block": 45,
-      "key": "ctrl-w ctrl-n",
-      "action": "workspace::NewFileSplitHorizontal",
-      "label": "New File Split Horizontal",
       "disabled": false,
       "kind": "bindings",
       "overrides": []
@@ -10273,30 +9797,6 @@ window.KEYMAP_DATA = {
       "context": "ProjectPanel && not_editing",
       "group": "Project tree",
       "block": 47,
-      "key": "down",
-      "action": "vim::MenuSelectNext",
-      "label": "Menu Select Next",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "ProjectPanel && not_editing",
-      "group": "Project tree",
-      "block": 47,
-      "key": "up",
-      "action": "vim::MenuSelectPrevious",
-      "label": "Menu Select Previous",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "ProjectPanel && not_editing",
-      "group": "Project tree",
-      "block": 47,
       "key": "v",
       "action": "project_panel::OpenSplitVertical",
       "label": "Open Split Vertical",
@@ -10675,30 +10175,6 @@ window.KEYMAP_DATA = {
           "action": "vim::MenuSelectPrevious"
         }
       ]
-    },
-    {
-      "source": "vim",
-      "context": "OutlinePanel && not_editing",
-      "group": "Outline Panel",
-      "block": 48,
-      "key": "down",
-      "action": "vim::MenuSelectNext",
-      "label": "Menu Select Next",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
-    },
-    {
-      "source": "vim",
-      "context": "OutlinePanel && not_editing",
-      "group": "Outline Panel",
-      "block": 48,
-      "key": "up",
-      "action": "vim::MenuSelectPrevious",
-      "label": "Menu Select Previous",
-      "disabled": false,
-      "kind": "bindings",
-      "overrides": []
     },
     {
       "source": "vim",

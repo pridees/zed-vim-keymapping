@@ -34,7 +34,22 @@ for (const row of rows) {
 }
 // Remove inherited entries that are unconditionally overridden, or replaced in the exact same context.
 const effective = rows.filter(r => r.source === 'custom' || !rows.some(c => c.source === 'custom' && c.kind === 'bindings' && c.key === r.key && (c.context === 'Global' || c.context === r.context)));
-const data = {version:'1.25.3', commit:'8dd255c3eafb5231056fe4e6f601cedd011f1c93', rows:effective};
+// Hide conventional keyboard aliases only when an equivalent Vim binding exists.
+// Keep contexts and complete action arguments: matching names alone is insufficient.
+const conventionalKey = /(?:^| )(?:left|right|up|down|home|end|pageup|pagedown|insert|delete)(?: |$)/;
+const duplicateControlChord = /^ctrl-w (?:ctrl-|shift-s$)/;
+const isStandardAlias = row => conventionalKey.test(row.key) || duplicateControlChord.test(row.key);
+const sameAction = (a, b) => a.context === b.context && JSON.stringify(a.action) === JSON.stringify(b.action);
+const visible = effective.filter(row => row.source !== 'vim' || row.disabled || !isStandardAlias(row) ||
+ !effective.some(other => other !== row && !other.disabled && !isStandardAlias(other) && sameAction(row, other)));
+assert(visible.some(r => r.key === 'h' && r.action === 'vim::Left'));
+assert(!visible.some(r => r.key === 'left' && r.action === 'vim::Left'));
+assert(visible.some(r => r.key === 'ctrl-w h' && r.action === 'workspace::ActivatePaneLeft'));
+assert(!visible.some(r => r.key === 'ctrl-w ctrl-h' && r.action === 'workspace::ActivatePaneLeft'));
+// These are distinct Vim commands, even though the upstream action name is shared.
+assert(visible.some(r => r.key === 'ctrl-p' && r.action === 'editor::ShowWordCompletions'));
+assert(visible.some(r => r.key === 'ctrl-n' && r.action === 'editor::ShowWordCompletions'));
+const data = {version:'1.25.3', commit:'8dd255c3eafb5231056fe4e6f601cedd011f1c93', rows:visible};
 assert.equal(rows.filter(r=>r.source==='custom').length, custom.reduce((n,b)=>n+Object.keys(b.bindings||{}).length+Object.keys(b.unbind||{}).length,0));
 assert(effective.some(r=>r.context==='ProjectPanel && not_editing' && r.key==='y' && r.action==='workspace::CopyRelativePath'));
 assert(effective.some(r=>r.context==='ProjectPanel && not_editing' && r.key==='c' && r.action==='project_panel::Copy'));
@@ -42,4 +57,4 @@ const output = new URL('../docs/keymaps.js', import.meta.url);
 const content = 'window.KEYMAP_DATA = ' + JSON.stringify(data,null,2) + ';\n';
 if (process.argv.includes('--check')) assert.equal(fs.readFileSync(output,'utf8'),content,'Cheat sheet is stale. Run node scripts/build.mjs');
 else fs.writeFileSync(output,content);
-console.log(`${rows.filter(r=>r.source==='custom').length} custom entries; ${effective.filter(r=>r.source==='vim').length} inherited Vim entries. Coverage OK.`);
+console.log(`${rows.filter(r=>r.source==='custom').length} custom entries; ${visible.filter(r=>r.source==='vim').length} inherited Vim entries; ${effective.length-visible.length} standard aliases hidden. Coverage OK.`);
