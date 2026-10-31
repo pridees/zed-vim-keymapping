@@ -11,7 +11,7 @@ Personal Linux Zed Vim configuration and its full-screen GitHub Pages cheat shee
 
 ## Required workflow
 
-Whenever you change a key binding, update the cheat sheet immediately in the same change. Run `node scripts/build.mjs`, revise human-readable labels in `docs/app.js` when needed, and run `node scripts/build.mjs --check`. Never leave the documentation out of sync or hand-edit generated `docs/keymaps.js`.
+Whenever you change a key binding, update the cheat sheet immediately in the same change. Run `node scripts/build.mjs`, revise human-readable labels in `docs/labels.js` and parameter-aware descriptions in `docs/app.js` when needed, and run `node scripts/build.mjs --check`. Keep every binding description clear and no longer than three words; run `node scripts/check-ui.mjs` to check all labels and UI logic. Never leave the documentation out of sync or hand-edit generated `docs/keymaps.js`.
 
 Preserve exact Zed contexts, action parameters, precedence and disabled prefix rules. Distinguish center tabs, docks, ProjectPanel, GitPanel, GitDiff, multibuffers, editor modes and terminal selection mode. Do not describe a context-specific shortcut as global. The native reference is a versioned snapshot, not a claim that every action is active in every context. Update the pinned version and commit together when refreshing defaults.
 

@@ -4,41 +4,53 @@ const data = window.KEYMAP_DATA.rows;
 let source = 'custom';
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const keyLabel = key => key.startsWith('shift-') && key.length === 7 ? key.at(-1).toUpperCase() : key.split('-').map(s => ({ctrl:'Ctrl',alt:'Alt',shift:'Shift',cmd:'Cmd',space:'Space',enter:'Enter',escape:'Esc',backspace:'Backspace',tab:'Tab',up:'↑',down:'↓',left:'←',right:'→'}[s] || s)).join('+');
-const labels = {'workspace::CopyRelativePath':'Copy relative path','workspace::CopyPath':'Copy full path','project_panel::Copy':'Copy file / folder','project_panel::Open':'Preview file','project_panel::OpenPermanent':'Open file','editor::OpenExcerpts':'Open source files','pane::CloseActiveItem':'Close active tab','agent::AddSelectionToThread':'Add selection to agent draft','vim::SelectNext':'Select next match','vim::SelectAll':'Select all matches'};
 function label(row){
  const action = Array.isArray(row.action) ? row.action[0] : row.action;
- if(row.kind==='unbind') return 'Remove this binding';
- if(row.disabled) return row.label;
- if(row.source==='custom') {
-  if(row.key==='space a d') return 'Add diagnostics to agent draft';
-  if(row.key==='space a n') return 'New agent thread';
-  if(row.key==='space a c') return 'Add agent context';
-  if(row.key==='space a r') return 'Review agent changes';
-  if(row.key==='space w q' && action==='action::Sequence') return 'Close dock · focus editor';
-  if(row.key==='space w shift-q') return 'Close all docks · focus editor';
-  if(row.key==='space w s') return 'Split editor down';
-  if(row.key==='space w v') return 'Split editor right';
-  if(row.key==='space w shift-o') return 'Join all editor panes';
-  if(row.key==='l' && row.context.includes('GitPanel')) return 'Open diff · focus editor';
-  if(row.key==='space b d') return 'Close tab (including pinned)';
- }
  const args = Array.isArray(row.action) ? row.action[1] : null;
- if(action==='editor::SelectNext') return args?.replace_newest ? 'Skip match · select next' : 'Select next match';
- if(action==='editor::SelectPrevious') return args?.replace_newest ? 'Skip match · select previous' : 'Select previous match';
- if(action==='editor::SelectAllMatches') return 'Select all matches';
+ if(row.kind==='unbind' || (row.disabled && action!==null)) return 'Binding removed';
+ if(row.disabled) return 'Disabled / prefix';
+ if(action==='action::Sequence') {
+  const sequences = {
+   'space a d':'Attach diagnostics context', 'space a n':'New agent thread',
+   'space a c':'Choose agent context', 'space a r':'Review agent changes',
+   'space w q':'Close active dock', 'space w shift-q':'Close all docks',
+   'space w s':'Split editor down', 'space w v':'Split editor right',
+   'space w shift-o':'Join editor panes', 'l':'Focus selected diff'
+  };
+  return sequences[row.key];
+ }
+ if(action==='workspace::SendKeystrokes') return {
+  'y s':'Add surrounding delimiters', 'd s':'Delete surrounding delimiters',
+  'c s':'Change surrounding delimiters', 'z t ^':'Top-align line start',
+  'z b ^':'Bottom-align line start', 'shift-h k z b ^':'Previous screenful',
+  'shift-l j z t ^':'Next screenful', 'z z ^':'Center line start'
+ }[args];
+ if(action==='pane::CloseActiveItem') return args?.close_pinned ? 'Close any tab' : args?.save_intent==='skip' ? 'Close without saving' : 'Close active tab';
+ if(action==='pane::DeploySearch' && args?.replace_enabled) return 'Replace across project';
+ if(action==='menu::Confirm' && row.context.includes('GitPanel')) return 'Open project diff';
+ if(action==='menu::SecondaryConfirm' && row.context.includes('GitPanel')) return 'Open file diff';
+ if(action==='editor::SelectNext') return args?.replace_newest ? 'Skip match forward' : 'Select next match';
+ if(action==='editor::SelectPrevious') return args?.replace_newest ? 'Skip match backward' : 'Select previous match';
  if(action==='vim::PushObject') return args?.around ? 'Around text object' : 'Inside text object';
  if(action==='vim::Number') return 'Count digit ' + args;
  if(action==='vim::Search') return args?.backwards ? 'Search backward' : 'Search forward';
  if(action==='vim::PushFindForward') return args?.before ? 'Till next character' : 'Find next character';
  if(action==='vim::PushFindBackward') return args?.after ? 'Till previous character' : 'Find previous character';
- if(action==='vim::PushJump') return args?.line ? 'Jump to mark line' : 'Jump to mark position';
- let text=labels[action] || row.label.replace(/^Push /, 'Start ');
- if(args?.ignore_punctuation) text += ' · WORD';
- if(args?.display_lines) text += ' · screen line';
- if(args?.partial_word) text += ' · partial word';
- if(args?.step) text += ' · progressive';
- if(args?.char) text += ' ' + args.char;
- return text;
+ if(action==='vim::PushJump') return args?.line ? 'Jump mark line' : 'Jump mark position';
+ if(action==='vim::UnmatchedForward') return 'Next unmatched ' + args.char;
+ if(action==='vim::UnmatchedBackward') return 'Previous unmatched ' + args.char;
+ if(action==='vim::Paste') return args?.preserve_clipboard ? 'Paste preserving register' : args?.before ? 'Paste before cursor' : row.context.includes('visual') ? 'Paste over selection' : 'Paste after cursor';
+ if(args?.step && action==='vim::Increment') return 'Increment progressive sequence';
+ if(args?.step && action==='vim::Decrement') return 'Decrement progressive sequence';
+ if(args?.partial_word) return action==='vim::MoveToNext' ? 'Next substring match' : 'Previous substring match';
+ if(args?.display_lines) return {
+  'vim::Down':'Screen line down', 'vim::Up':'Screen line up',
+  'vim::StartOfLine':'Screen line start', 'vim::EndOfLine':'Screen line end',
+  'vim::MiddleOfLine':'Screen line midpoint', 'vim::FirstNonWhitespace':'Screen first nonblank'
+ }[action];
+ if(action==='vim::IndentObj' && args?.include_below) return 'Indentation including below';
+ const text = window.KEYMAP_LABELS[action];
+ return args?.ignore_punctuation ? text?.replace(/word/i,'WORD') : text;
 }
 function render(){
  const query=$('#search').value.trim().toLowerCase();
@@ -48,7 +60,7 @@ function render(){
  $('#empty').hidden=rows.length>0;
  const groups=new Map();
  for(const r of rows){const name=(source==='all'?`${r.source==='custom'?'Custom':'Native'} / `:'')+r.group;if(!groups.has(name))groups.set(name,[]);groups.get(name).push(r);}
- $('#cards').innerHTML=[...groups].map(([name,items])=>`<article class="card"><h2>${escape(name)}<span>${String(items.length).padStart(2,'0')}</span></h2>${items.map(r=>`<details class="${r.disabled?'disabled':''}"><summary><span class="keys">${r.key.split(' ').map(k=>`<kbd>${escape(keyLabel(k))}</kbd>`).join('')}</span><span class="description">${escape(label(r))}${r.overrides?.length?'<small class="tag">CONTEXT OVERRIDES</small>':''}</span></summary><div class="meta"><strong>CONTEXT</strong><p>${escape(r.context)}</p><pre>${escape(JSON.stringify(r.action,null,2))}</pre>${r.overrides?.length?`<strong>CUSTOM RULES FOR THIS KEY</strong>${r.overrides.map(o=>`<p>${escape(o.label)}<br>${escape(o.context)}</p>`).join('')}`:''}</div></details>`).join('')}</article>`).join('');
+ $('#cards').innerHTML=[...groups].map(([name,items])=>`<article class="card"><h2>${escape(name)}<span>${String(items.length).padStart(2,'0')}</span></h2>${items.map(r=>`<details class="${r.disabled?'disabled':''}"><summary><span class="keys">${r.key.split(' ').map(k=>`<kbd>${escape(keyLabel(k))}</kbd>`).join('')}</span><span class="description">${escape(label(r))}${r.overrides?.length?'<small class="tag">CONTEXT OVERRIDES</small>':''}</span></summary><div class="meta"><strong>CONTEXT</strong><p>${escape(r.context)}</p><pre>${escape(JSON.stringify(r.action,null,2))}</pre>${r.overrides?.length?`<strong>CUSTOM RULES FOR THIS KEY</strong>${r.overrides.map(o=>`<p>${escape(label(data.find(c=>c.source==='custom' && c.context===o.context && JSON.stringify(c.action)===JSON.stringify(o.action) && c.key===r.key)))}<br>${escape(o.context)}</p>`).join('')}`:''}</div></details>`).join('')}</article>`).join('');
 }
 function groups(){const select=$('#group');select.innerHTML='<option value="">All contexts</option>'+[...new Set(data.filter(r=>source==='all'||r.source===source).map(r=>r.group))].sort().map(g=>`<option>${escape(g)}</option>`).join('');}
 $('#sources').addEventListener('click',event=>{const button=event.target.closest('button');if(!button)return;source=button.dataset.source;document.querySelectorAll('#sources button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));groups();render();});
