@@ -10,39 +10,20 @@ Find a shortcut by key or command, browse commands by task, and explore both cus
 
 ## Installation
 
-Enable `"vim_mode": true` in Zed settings. Run the commands below from the cloned repository root. They create Zed's user configuration directory and copy `keymap.json` into it. Back up any existing keymap before replacing it; these commands replace the whole file rather than merge bindings.
+Enable Vim mode in Zed, then run one command from the cloned repository root. The installer finds Zed's configuration directory, backs up your existing keymap, and installs this one. It prints the installation and backup paths when finished.
 
 ### Linux / macOS
 
-Uses `~/.config/zed`, or `$XDG_CONFIG_HOME/zed` on Linux when configured. `cp -i` asks before overwriting an existing file.
-
 ```sh
-zed_config_dir="$HOME/.config/zed"
-if [ "$(uname -s)" = "Linux" ]; then
-    zed_config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/zed"
-fi
-mkdir -p "$zed_config_dir"
-cp -i keymap.json "$zed_config_dir/keymap.json"
+bash scripts/install.sh
 ```
 
 ### Windows (PowerShell)
 
-Uses `%APPDATA%\Zed`. `Copy-Item -Confirm` asks for confirmation before copying.
-
 ```powershell
-$zedConfigDir = Join-Path $env:APPDATA "Zed"
-New-Item -ItemType Directory -Path $zedConfigDir -Force | Out-Null
-Copy-Item -LiteralPath ".\keymap.json" -Destination (Join-Path $zedConfigDir "keymap.json") -Confirm
+powershell -NoProfile -File .\scripts\install.ps1
 ```
 
-These commands copy the same keymap on every platform; `ctrl` bindings remain Control bindings on macOS. The configuration paths follow [Zed's user keymap documentation](https://zed.dev/docs/key-bindings#user-keymaps).
-
-### Symlink alternative (Linux/macOS)
-
-To keep Zed linked to this checkout, replace the `cp` command above with the following command. The destination must not already exist.
-
-```sh
-ln -s "$PWD/keymap.json" "$zed_config_dir/keymap.json"
-```
+The same shortcuts are installed on every platform; `Ctrl` remains Control on macOS.
 
 The reference defaults come from [Zed](https://github.com/zed-industries/zed/blob/8dd255c3eafb5231056fe4e6f601cedd011f1c93/assets/keymaps/vim.json). See [reference/NOTICE.md](reference/NOTICE.md) for attribution. Project code and configuration: [MIT](LICENSE).
