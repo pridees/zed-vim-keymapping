@@ -9,19 +9,19 @@ const reference = {
   commit: '8dd255c3eafb5231056fe4e6f601cedd011f1c93',
 };
 const contextGroups = [
-  ['AgentPanel', 'Agent editor'],
-  ['GitDiff', 'Diff editor'],
+  ['AgentPanel', 'Agent panel'],
+  ['AcpThread', 'Agent panel'],
+  ['GitDiff', 'Diff multibuffer'],
   ['multibuffer', 'Multibuffers'],
   ['ProjectPanel', 'Project tree'],
-  ['CommitEditor', 'Commit editor'],
+  ['CommitEditor', 'Git panel'],
   ['GitPanel', 'Git panel'],
   ['Terminal && vi_mode', 'Terminal selection'],
-  ['Dock || Terminal', 'Dock focus'],
-  ['!Dock', 'Center tabs'],
-  ['VimControl || !vim_mode', 'Workspace leader'],
-  ['EmptyPane', 'Editor leader'],
+  ['Dock || Terminal', 'Workspace'],
+  ['VimControl || !vim_mode', 'Workspace'],
+  ['EmptyPane', 'Editor'],
   ['vim_mode == visual', 'Visual mode'],
-  ['vim_mode == normal', 'Normal mode'],
+  ['vim_mode == normal', 'Editor'],
   ['vim_mode == insert', 'Insert mode'],
   ['vim_mode == replace', 'Replace mode'],
   ['vim_operator', 'Operators & objects'],
@@ -119,6 +119,9 @@ function createRows(source, blocks) {
           label: humanizeAction(action),
           disabled: kind === 'unbind' || action === null,
           kind,
+          ...(block.use_key_equivalents === undefined
+            ? {}
+            : { use_key_equivalents: block.use_key_equivalents }),
         });
       }
     }
@@ -299,7 +302,10 @@ function updateAssetVersions(keymapContent, checkOnly) {
 function main() {
   const checkOnly = process.argv.includes('--check');
   const custom = readKeymap('keymap.json');
-  const defaults = readKeymap('reference/vim.json');
+  const defaults = [
+    ...readKeymap('reference/vim.json'),
+    ...readKeymap('reference/linux-ui.json'),
+  ];
   const customRows = createRows('custom', custom);
   const rows = [...customRows, ...createRows('vim', defaults)];
   markUnboundRows(customRows);
@@ -318,7 +324,7 @@ function main() {
   );
   updateAssetVersions(content, checkOnly);
   console.log(
-    `${customRows.length} custom entries; ${visible.filter((row) => row.source === 'vim').length} inherited Vim entries; ${effective.length - vimScoped.length} Zed UI shortcuts and ${vimScoped.length - visible.length} standard aliases hidden. Coverage OK.`,
+    `${customRows.length} custom entries; ${visible.filter((row) => row.source === 'vim').length} inherited entries; ${effective.length - vimScoped.length} Zed UI shortcuts and ${vimScoped.length - visible.length} standard aliases hidden. Coverage OK.`,
   );
 }
 

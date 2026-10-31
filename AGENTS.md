@@ -6,7 +6,8 @@ Personal Linux Zed Vim configuration and its full-screen GitHub Pages cheat shee
 
 - `keymap.json`: active custom Zed JSONC keymap. The local Zed configuration symlinks to this file.
 - `reference/vim.json`: upstream Vim defaults pinned to Zed 1.25.3, commit `8dd255c3eafb5231056fe4e6f601cedd011f1c93`. It includes shared Helix definitions; the generator excludes Helix-only contexts.
-- `scripts/build.mjs`: generates `docs/keymaps.js` from both files; no dependencies.
+- `reference/linux-ui.json`: selected native Linux UI bindings from the same pinned version, with original contexts and key-equivalent settings. These supplement the Vim reference for explicitly documented controls.
+- `scripts/build.mjs`: generates `docs/keymaps.js` from the custom keymap and reference files; no dependencies.
 - `docs/`: static GitHub Pages site, deployed from `main:/docs`.
 
 ## Required workflow

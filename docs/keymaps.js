@@ -53,7 +53,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "alt-r",
       "action": "multi_workspace::ToggleWorkspaceSidebar",
-      "label": "Toggle workspace sidebar",
+      "label": "Toggle AI Chats",
       "disabled": false,
       "kind": "bindings"
     },
@@ -127,7 +127,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "shift-h",
       "action": "pane::ActivatePreviousItem",
@@ -138,7 +138,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "shift-l",
       "action": "pane::ActivateNextItem",
@@ -149,7 +149,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b b",
       "action": "pane::AlternateFile",
@@ -160,7 +160,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b o",
       "action": "pane::CloseOtherItems",
@@ -171,7 +171,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b h",
       "action": "pane::CloseItemsToTheLeft",
@@ -182,7 +182,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b l",
       "action": "pane::CloseItemsToTheRight",
@@ -193,7 +193,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b a",
       "action": "pane::CloseAllItems",
@@ -204,7 +204,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b c",
       "action": "pane::CloseCleanItems",
@@ -215,7 +215,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b p",
       "action": "pane::TogglePinTab",
@@ -226,7 +226,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space b u",
       "action": "pane::ReopenClosedItem",
@@ -237,7 +237,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space -",
       "action": "pane::SplitDown",
@@ -248,7 +248,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space |",
       "action": "pane::SplitRight",
@@ -259,7 +259,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space /",
       "action": "pane::DeploySearch",
@@ -270,7 +270,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space s g",
       "action": "pane::DeploySearch",
@@ -281,7 +281,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space s r",
       "action": [
@@ -297,7 +297,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space s s",
       "action": "outline::Toggle",
@@ -308,7 +308,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space s shift-s",
       "action": "project_symbols::Toggle",
@@ -319,7 +319,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space g",
       "action": null,
@@ -330,7 +330,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space g g",
       "action": "git_panel::ToggleFocus",
@@ -341,7 +341,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space g d",
       "action": "git::Diff",
@@ -352,7 +352,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space g shift-d",
       "action": "git::CompareWithBranch",
@@ -363,7 +363,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space t",
       "action": null,
@@ -374,7 +374,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space u h",
       "action": "editor::ToggleInlayHints",
@@ -385,7 +385,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "g d",
       "action": "editor::GoToDefinition",
@@ -396,7 +396,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "g r",
       "action": "editor::FindAllReferences",
@@ -407,7 +407,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c r",
       "action": "editor::Rename",
@@ -418,7 +418,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c a",
       "action": "editor::ToggleCodeActions",
@@ -429,7 +429,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c f",
       "action": "editor::Format",
@@ -440,7 +440,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c d",
       "action": "editor::Hover",
@@ -451,7 +451,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c s",
       "action": null,
@@ -462,7 +462,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c i",
       "action": "call_hierarchy::ShowIncomingCalls",
@@ -473,7 +473,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c o",
       "action": "call_hierarchy::ShowOutgoingCalls",
@@ -484,7 +484,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "space c l",
       "action": "editor::RestartLanguageServer",
@@ -495,7 +495,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "g s",
       "action": null,
@@ -506,7 +506,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "g s a",
       "action": [
@@ -520,7 +520,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "g s d",
       "action": [
@@ -534,7 +534,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && vim_mode == normal)) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 8,
       "key": "g s r",
       "action": [
@@ -615,7 +615,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "Editor && vim_mode == normal && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 12,
       "key": "[ space",
       "action": "vim::InsertEmptyLineAbove",
@@ -626,7 +626,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "Editor && vim_mode == normal && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 12,
       "key": "] space",
       "action": "vim::InsertEmptyLineBelow",
@@ -659,7 +659,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && mode == full && (vim_mode == normal || vim_mode == visual))) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 14,
       "key": "space a",
       "action": null,
@@ -670,7 +670,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && mode == full && (vim_mode == normal || vim_mode == visual))) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 14,
       "key": "space a a",
       "action": "agent::FocusAgent",
@@ -681,7 +681,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && mode == full && (vim_mode == normal || vim_mode == visual))) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 14,
       "key": "space a t",
       "action": "agent::AddSelectionToThread",
@@ -692,7 +692,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(EmptyPane || (Editor && mode == full && (vim_mode == normal || vim_mode == visual))) && !menu",
-      "group": "Editor leader",
+      "group": "Editor",
       "block": 14,
       "key": "space a d",
       "action": [
@@ -1276,7 +1276,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Agent editor",
+      "group": "Agent panel",
       "block": 18,
       "key": "space",
       "action": null,
@@ -1287,7 +1287,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Agent editor",
+      "group": "Agent panel",
       "block": 18,
       "key": "space a",
       "action": null,
@@ -1298,7 +1298,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Agent editor",
+      "group": "Agent panel",
       "block": 18,
       "key": "space a a",
       "action": "agent::Toggle",
@@ -1309,7 +1309,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Agent editor",
+      "group": "Agent panel",
       "block": 18,
       "key": "space a m",
       "action": "agent::ToggleModelSelector",
@@ -1320,7 +1320,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Agent editor",
+      "group": "Agent panel",
       "block": 18,
       "key": "space a f",
       "action": null,
@@ -1331,7 +1331,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "AgentPanel > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Agent editor",
+      "group": "Agent panel",
       "block": 18,
       "key": "space a e",
       "action": "agent::ToggleThinkingEffortMenu",
@@ -1342,7 +1342,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Diff editor",
+      "group": "Diff multibuffer",
       "block": 19,
       "key": "g a",
       "action": "git::ToggleStaged",
@@ -1353,7 +1353,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
-      "group": "Diff editor",
+      "group": "Diff multibuffer",
       "block": 19,
       "key": "g x",
       "action": "git::Restore",
@@ -1606,7 +1606,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "CommitEditor > Editor",
-      "group": "Commit editor",
+      "group": "Git panel",
       "block": 22,
       "key": "tab",
       "action": "git_panel::FocusChanges",
@@ -1617,7 +1617,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space e",
       "action": "project_panel::Toggle",
@@ -1628,7 +1628,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f",
       "action": null,
@@ -1639,7 +1639,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space space",
       "action": "file_finder::Toggle",
@@ -1650,7 +1650,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space s f",
       "action": "file_finder::Toggle",
@@ -1661,7 +1661,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f n",
       "action": "workspace::NewFile",
@@ -1672,7 +1672,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f h",
       "action": "git::FileHistory",
@@ -1683,7 +1683,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f y",
       "action": "workspace::CopyRelativePath",
@@ -1694,7 +1694,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f shift-y",
       "action": "workspace::CopyPath",
@@ -1705,7 +1705,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f p",
       "action": "projects::OpenRecent",
@@ -1716,7 +1716,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space f b",
       "action": "tab_switcher::OpenInActivePane",
@@ -1727,7 +1727,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space b d",
       "action": [
@@ -1743,7 +1743,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space g shift-g",
       "action": "git_graph::Open",
@@ -1754,7 +1754,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space g b",
       "action": "git::Branch",
@@ -1765,7 +1765,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space g f",
       "action": "git::Fetch",
@@ -1776,7 +1776,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space g p",
       "action": "git::Pull",
@@ -1787,7 +1787,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space g shift-p",
       "action": "git::Push",
@@ -1798,7 +1798,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space g r",
       "action": "git::PullRebase",
@@ -1809,7 +1809,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space x",
       "action": "diagnostics::Deploy",
@@ -1820,7 +1820,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space r",
       "action": "task::Spawn",
@@ -1831,7 +1831,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space shift-r",
       "action": "task::Rerun",
@@ -1842,7 +1842,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w",
       "action": null,
@@ -1853,7 +1853,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w h",
       "action": "workspace::ToggleLeftDock",
@@ -1864,7 +1864,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w j",
       "action": "workspace::ToggleBottomDock",
@@ -1875,7 +1875,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w k",
       "action": "workspace::ToggleRightDock",
@@ -1886,7 +1886,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w tab",
       "action": "workspace::ToggleAllDocks",
@@ -1897,7 +1897,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w q",
       "action": [
@@ -1917,7 +1917,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w shift-q",
       "action": [
@@ -1937,7 +1937,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w e",
       "action": "project_panel::Toggle",
@@ -1948,7 +1948,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w g",
       "action": "git_panel::Toggle",
@@ -1959,7 +1959,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w t",
       "action": "terminal_panel::Toggle",
@@ -1970,7 +1970,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w a",
       "action": "agent::Toggle",
@@ -1981,7 +1981,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w o",
       "action": "outline_panel::Toggle",
@@ -1992,7 +1992,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w d",
       "action": "debug_panel::Toggle",
@@ -2003,7 +2003,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w c",
       "action": "collab_panel::Toggle",
@@ -2014,7 +2014,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w m",
       "action": "workspace::ToggleZoom",
@@ -2025,7 +2025,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w l",
       "action": "lsp_tool::ToggleMenu",
@@ -2036,7 +2036,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w s",
       "action": [
@@ -2053,7 +2053,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w v",
       "action": [
@@ -2070,7 +2070,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w =",
       "action": "workspace::ResetPaneSizes",
@@ -2081,7 +2081,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
-      "group": "Workspace leader",
+      "group": "Workspace",
       "block": 23,
       "key": "space w shift-o",
       "action": [
@@ -2098,7 +2098,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "(VimControl || !vim_mode) && !Dock && (!Terminal || vi_mode)",
-      "group": "Center tabs",
+      "group": "Workspace",
       "block": 24,
       "key": "space w q",
       "action": "pane::CloseActiveItem",
@@ -2109,7 +2109,7 @@ window.KEYMAP_DATA = {
     {
       "source": "custom",
       "context": "Dock || Terminal",
-      "group": "Dock focus",
+      "group": "Workspace",
       "block": 25,
       "key": "ctrl-;",
       "action": "editor::ToggleFocus",
@@ -4888,7 +4888,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "i",
       "action": "vim::InsertBefore",
@@ -4900,7 +4900,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "a",
       "action": "vim::InsertAfter",
@@ -4918,7 +4918,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "ctrl-[",
       "action": "editor::Cancel",
@@ -4930,7 +4930,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": ":",
       "action": "command_palette::Toggle",
@@ -4942,7 +4942,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "c",
       "action": "vim::PushChange",
@@ -4965,7 +4965,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "shift-c",
       "action": "vim::ChangeToEndOfLine",
@@ -4983,7 +4983,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "d",
       "action": "vim::PushDelete",
@@ -5016,7 +5016,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g shift-j",
       "action": "vim::JoinLinesNoWhitespace",
@@ -5028,7 +5028,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "y",
       "action": "vim::PushYank",
@@ -5046,7 +5046,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "shift-y",
       "action": "vim::YankLine",
@@ -5064,7 +5064,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "x",
       "action": "vim::DeleteRight",
@@ -5082,7 +5082,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "shift-x",
       "action": "vim::DeleteLeft",
@@ -5094,7 +5094,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "ctrl-a",
       "action": "vim::Increment",
@@ -5106,7 +5106,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "ctrl-x",
       "action": "vim::Decrement",
@@ -5118,7 +5118,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "ctrl-r",
       "action": "vim::Redo",
@@ -5130,7 +5130,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": ">",
       "action": "vim::PushIndent",
@@ -5142,7 +5142,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "<",
       "action": "vim::PushOutdent",
@@ -5154,7 +5154,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "=",
       "action": "vim::PushAutoIndent",
@@ -5166,7 +5166,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "!",
       "action": "vim::PushShellCommand",
@@ -5178,7 +5178,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g u",
       "action": "vim::PushLowercase",
@@ -5190,7 +5190,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g shift-u",
       "action": "vim::PushUppercase",
@@ -5202,7 +5202,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g ~",
       "action": "vim::PushOppositeCase",
@@ -5214,7 +5214,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g ?",
       "action": "vim::PushRot13",
@@ -5226,7 +5226,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g w",
       "action": "vim::PushRewrap",
@@ -5238,7 +5238,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g q",
       "action": "vim::PushRewrap",
@@ -5250,7 +5250,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "] d",
       "action": "editor::GoToDiagnostic",
@@ -5262,7 +5262,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "[ d",
       "action": "editor::GoToPreviousDiagnostic",
@@ -5274,7 +5274,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "] c",
       "action": "editor::GoToHunk",
@@ -5286,7 +5286,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "[ c",
       "action": "editor::GoToPreviousHunk",
@@ -5298,7 +5298,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g c",
       "action": "vim::PushToggleComments",
@@ -5310,7 +5310,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 2,
       "key": "g b",
       "action": "vim::PushToggleBlockComments",
@@ -6394,7 +6394,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "escape",
       "action": "editor::Cancel",
@@ -6406,7 +6406,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-d",
       "action": "vim::DeleteToEndOfLine",
@@ -6424,7 +6424,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-j",
       "action": "vim::JoinLines",
@@ -6436,7 +6436,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-y",
       "action": "vim::YankLine",
@@ -6454,7 +6454,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-i",
       "action": "vim::InsertFirstNonWhitespace",
@@ -6466,7 +6466,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-a",
       "action": "vim::InsertEndOfLine",
@@ -6484,7 +6484,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "o",
       "action": "vim::InsertLineBelow",
@@ -6502,7 +6502,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-o",
       "action": "vim::InsertLineAbove",
@@ -6520,7 +6520,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "~",
       "action": "vim::ChangeCase",
@@ -6532,7 +6532,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "ctrl-a",
       "action": "vim::Increment",
@@ -6544,7 +6544,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "ctrl-x",
       "action": "vim::Decrement",
@@ -6556,7 +6556,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "p",
       "action": "vim::Paste",
@@ -6579,7 +6579,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-p",
       "action": [
@@ -6607,7 +6607,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "u",
       "action": "vim::Undo",
@@ -6625,7 +6625,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-u",
       "action": "vim::UndoLastLine",
@@ -6637,7 +6637,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "r",
       "action": "vim::PushReplace",
@@ -6660,7 +6660,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "s",
       "action": "vim::Substitute",
@@ -6683,7 +6683,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "shift-s",
       "action": "vim::SubstituteLine",
@@ -6706,7 +6706,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == normal || vim_mode == helix_normal) && !menu",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 8,
       "key": "\"",
       "action": "vim::PushRegister",
@@ -6742,7 +6742,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == insert || vim_mode == normal) && showing_signature_help && !showing_completions",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 16,
       "key": "ctrl-p",
       "action": "editor::SignatureHelpPrevious",
@@ -6754,7 +6754,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "(vim_mode == insert || vim_mode == normal) && showing_signature_help && !showing_completions",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 16,
       "key": "ctrl-n",
       "action": "editor::SignatureHelpNext",
@@ -10329,6 +10329,7 @@ window.KEYMAP_DATA = {
       "label": "Select next item",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10347,6 +10348,7 @@ window.KEYMAP_DATA = {
       "label": "Select previous item",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10365,6 +10367,7 @@ window.KEYMAP_DATA = {
       "label": "Open project diff",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "Editor && multibuffer && (vim_mode == normal || vim_mode == visual) && !menu",
@@ -10388,6 +10391,7 @@ window.KEYMAP_DATA = {
       "label": "Collapse selected folder",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10406,6 +10410,7 @@ window.KEYMAP_DATA = {
       "label": "Expand selected folder",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10435,6 +10440,7 @@ window.KEYMAP_DATA = {
       "label": "Select first item",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10453,6 +10459,7 @@ window.KEYMAP_DATA = {
       "label": "Select last item",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10471,6 +10478,7 @@ window.KEYMAP_DATA = {
       "label": "Focus commit editor",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": []
     },
     {
@@ -10483,6 +10491,7 @@ window.KEYMAP_DATA = {
       "label": "Toggle staging",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "ProjectPanel && not_editing",
@@ -10501,6 +10510,7 @@ window.KEYMAP_DATA = {
       "label": "Stage all changes",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": []
     },
     {
@@ -10513,6 +10523,7 @@ window.KEYMAP_DATA = {
       "label": "Stage selected range",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": [
         {
           "context": "GitDiff > Editor && (vim_mode == normal || vim_mode == visual) && !menu",
@@ -10531,6 +10542,7 @@ window.KEYMAP_DATA = {
       "label": "Unstage all changes",
       "disabled": false,
       "kind": "bindings",
+      "use_key_equivalents": true,
       "overrides": []
     },
     {
@@ -10668,7 +10680,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "GitCommit > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 57,
       "key": "ctrl-c",
       "action": "menu::Cancel",
@@ -10680,7 +10692,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "GitCommit > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 57,
       "key": "escape",
       "action": "menu::Cancel",
@@ -11009,7 +11021,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "NotebookEditor > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 64,
       "key": "j",
       "action": "notebook::NotebookMoveDown",
@@ -11027,7 +11039,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "NotebookEditor > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 64,
       "key": "k",
       "action": "notebook::NotebookMoveUp",
@@ -11045,7 +11057,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "NotebookEditor > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 64,
       "key": "escape",
       "action": "notebook::EnterCommandMode",
@@ -11428,7 +11440,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "ThreadsSidebar > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 67,
       "key": "j",
       "action": "editor::MoveDown",
@@ -11446,7 +11458,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "ThreadsSidebar > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 67,
       "key": "k",
       "action": "editor::MoveUp",
@@ -11464,7 +11476,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "ThreadsSidebar > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 67,
       "key": "/",
       "action": "vim::SwitchToInsertMode",
@@ -11482,7 +11494,7 @@ window.KEYMAP_DATA = {
     {
       "source": "vim",
       "context": "ThreadsSidebar > Editor && VimControl && vim_mode == normal",
-      "group": "Normal mode",
+      "group": "Editor",
       "block": 67,
       "key": "escape",
       "action": "menu::Cancel",
@@ -11490,6 +11502,43 @@ window.KEYMAP_DATA = {
       "disabled": false,
       "kind": "bindings",
       "overrides": []
+    },
+    {
+      "source": "vim",
+      "context": "Editor",
+      "group": "Editor",
+      "block": 70,
+      "key": "ctrl-;",
+      "action": "editor::ToggleLineNumbers",
+      "label": "Toggle line numbers",
+      "disabled": false,
+      "kind": "bindings",
+      "overrides": [
+        {
+          "context": "Dock || Terminal",
+          "label": "Focus editor",
+          "action": "editor::ToggleFocus"
+        }
+      ]
+    },
+    {
+      "source": "vim",
+      "context": "AcpThread > Editor",
+      "group": "Agent panel",
+      "block": 71,
+      "key": "ctrl-;",
+      "action": "agent::OpenAddContextMenu",
+      "label": "Toggle context menu",
+      "disabled": false,
+      "kind": "bindings",
+      "use_key_equivalents": true,
+      "overrides": [
+        {
+          "context": "Dock || Terminal",
+          "label": "Focus editor",
+          "action": "editor::ToggleFocus"
+        }
+      ]
     }
   ]
 };

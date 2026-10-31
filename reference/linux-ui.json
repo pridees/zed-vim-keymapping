@@ -1,0 +1,17 @@
+// Selected Linux UI defaults from Zed 1.25.3.
+// Commit: 8dd255c3eafb5231056fe4e6f601cedd011f1c93. See NOTICE.md.
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-;": "editor::ToggleLineNumbers"
+    }
+  },
+  {
+    "context": "AcpThread > Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-;": "agent::OpenAddContextMenu"
+    }
+  }
+]

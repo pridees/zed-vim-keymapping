@@ -153,6 +153,96 @@ function checkFilters(app) {
   app.dispatch('#disabled', 'change');
 }
 
+function checkGroups(app) {
+  const rows = app.window.KEYMAP_DATA.rows;
+  const removedGroups = new Set([
+    'Workspace leader',
+    'Diff editor',
+    'Agent editor',
+    'Editor leader',
+    'Dock focus',
+    'Center tabs',
+    'Commit editor',
+    'Normal mode',
+  ]);
+  assert(!rows.some((row) => removedGroups.has(row.group)));
+  assert(
+    rows.some(
+      (row) =>
+        row.key === 'alt-r' &&
+        row.group === 'Workspace' &&
+        row.label === 'Toggle AI Chats',
+    ),
+  );
+  assert(
+    rows
+      .filter((row) => row.context.includes('GitDiff'))
+      .every((row) => row.group === 'Diff multibuffer'),
+  );
+  assert(
+    rows
+      .filter((row) => row.context.includes('CommitEditor'))
+      .every((row) => row.group === 'Git panel'),
+  );
+  assert(
+    rows.some(
+      (row) => row.context === 'vim_mode == normal' && row.group === 'Editor',
+    ),
+  );
+
+  // Regrouping must retain both meanings of closing a tab or a dock.
+  const closeRows = rows.filter(
+    (row) => row.source === 'custom' && row.key === 'space w q',
+  );
+  assert.equal(closeRows.length, 2);
+  assert(closeRows.every((row) => row.group === 'Workspace'));
+  assert(
+    closeRows.some(
+      (row) =>
+        row.context.includes('!Dock') && row.action === 'pane::CloseActiveItem',
+    ),
+  );
+  assert(closeRows.some((row) => row.label === 'Close active dock'));
+  assert(
+    rows.some(
+      (row) =>
+        row.source === 'custom' &&
+        row.context === 'Dock || Terminal' &&
+        row.key === 'ctrl-;' &&
+        row.action === 'editor::ToggleFocus' &&
+        row.group === 'Workspace',
+    ),
+  );
+
+  const editorControl = rows.find(
+    (row) =>
+      row.source === 'vim' && row.context === 'Editor' && row.key === 'ctrl-;',
+  );
+  assert.equal(editorControl.action, 'editor::ToggleLineNumbers');
+  assert.equal(editorControl.group, 'Editor');
+  const agentControl = rows.find(
+    (row) =>
+      row.source === 'vim' &&
+      row.context === 'AcpThread > Editor' &&
+      row.key === 'ctrl-;',
+  );
+  assert.equal(agentControl.action, 'agent::OpenAddContextMenu');
+  assert.equal(agentControl.group, 'Agent panel');
+  assert.equal(agentControl.use_key_equivalents, true);
+
+  app.selectSource('vim');
+  for (const [group, description] of [
+    ['Editor', 'Toggle line numbers'],
+    ['Agent panel', 'Toggle context menu'],
+  ]) {
+    app.getElement('#group').value = group;
+    app.dispatch('#group', 'change');
+    assert(app.html.includes(description));
+    assert(!app.html.includes('<span class="description">Focus editor'));
+  }
+  app.selectSource('custom');
+}
+
 function checkKeyboard(app) {
   const search = app.getElement('#search');
   let prevented = false;
@@ -361,6 +451,7 @@ function checkEscaping() {
 
 const app = createAppFixture();
 checkFilters(app);
+checkGroups(app);
 checkKeyboard(app);
 await checkFullscreen(app);
 checkDescriptions(app);
@@ -370,5 +461,5 @@ console.log(
   'UI logic OK: search, source/context/disabled filters, keyboard, fullscreen and HTML escaping.',
 );
 console.log(
-  'Native scope OK: Vim commands retained; ordinary Zed UI shortcuts excluded.',
+  'Native scope OK: Vim commands retained; unrelated Zed UI shortcuts excluded.',
 );
