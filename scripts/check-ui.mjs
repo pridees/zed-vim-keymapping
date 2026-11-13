@@ -171,7 +171,7 @@ function checkGroups(app) {
       (row) =>
         row.key === 'alt-r' &&
         row.group === 'Workspace' &&
-        row.label === 'Toggle AI Chats',
+        row.label === 'Toggle Threads sidebar',
     ),
   );
   assert(
@@ -233,7 +233,7 @@ function checkGroups(app) {
   app.selectSource('vim');
   for (const [group, description] of [
     ['Editor', 'Toggle line numbers'],
-    ['Agent panel', 'Toggle context menu'],
+    ['Agent panel', 'Open context menu'],
   ]) {
     app.getElement('#group').value = group;
     app.dispatch('#group', 'change');
@@ -328,6 +328,14 @@ function checkDescriptions({ window }) {
     }
   }
   const expectations = [
+    [
+      (row) => row.source === 'custom' && row.key === 'space w shift-t',
+      'Toggle Threads sidebar',
+    ],
+    [
+      (row) => row.source === 'custom' && row.key === 'alt-r',
+      'Toggle Threads sidebar',
+    ],
     [(row) => row.action === 'terminal_panel::Toggle', 'Toggle terminal panel'],
     [(row) => row.action === 'diagnostics::Deploy', 'Show project diagnostics'],
     [(row) => row.key === 'space s r', 'Replace across project'],

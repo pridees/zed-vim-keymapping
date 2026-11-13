@@ -382,6 +382,7 @@
       "space w e": "project_panel::Toggle",
       "space w g": "git_panel::Toggle",
       "space w t": "terminal_panel::Toggle",
+      "space w shift-t": "multi_workspace::ToggleWorkspaceSidebar",
       "space w a": "agent::Toggle",
       "space w o": "outline_panel::Toggle",
       "space w d": "debug_panel::Toggle",

@@ -53,7 +53,7 @@ window.KEYMAP_DATA = {
       "block": 2,
       "key": "alt-r",
       "action": "multi_workspace::ToggleWorkspaceSidebar",
-      "label": "Toggle AI Chats",
+      "label": "Toggle Threads sidebar",
       "disabled": false,
       "kind": "bindings"
     },
@@ -1964,6 +1964,17 @@ window.KEYMAP_DATA = {
       "key": "space w t",
       "action": "terminal_panel::Toggle",
       "label": "Toggle terminal panel",
+      "disabled": false,
+      "kind": "bindings"
+    },
+    {
+      "source": "custom",
+      "context": "(VimControl || !vim_mode) && (!Terminal || vi_mode)",
+      "group": "Workspace",
+      "block": 23,
+      "key": "space w shift-t",
+      "action": "multi_workspace::ToggleWorkspaceSidebar",
+      "label": "Toggle Threads sidebar",
       "disabled": false,
       "kind": "bindings"
     },
@@ -11528,7 +11539,7 @@ window.KEYMAP_DATA = {
       "block": 71,
       "key": "ctrl-;",
       "action": "agent::OpenAddContextMenu",
-      "label": "Toggle context menu",
+      "label": "Open context menu",
       "disabled": false,
       "kind": "bindings",
       "use_key_equivalents": true,

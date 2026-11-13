@@ -20,6 +20,10 @@ Navigate files and tabs, jump to definitions, review Git changes, and work with 
 
 Find a shortcut by key or command, browse commands by task, and explore both custom shortcuts and familiar Vim commands. Keep the cheat sheet open while you work, or use it to learn your next shortcut.
 
+`Space w t` toggles the terminal panel; `Space w Shift+T` toggles the Threads sidebar (also available on `Alt+R`).
+
+In Zed 1.25.3, WhichKey derives descriptions from action names and does not support custom keymap descriptions. Sequences appear as `action: sequence`, and surround shortcuts appear as `workspace: send keystrokes`. The cheat sheet provides specific descriptions for these bindings, including their parameters and contexts.
+
 ## Installation
 
 Enable Vim mode in Zed, then run one command from the cloned repository root. The installer finds Zed's configuration directory, saves your original keymap in a separate backup for each run, and installs this one. It prints the installation and backup paths when finished.
